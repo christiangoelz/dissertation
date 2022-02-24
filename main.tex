@@ -2,7 +2,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{{images/}}
+\usepackage{nomencl}
+\usepackage[english]{babel}
 
+%---------------------------------- Title Page -----------------------------------
+\pagenumbering{roman}
 \title{
     {Working Title: Applied Machine Learning In Aging Neuroscience}\\
     {\large Paderborn University}\\
@@ -10,15 +14,56 @@
 \author{Christian Goelz}
 \date{25.06.2021}
 
+%------------------------------------ Document ------------------------------------
 \begin{document}
     \maketitle
+    
+    \tableofcontents
+    
+    \chapter*{Acknowledgement}
+    \addcontentsline{toc}{chapter}{Acknowledgement}
+    \input{chapters/acknowledgement}
 
     \chapter*{Abstract}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \setcounter{page}{3}
     \input{chapters/abstract}
     
-    \chapter*{Introduction}
+    \chapter*{Figures}
+    \addcontentsline{toc}{chapter}{Figures}
+
+    \chapter*{Tables}
+    \addcontentsline{toc}{chapter}{Tables}
+
+    \chapter*{List of Abreviations}
+    \addcontentsline{toc}{chapter}{List of Abreviations}
+
+    \chapter*{Publications and other scientific contributions}
+    \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
+    \input{chapters/papers_work}
+
+    \chapter{Introduction}
+    \pagenumbering{arabic}
     \input{chapters/introduction}
 
-    \chapter*{Theoretical Background and Current State of Research}
+    \chapter{Theoretical Background}
     \input{chapters/background}
+
+    \chapter{Aims and scope}
+
+    \chapter{General methodology}
+
+    \chapter{Publications}
+        \section{Paper 1}
+
+        \section{Paper 2}
+
+        \section{Paper 3}
+
+    \chapter{General discussion}
+
+    \chapter{Bibliography}
+
+    \chapter{Statutory Declaration}
+
 \end{document}
