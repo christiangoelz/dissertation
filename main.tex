@@ -1,73 +1,67 @@
 \documentclass[11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\graphicspath{{images/}}
 \usepackage{nomencl}
 \usepackage[english]{babel}
+\usepackage[ddmmyyyy]{datetime}
+\graphicspath{{images/}}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
-%---------------------------------- Title Page -----------------------------------
-\pagenumbering{roman}
-\title{
-    {Working Title: Brain network dynamics over the human lifespan}\\
-    {\large Paderborn University}\\
-}
-\author{Christian Goelz}
-\date{25.06.2021}
-
 %------------------------------------ Document ------------------------------------
 \begin{document}
-    \maketitle
-    
-    \tableofcontents
-    
-    \chapter*{Acknowledgement}
-    \addcontentsline{toc}{chapter}{Acknowledgement}
-    \input{chapters/acknowledgement}
+\input{chapters/titlepage}
 
-    \chapter*{Abstract}
-    \addcontentsline{toc}{chapter}{Abstract}
-    \setcounter{page}{3}
-    \input{chapters/abstract}
-    
-    \chapter*{Figures}
-    \addcontentsline{toc}{chapter}{Figures}
+\tableofcontents
 
-    \chapter*{Tables}
-    \addcontentsline{toc}{chapter}{Tables}
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}
+\input{chapters/acknowledgement}
 
-    \chapter*{List of Abreviations}
-    \addcontentsline{toc}{chapter}{List of Abreviations}
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\setcounter{page}{3}
+\input{chapters/abstract}
 
-    \chapter*{Publications and other scientific contributions}
-    \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
-    \input{chapters/papers_work}
+\chapter*{Figures}
+\addcontentsline{toc}{chapter}{Figures}
 
-    \chapter{Introduction}
-    \pagenumbering{arabic}
-    \input{chapters/introduction}
+\chapter*{Tables}
+\addcontentsline{toc}{chapter}{Tables}
 
-    \chapter{Theoretical Background}
-    \input{chapters/background}
+\chapter*{List of Abreviations}
+\addcontentsline{toc}{chapter}{List of Abreviations}
 
-    \chapter{Aims and scope}
+\chapter*{Publications and other scientific contributions}
+\addcontentsline{toc}{chapter}{Publications and other scientific contributions}
+\input{chapters/papers_work}
 
-    \chapter{General methodology}
+\chapter{Introduction}
+\pagenumbering{arabic}
+\input{chapters/introduction}
 
-    \chapter{Publications}
-        \section{Paper 1}
-        
-        \section{Paper 2}
+\chapter{Theoretical Background}
+\input{chapters/background}
 
-        \section{Paper 3}
+\chapter{Aims and scope}
 
-        \section{Paper 4}
+\chapter{General methodology}
 
-    \chapter{General discussion}
+\chapter{Publications}
+\section{Paper 1}
 
-    \chapter{Bibliography}
+\section{Paper 2}
 
-    \chapter{Statutory Declaration}
+\section{Paper 3}
+
+\section{Paper 4}
+
+\chapter{General discussion}
+
+\chapter{Bibliography}
+\bibliographystyle{plain}
+\bibliography{literature}
+
+\chapter{Statutory Declaration}
 
 \end{document}
