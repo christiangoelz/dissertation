@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{Acknowledgement}{3}{}%
 \contentsline {chapter}{Abstract}{3}{}%
 \contentsline {chapter}{Figures}{4}{}%
@@ -9,11 +9,12 @@
 \contentsline {chapter}{\numberline {2}Theoretical Background}{3}{}%
 \contentsline {section}{\numberline {2.1}Age related reorganization of the brain}{3}{}%
 \contentsline {subsection}{\numberline {2.1.1}Contributing Factors}{3}{}%
-\contentsline {section}{\numberline {2.2}Methodological Approaches}{3}{}%
-\contentsline {subsection}{\numberline {2.2.1}Measuring age related changes}{5}{}%
-\contentsline {subsection}{\numberline {2.2.2}Neural Datascience}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Dimensionality reduction}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Machine Learning}{5}{}%
+\contentsline {section}{\numberline {2.2}A data driven way to study the aging brain}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Neural Datascience}{4}{}%
+\contentsline {subsection}{\numberline {2.2.2}Measuring age related changes}{5}{}%
+\contentsline {subsection}{\numberline {2.2.3}Neural Datascience}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Dimensionality reduction}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Machine Learning}{5}{}%
 \contentsline {chapter}{\numberline {3}Aims and scope}{6}{}%
 \contentsline {chapter}{\numberline {4}General methodology}{7}{}%
 \contentsline {chapter}{\numberline {5}Publications}{8}{}%
