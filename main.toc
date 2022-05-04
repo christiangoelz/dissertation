@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {2.1}Age related reorganization of the brain}{3}{}%
 \contentsline {subsection}{\numberline {2.1.1}Contributing Factors}{3}{}%
 \contentsline {section}{\numberline {2.2}A data driven way to study the aging brain}{3}{}%
-\contentsline {subsection}{\numberline {2.2.1}Neural Datascience}{4}{}%
+\contentsline {subsection}{\numberline {2.2.1}The data scientists view on neural data}{4}{}%
 \contentsline {subsection}{\numberline {2.2.2}Measuring age related changes}{5}{}%
 \contentsline {subsection}{\numberline {2.2.3}Neural Datascience}{5}{}%
 \contentsline {subsubsection}{\numberline {2.2.3.1}Dimensionality reduction}{5}{}%
