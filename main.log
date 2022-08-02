@@ -192,7 +192,7 @@ File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
 \g__pdf_backend_link_int=\count290
 \g__pdf_backend_link_sf_int=\count291
 )
-No file main.aux.
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -213,7 +213,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-(./chapters/titlepage.tex
+ (./chapters/titlepage.tex
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
@@ -224,23 +224,34 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
  [1
 
+]) (./main.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+ [1
+
 ])
-No file main.toc.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-[1
-
-] (./chapters/acknowledgement.tex) [2
+ [2]
+(./chapters/acknowledgement.tex) [3
 
 ] (./chapters/abstract.tex) [3
 
 ] [4
 
-]
-[5
+] [5
 
-] [6
+]
+[6
 
 ] (./chapters/papers_work.tex) [7
 
@@ -265,10 +276,6 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 12.
 
 
 LaTeX Warning: Citation `Mooney2016' on page 3 undefined on input line 12.
@@ -311,12 +318,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4175 strings out of 478741
- 73716 string characters out of 5860983
- 446464 words of memory out of 5000000
- 22560 multiletter control sequences out of 15000+600000
- 481737 words of font info for 78 fonts, out of 8000000 for 9000
+ 4196 strings out of 478741
+ 73944 string characters out of 5860983
+ 447374 words of memory out of 5000000
+ 22571 multiletter control sequences out of 15000+600000
+ 484176 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 110i,5n,106p,1095b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,6n,106p,1095b,278s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (19 pages, 13060 bytes).
+Output written on main.dvi (20 pages, 16868 bytes).
