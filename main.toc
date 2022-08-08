@@ -9,7 +9,7 @@
 \contentsline {chapter}{\numberline {2}Theoretical Background}{3}{}%
 \contentsline {section}{\numberline {2.1}A data driven way to study the aging brain}{3}{}%
 \contentsline {section}{\numberline {2.2}Machine Learning}{3}{}%
-\contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{3}{}%
+\contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{4}{}%
 \contentsline {subsection}{\numberline {2.3.1}Contributing Factors}{4}{}%
 \contentsline {subsection}{\numberline {2.3.2}Measuring age related changes}{5}{}%
 \contentsline {subsection}{\numberline {2.3.3}Neural Datascience}{5}{}%
@@ -24,4 +24,4 @@
 \contentsline {section}{\numberline {5.4}Paper 4}{8}{}%
 \contentsline {chapter}{\numberline {6}General discussion}{9}{}%
 \contentsline {chapter}{\numberline {7}Bibliography}{10}{}%
-\contentsline {chapter}{\numberline {8}Statutory Declaration}{11}{}%
+\contentsline {chapter}{\numberline {8}Statutory Declaration}{12}{}%
