@@ -8,20 +8,18 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{}%
 \contentsline {chapter}{\numberline {2}Theoretical Background}{3}{}%
 \contentsline {section}{\numberline {2.1}A data driven way to study the aging brain}{3}{}%
-\contentsline {section}{\numberline {2.2}Machine Learning in neuroscience}{3}{}%
+\contentsline {section}{\numberline {2.2}Machine learning}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}Categories of machine learning}{4}{}%
+\contentsline {subsection}{\numberline {2.2.2}Applications in Neuroscience}{4}{}%
 \contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{4}{}%
-\contentsline {subsection}{\numberline {2.3.1}Contributing Factors}{4}{}%
-\contentsline {subsection}{\numberline {2.3.2}Measuring age related changes}{5}{}%
-\contentsline {subsection}{\numberline {2.3.3}Neural Datascience}{5}{}%
-\contentsline {subsubsection}{\numberline {2.3.3.1}Dimensionality reduction}{5}{}%
-\contentsline {subsubsection}{\numberline {2.3.3.2}Machine Learning}{5}{}%
-\contentsline {chapter}{\numberline {3}Aims and scope}{6}{}%
-\contentsline {chapter}{\numberline {4}General methodology}{7}{}%
-\contentsline {chapter}{\numberline {5}Publications}{8}{}%
-\contentsline {section}{\numberline {5.1}Paper 1}{8}{}%
-\contentsline {section}{\numberline {5.2}Paper 2}{8}{}%
-\contentsline {section}{\numberline {5.3}Paper 3}{8}{}%
-\contentsline {section}{\numberline {5.4}Paper 4}{8}{}%
-\contentsline {chapter}{\numberline {6}General discussion}{9}{}%
-\contentsline {chapter}{\numberline {7}Bibliography}{10}{}%
-\contentsline {chapter}{\numberline {8}Statutory Declaration}{11}{}%
+\contentsline {section}{\numberline {2.4}}{5}{}%
+\contentsline {chapter}{\numberline {3}Aims and scope}{7}{}%
+\contentsline {chapter}{\numberline {4}General methodology}{8}{}%
+\contentsline {chapter}{\numberline {5}Publications}{9}{}%
+\contentsline {section}{\numberline {5.1}Paper 1}{9}{}%
+\contentsline {section}{\numberline {5.2}Paper 2}{9}{}%
+\contentsline {section}{\numberline {5.3}Paper 3}{9}{}%
+\contentsline {section}{\numberline {5.4}Paper 4}{9}{}%
+\contentsline {chapter}{\numberline {6}General discussion}{10}{}%
+\contentsline {chapter}{\numberline {7}Bibliography}{11}{}%
+\contentsline {chapter}{\numberline {8}Statutory Declaration}{14}{}%

@@ -1,0 +1,58 @@
+\begin{thebibliography}{1}
+
+\bibitem{Breiman2001}
+Leo Breiman.
+\newblock Statistical modeling: The two cultures (with comments and a rejoinder
+  by the author).
+\newblock {\em Statistical Science}, 16(3):199--231, 2001.
+
+\bibitem{Choi2022}
+Chanyeol Choi, Hyunseok Kim, Ji-Hoon Kang, Min-Kyu Song, Hanwool Yeon,
+  Celesta~S Chang, Jun~Min Suh, Jiho Shin, Kuangye Lu, Bo-In Park, et~al.
+\newblock Reconfigurable heterogeneous integration using stackable chips with
+  embedded artificial intelligence.
+\newblock {\em Nature Electronics}, 5(6):386--393, 2022.
+
+\bibitem{Hastie2009}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em {The Elements of Statistical Learning. Data Mining, Inference,
+  and Prediction, Second Edition}}.
+\newblock Springer-Verlag, New York, second edition, 2009.
+
+\bibitem{Jordan2015}
+M.~I. Jordan and T.~M. Mitchell.
+\newblock Machine learning: Trends, perspectives, and prospects.
+\newblock {\em Science}, 349(6245):255--260, 2015.
+
+\bibitem{Liu2020}
+Yuan Liu, Ayush Jain, Clara Eng, David~H. Way, Kang Lee, Peggy Bui, Kimberly
+  Kanada, Guilherme de~Oliveira~Marinho, Jessica Gallegos, Sara Gabriele,
+  Vishakha Gupta, Nalini Singh, Vivek Natarajan, Rainer Hofmann-Wellenhof,
+  Greg~S. Corrado, Lily~H. Peng, Dale~R. Webster, Dennis Ai, Susan~J. Huang,
+  Yun Liu, R.~Carter Dunn, and David Coz.
+\newblock A deep learning system for differential diagnosis of skin diseases.
+\newblock {\em Nature Medicine}, 26(6):900--908, Jun 2020.
+
+\bibitem{Macpherson2021}
+Tom Macpherson, Anne Churchland, Terry Sejnowski, James DiCarlo, Yukiyasu
+  Kamitani, Hidehiko Takahashi, and Takatoshi Hikida.
+\newblock Natural and artificial intelligence: A brief introduction to the
+  interplay between ai and neuroscience research.
+\newblock {\em Neural Networks}, 144:603--613, 2021.
+
+\bibitem{Mooney2016}
+Kathleen~M. Mooney, Amy~E. Morgan, and Mark~T. Mc~Auley.
+\newblock Aging and computational systems biology.
+\newblock {\em WIREs Systems Biology and Medicine}, 8(2):123--139, 2016.
+
+\bibitem{Nylen2013}
+Erik~Lee Nylen and Pascal Wallisch.
+\newblock {\em Neural Data Science}.
+\newblock Academic Press, 2017.
+
+\bibitem{Samual1959}
+A.~L. Samuel.
+\newblock Some studies in machine learning using the game of checkers.
+\newblock {\em IBM Journal of Research and Development}, 3(3):210--229, 1959.
+
+\end{thebibliography}
