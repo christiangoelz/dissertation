@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {2.2}Machine learning}{3}{}%
 \contentsline {subsection}{\numberline {2.2.1}Categories of machine learning}{4}{}%
 \contentsline {subsection}{\numberline {2.2.2}Applications in Neuroscience}{4}{}%
-\contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{4}{}%
+\contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{5}{}%
 \contentsline {section}{\numberline {2.4}}{5}{}%
 \contentsline {chapter}{\numberline {3}Aims and scope}{7}{}%
 \contentsline {chapter}{\numberline {4}General methodology}{8}{}%
