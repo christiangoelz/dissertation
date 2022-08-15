@@ -8,6 +8,12 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+linkcolor=black,
+filecolor=magenta,      
+urlcolor=cyan
+}
 %------------------------------------ Document ------------------------------------
 \begin{document}
 \input{chapters/titlepage}
@@ -40,19 +46,19 @@
 \pagenumbering{arabic}
 
     \section{Motivation}
-    \input{chapters/introduction/motivation}
+    \input{chapters/introduction/1_motivation}
 
     \section{Outline of the thesis}
-    \input{chapters/introduction/outline}
+    \input{chapters/introduction/2_outline}
 
     \section{Theoretical Background and terminology}
-    \input{chapters/introduction/theoretical_background_terminology}    
+    \input{chapters/introduction/3_theoretical_background_terminology}    
 
     \section{Aims and scope}
-    \input{chapters/introduction/aims_scope}
+    \input{chapters/introduction/4_aims_scope}
 
     \section{General methodology}
-    \input{chapters/introduction/general_methodology}
+    \input{chapters/introduction/5_general_methodology}
 
 \chapter{Paper 1}
 

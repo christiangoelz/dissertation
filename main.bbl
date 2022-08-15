@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{Adamopoulou2020}
+Eleni Adamopoulou and Lefteris Moussiades.
+\newblock An overview of chatbot technology.
+\newblock In Ilias Maglogiannis, Lazaros Iliadis, and Elias Pimenidis, editors,
+  {\em Artificial Intelligence Applications and Innovations}, pages 373--383,
+  Cham, 2020. Springer International Publishing.
+
+\bibitem{Appenzeller2017}
+Tim Appenzeller.
+\newblock The ai revolution in science: How deep learning is helping scientists
+  cope with a data deluge, 2017.
+
 \bibitem{Breiman2001}
 Leo Breiman.
 \newblock Statistical modeling: The two cultures (with comments and a rejoinder
@@ -21,8 +33,8 @@ Chanyeol Choi, Hyunseok Kim, Ji-Hoon Kang, Min-Kyu Song, Hanwool Yeon,
 
 \bibitem{Hastie2009}
 Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
-\newblock {\em {The Elements of Statistical Learning. Data Mining, Inference,
-  and Prediction, Second Edition}}.
+\newblock {\em The Elements of Statistical Learning. Data Mining, Inference,
+  and Prediction, Second Edition}.
 \newblock Springer-Verlag, New York, second edition, 2009.
 
 \bibitem{Jumper2021}

@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QStructural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure.\\E$"}
