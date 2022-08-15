@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.8.2)  11 AUG 2022 11:07
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.8.11)  11 AUG 2022 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,9 +6,9 @@ entering extended mode
 **main
 (./main.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+(/usr/local/texlive/2022/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count181
@@ -23,7 +23,7 @@ File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
@@ -31,45 +31,45 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/xetex.def
 File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
- (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
- (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 )
 \XKV@depth=\count190
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/tocbasic.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2021/11/13 v3.35 KOMA-Script package (handling toc-files)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrbase.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2021/11/13 v3.35 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2021/11/13 v3.35 KOMA-Script package (file load hooks)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
 Package: scrlfile-hook 2021/11/13 v3.35 KOMA-Script package (using LaTeX hooks)
- (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2021/11/13 v3.35 KOMA-Script package (logo)
 )))
 Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
@@ -85,48 +85,48 @@ Package tocbasic Info: babel extension for `nls' omitted
 \nomlabelwidth=\dimen141
 \nom@tempdim=\dimen142
 \nomitemsep=\skip50
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
+) (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
 \babel@savecnt=\count191
 \U@D=\dimen143
 \l@unhyphenated=\language87
- (/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/xebabel.def (/usr/local/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read2
 \bbl@dirlevel=\count192
- (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 105.
+(babel)             (\language21). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 108.
-)) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+(babel)             (\language21). Reported on input line 108.
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
- (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count193
-) (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fmtcount 2020/01/30 v3.07
- (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fcprefix 2012/09/28
- (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fcnumparser 2017/06/15
 \fc@digit@counter=\count194
-)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
 \ex@=\dimen144
 )
 \c@padzeroesN=\count195
 \fc@tmpcatcode=\count196
- (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/fmtcount/fc-english.def
 Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 File: fc-english.def 2016/01/12
@@ -138,7 +138,7 @@ File: fc-english.def 2016/01/12
 \@tmpstrctr=\count267
 \@DT@loopN=\count268
 \@DT@X=\count269
-) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
 \@day=\count270
@@ -160,8 +160,8 @@ Package datetime Info: No datetime.cfg file found, using default settings on inp
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks22
 \dt@b=\toks23
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2022-01-12 L3 backend support: XeTeX
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
  (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count285
 \l__color_backend_stack_int=\count286
@@ -184,7 +184,7 @@ LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 12.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 12.
@@ -198,11 +198,11 @@ LaTeX Font Info:    ... okay on input line 12.
 
 ]) (./main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 10.
+(Font)              <10.95> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 10.
+(Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 10.
+(Font)              <6> on input line 9.
  [1
 
 ])
@@ -219,22 +219,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [6
 
-] (./chapters/papers_work.tex) [7
+] (./chapters/papers.tex) [7
 
 ]
 Chapter 1.
-(./chapters/introduction.tex
+(./chapters/introduction/motivation.tex
 Overfull \hbox (1.84274pt too wide) in paragraph at lines 13--14
 []\TU/lmr/m/n/10.95 First study is about detecting dedifferentiated and compensatory mech-
  []
 
 [1
 
-]) [2]
+]) (./chapters/introduction/outline.tex) (./chapters/introduction/theoretical_background_terminology.tex [2] [3]) (./chapters/introduction/aims_scope.tex [4]) (./chapters/introduction/general_methodology.tex) [5]
 Chapter 2.
-(./chapters/background.tex [3
+[6
 
-] [4] [5]) [6]
+]
 Chapter 3.
 [7
 
@@ -262,12 +262,12 @@ Chapter 8.
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4292 strings out of 476191
- 76558 string characters out of 5812073
- 456888 words of memory out of 5000000
- 24963 multiletter control sequences out of 15000+600000
+ 4310 strings out of 476179
+ 77868 string characters out of 5809544
+ 458302 words of memory out of 5000000
+ 24983 multiletter control sequences out of 15000+600000
  472102 words of font info for 50 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,5n,106p,1150b,237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,6n,106p,1108b,237s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (23 pages).

@@ -5,21 +5,20 @@
 \contentsline {chapter}{Tables}{5}{}%
 \contentsline {chapter}{List of Abreviations}{6}{}%
 \contentsline {chapter}{Publications and other scientific contributions}{7}{}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
-\contentsline {chapter}{\numberline {2}Theoretical Background}{3}{}%
-\contentsline {section}{\numberline {2.1}A data driven way to study the aging brain}{3}{}%
-\contentsline {section}{\numberline {2.2}Machine learning}{3}{}%
-\contentsline {subsection}{\numberline {2.2.1}Categories of machine learning}{4}{}%
-\contentsline {subsection}{\numberline {2.2.2}Applications in Neuroscience}{4}{}%
-\contentsline {section}{\numberline {2.3}Age related reorganization of the brain}{5}{}%
-\contentsline {section}{\numberline {2.4}}{5}{}%
-\contentsline {chapter}{\numberline {3}Aims and scope}{7}{}%
-\contentsline {chapter}{\numberline {4}General methodology}{8}{}%
-\contentsline {chapter}{\numberline {5}Publications}{9}{}%
-\contentsline {section}{\numberline {5.1}Paper 1}{9}{}%
-\contentsline {section}{\numberline {5.2}Paper 2}{9}{}%
-\contentsline {section}{\numberline {5.3}Paper 3}{9}{}%
-\contentsline {section}{\numberline {5.4}Paper 4}{9}{}%
+\contentsline {chapter}{\numberline {1}General Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{}%
+\contentsline {section}{\numberline {1.2}Outline of the thesis}{3}{}%
+\contentsline {section}{\numberline {1.3}Theoretical Background and terminology}{3}{}%
+\contentsline {subsection}{\numberline {1.3.1}Machine learning}{3}{}%
+\contentsline {subsubsection}{\numberline {1.3.1.1}Applications on Neuroscience}{3}{}%
+\contentsline {section}{\numberline {1.4}Age related reorganization of the brain}{4}{}%
+\contentsline {section}{\numberline {1.5}Machine Learining in Aging Neuroscience}{4}{}%
+\contentsline {section}{\numberline {1.6}Aims and scope}{4}{}%
+\contentsline {section}{\numberline {1.7}General methodology}{5}{}%
+\contentsline {chapter}{\numberline {2}Paper 1}{6}{}%
+\contentsline {chapter}{\numberline {3}Paper 2}{7}{}%
+\contentsline {chapter}{\numberline {4}Paper 3}{8}{}%
+\contentsline {chapter}{\numberline {5}Paper 4}{9}{}%
 \contentsline {chapter}{\numberline {6}General discussion}{10}{}%
 \contentsline {chapter}{\numberline {7}Bibliography}{11}{}%
 \contentsline {chapter}{\numberline {8}Statutory Declaration}{14}{}%
