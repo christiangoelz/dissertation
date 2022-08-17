@@ -12,12 +12,6 @@ Tim Appenzeller.
 \newblock The ai revolution in science: How deep learning is helping scientists
   cope with a data deluge, 2017.
 
-\bibitem{Breiman2001}
-Leo Breiman.
-\newblock Statistical modeling: The two cultures (with comments and a rejoinder
-  by the author).
-\newblock {\em Statistical Science}, 16(3):199--231, 2001.
-
 \bibitem{Brunton2019}
 Bingni~W. Brunton and Michael Beyeler.
 \newblock Data-driven models in human neuroscience and neuroengineering.
@@ -36,6 +30,17 @@ Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
 \newblock {\em The Elements of Statistical Learning. Data Mining, Inference,
   and Prediction, Second Edition}.
 \newblock Springer-Verlag, New York, second edition, 2009.
+
+\bibitem{Hey2009}
+Tony Hey, Stewart Tansley, Kristin Tolle, and Jim Gray.
+\newblock {\em The Fourth Paradigm: Data-Intensive Scientific Discovery}.
+\newblock Microsoft Research, October 2009.
+
+\bibitem{Hou2019}
+Yujun Hou, Xiuli Dan, Mansi Babbar, Yong Wei, Steen~G. Hasselbalch, Deborah~L.
+  Croteau, and Vilhelm~A. Bohr.
+\newblock Ageing as a risk factor for neurodegenerative disease.
+\newblock {\em Nature reviews. Neurology}, 15(10):565--581, 2019.
 
 \bibitem{Jumper2021}
 John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
