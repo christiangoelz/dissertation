@@ -2,7 +2,7 @@
 
 
 %------------------------------------ Packages ------------------------------------
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{nomencl}
 \usepackage[english]{babel}
@@ -44,35 +44,40 @@ urlcolor=cyan
 
 \chapter*{Publications and other scientific contributions}
 \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
-\input{chapters/papers}
+\input{chapters/publist}
 
 \chapter{General Introduction}
+\label{chap:intro}
 \pagenumbering{arabic}
 
     \section{Motivation}
-    \input{chapters/introduction/1_motivation}
+    \input{chapters/1_introduction/1_motivation}
+    \label{sec:motivation}
 
     \section{Outline of the thesis}
-    \input{chapters/introduction/2_outline}
+    \input{chapters/1_introduction/2_outline}
+    \label{sec:outline}
 
     \section{Theoretical Background and terminology}
-    \input{chapters/introduction/3_theoretical_background_terminology}    
+    \input{chapters/1_introduction/3_theoretical_background_terminology}    
+    \label{sec:theory}
 
     \section{Aims and scope}
-    \input{chapters/introduction/4_aims_scope}
+    \input{chapters/1_introduction/4_aims_scope}
+    \label{sec:aims_scope}
 
     \section{General methodology}
-    \input{chapters/introduction/5_general_methodology}
+    \input{chapters/1_introduction/5_general_methodology}
+    \label{sec:methods}
 
-\chapter{Paper 1}
+\chapter{Paper 1 + 2}
+\label{chap:res1}
 
-\chapter{Paper 2}
-
-\chapter{Paper 3}
-
-\chapter{Paper 4}
+\chapter{Paper 3 + 4}
+\label{chap:res2}
 
 \chapter{General discussion}
+\label{chap:disc}
 
 \chapter{Bibliography}
 \bibliographystyle{plain}
