@@ -732,6 +732,37 @@
     \field{year}{2009}
   \endentry
 
+  \entry{Breiman2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BL}{%
+         family={Breiman},
+         familyi={B\bibinitperiod},
+         given={Leo},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Institute of Mathematical Statistics}%
+    }
+    \strng{namehash}{BL1}
+    \strng{fullhash}{BL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1214/ss/1009213726
+    \endverb
+    \field{number}{3}
+    \field{pages}{199\bibrangedash 231}
+    \field{title}{Statistical Modeling: The Two Cultures (with comments and a
+  rejoinder by the author)}
+    \verb{url}
+    \verb https://doi.org/10.1214/ss/1009213726
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{Statistical Science}
+    \field{year}{2001}
+  \endentry
+
   \entry{Macpherson2021}{article}{}
     \name{author}{7}{}{%
       {{hash=MT}{%
