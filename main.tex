@@ -1,6 +1,5 @@
 \documentclass[11pt]{report}
 
-
 %------------------------------------ Packages ------------------------------------
 %\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
@@ -8,8 +7,11 @@
 \usepackage[english]{babel}
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{hyperref}
-
+\usepackage[style=nature,backend=bibtex,maxbibnames=99]{biblatex}
+\usepackage{csquotes}
+\usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 %------------------------------------ Settings ------------------------------------
+\addbibresource{literature.bib} 
 \graphicspath{{images/}}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
@@ -20,18 +22,18 @@ urlcolor=cyan
 }
 %------------------------------------ Document ------------------------------------
 \begin{document}
-\input{chapters/titlepage}
+\input{chapters/0_Other/titlepage}
 
 \tableofcontents
 
 \chapter*{Acknowledgement}
 \addcontentsline{toc}{chapter}{Acknowledgement}
-\input{chapters/acknowledgement}
+\input{chapters/0_Other/acknowledgement}
 
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \setcounter{page}{3}
-\input{chapters/abstract}
+\input{chapters/0_Other/abstract}
 
 \chapter*{Figures}
 \addcontentsline{toc}{chapter}{Figures}
@@ -44,10 +46,9 @@ urlcolor=cyan
 
 \chapter*{Publications and other scientific contributions}
 \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
-\input{chapters/publist}
+\input{chapters/0_Other/publist}
 
-\chapter{General Introduction}
-\label{chap:intro}
+\chapter{General Introduction}\label{chap:intro}
 \pagenumbering{arabic}
 
     \section{Motivation}
@@ -55,34 +56,37 @@ urlcolor=cyan
     \label{sec:motivation}
 
     \section{Outline of the thesis}
-    \input{chapters/1_introduction/2_outline}
     \label{sec:outline}
+    \input{chapters/1_introduction/2_outline}
 
     \section{Theoretical Background and terminology}
-    \input{chapters/1_introduction/3_theoretical_background_terminology}    
     \label{sec:theory}
+    \input{chapters/1_introduction/3_theoretical_background_terminology}    
 
     \section{Aims and scope}
-    \input{chapters/1_introduction/4_aims_scope}
     \label{sec:aims_scope}
+    \input{chapters/1_introduction/4_aims_scope}
 
     \section{General methodology}
-    \input{chapters/1_introduction/5_general_methodology}
     \label{sec:methods}
+    \input{chapters/1_introduction/5_general_methodology}
 
-\chapter{Paper 1 + 2}
-\label{chap:res1}
 
-\chapter{Paper 3 + 4}
-\label{chap:res2}
+\chapter{Paper 1}
+\label{chap:paper1}
+
+\chapter{Paper 2}
+\label{chap:paper2}
+
+\chapter{Paper 3}
+\label{chap:paper3}
+
+\chapter{Paper 4}
+\label{chap:paper4}
 
 \chapter{General discussion}
-\label{chap:disc}
+\label{chap:discussion}
 
-\chapter{Bibliography}
-\bibliographystyle{plain}
-\bibliography{literature}
-
-\chapter{Statutory Declaration}
+\printbibliography
 
 \end{document}

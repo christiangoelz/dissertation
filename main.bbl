@@ -1,91 +1,887 @@
-\begin{thebibliography}{10}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem{Adamopoulou2020}
-Eleni Adamopoulou and Lefteris Moussiades.
-\newblock An overview of chatbot technology.
-\newblock In Ilias Maglogiannis, Lazaros Iliadis, and Elias Pimenidis, editors,
-  {\em Artificial Intelligence Applications and Innovations}, pages 373--383,
-  Cham, 2020. Springer International Publishing.
+\datalist[entry]{none/global//global/global}
+  \entry{Leonard2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LJJ}{%
+         family={Leonard},
+         familyi={L\bibinitperiod},
+         given={John\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MDA}{%
+         family={Mindell},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima A},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SEL}{%
+         family={Stayton},
+         familyi={S\bibinitperiod},
+         given={Erik\bibnamedelima L},
+         giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJJ+1}
+    \strng{fullhash}{LJJMDASEL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Autonomous vehicles, mobility, and employment policy: the
+  roads ahead}
+    \field{journaltitle}{Massachusetts Inst. Technol., Cambridge, MA, Rep.
+  RB02-2020}
+    \field{year}{2020}
+  \endentry
 
-\bibitem{Appenzeller2017}
-Tim Appenzeller.
-\newblock The ai revolution in science: How deep learning is helping scientists
-  cope with a data deluge, 2017.
+  \entry{Liu2020}{article}{}
+    \name{author}{22}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yuan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={Jain},
+         familyi={J\bibinitperiod},
+         given={Ayush},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=EC}{%
+         family={Eng},
+         familyi={E\bibinitperiod},
+         given={Clara},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WDH}{%
+         family={Way},
+         familyi={W\bibinitperiod},
+         given={David\bibnamedelima H.},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Kang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bui},
+         familyi={B\bibinitperiod},
+         given={Peggy},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kanada},
+         familyi={K\bibinitperiod},
+         given={Kimberly},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=dOMG}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Oliveira\bibnamedelima Marinho},
+         familyi={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Guilherme},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gallegos},
+         familyi={G\bibinitperiod},
+         given={Jessica},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gabriele},
+         familyi={G\bibinitperiod},
+         given={Sara},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Vishakha},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Nalini},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=NV}{%
+         family={Natarajan},
+         familyi={N\bibinitperiod},
+         given={Vivek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HWR}{%
+         family={Hofmann-Wellenhof},
+         familyi={H\bibinithyphendelim W\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CGS}{%
+         family={Corrado},
+         familyi={C\bibinitperiod},
+         given={Greg\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PLH}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Lily\bibnamedelima H.},
+         giveni={L\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WDR}{%
+         family={Webster},
+         familyi={W\bibinitperiod},
+         given={Dale\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Ai},
+         familyi={A\bibinitperiod},
+         given={Dennis},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HSJ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Susan\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DRC}{%
+         family={Dunn},
+         familyi={D\bibinitperiod},
+         given={R.\bibnamedelima Carter},
+         giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Coz},
+         familyi={C\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYJAECWDHLKBPKKdOMGGJGSGVSNNVHWRCGSPLHWDRADHSJLYDRCCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41591-020-0842-3
+    \endverb
+    \field{issn}{1546-170X}
+    \field{number}{6}
+    \field{pages}{900\bibrangedash 908}
+    \field{title}{A deep learning system for differential diagnosis of skin
+  diseases}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41591-020-0842-3
+    \endverb
+    \field{volume}{26}
+    \field{journaltitle}{Nature Medicine}
+    \field{month}{06}
+    \field{year}{2020}
+  \endentry
 
-\bibitem{Brunton2019}
-Bingni~W. Brunton and Michael Beyeler.
-\newblock Data-driven models in human neuroscience and neuroengineering.
-\newblock {\em Current Opinion in Neurobiology}, 58:21--29, 2019.
-\newblock Computational Neuroscience.
+  \entry{Adamopoulou2020}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=AE}{%
+         family={Adamopoulou},
+         familyi={A\bibinitperiod},
+         given={Eleni},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Moussiades},
+         familyi={M\bibinitperiod},
+         given={Lefteris},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=MI}{%
+         family={Maglogiannis},
+         familyi={M\bibinitperiod},
+         given={Ilias},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=IL}{%
+         family={Iliadis},
+         familyi={I\bibinitperiod},
+         given={Lazaros},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PE}{%
+         family={Pimenidis},
+         familyi={P\bibinitperiod},
+         given={Elias},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \strng{namehash}{AEML1}
+    \strng{fullhash}{AEML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Artificial Intelligence Applications and Innovations}
+    \verb{doi}
+    \verb 10.1007/978-3-030-49186-4_31
+    \endverb
+    \field{isbn}{978-3-030-49186-4}
+    \field{pages}{373\bibrangedash 383}
+    \field{title}{An Overview of Chatbot Technology}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-030-49186-4_31
+    \endverb
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2020}
+  \endentry
 
-\bibitem{Choi2022}
-Chanyeol Choi, Hyunseok Kim, Ji-Hoon Kang, Min-Kyu Song, Hanwool Yeon,
-  Celesta~S Chang, Jun~Min Suh, Jiho Shin, Kuangye Lu, Bo-In Park, et~al.
-\newblock Reconfigurable heterogeneous integration using stackable chips with
-  embedded artificial intelligence.
-\newblock {\em Nature Electronics}, 5(6):386--393, 2022.
+  \entry{Brunton2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BBW}{%
+         family={Brunton},
+         familyi={B\bibinitperiod},
+         given={Bingni\bibnamedelima W.},
+         giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Beyeler},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BBWBM1}
+    \strng{fullhash}{BBWBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.conb.2019.06.008
+    \endverb
+    \field{issn}{0959-4388}
+    \field{note}{Computational Neuroscience}
+    \field{pages}{21\bibrangedash 29}
+    \field{title}{Data-driven models in human neuroscience and
+  neuroengineering}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0959438818302502
+    \endverb
+    \field{volume}{58}
+    \field{journaltitle}{Current Opinion in Neurobiology}
+    \field{year}{2019}
+  \endentry
 
-\bibitem{Goelz2021b}
-Christian Goelz, Karin Mora, Julia Stroehlein, Franziska Haase, Michael
-  Dellnitz, Claus Reinsberger, and Solveig Vieluf.
-\newblock Electrophysiological signatures of dedifferentiation differ between
-  fit and less fit older adults.
-\newblock {\em Cognitive Neurodynamics}, 15:1--13, 10 2021.
+  \entry{Appenzeller2017}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AT}{%
+         family={Appenzeller},
+         familyi={A\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AT1}
+    \strng{fullhash}{AT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1126/science.aan7064
+    \endverb
+    \field{title}{The AI revolution in science: How deep learning is helping
+  scientists cope with a data deluge}
+    \verb{url}
+    \verb https://www.science.org/content/article/ai-revolution-science
+    \endverb
+    \field{journaltitle}{Science}
+    \field{year}{2017}
+  \endentry
 
-\bibitem{Hastie2009}
-Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
-\newblock {\em The Elements of Statistical Learning. Data Mining, Inference,
-  and Prediction, Second Edition}.
-\newblock Springer-Verlag, New York, second edition, 2009.
+  \entry{Hey2009}{book}{}
+    \name{author}{4}{}{%
+      {{hash=HT}{%
+         family={Hey},
+         familyi={H\bibinitperiod},
+         given={Tony},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tansley},
+         familyi={T\bibinitperiod},
+         given={Stewart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Tolle},
+         familyi={T\bibinitperiod},
+         given={Kristin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Gray},
+         familyi={G\bibinitperiod},
+         given={Jim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Microsoft Research}%
+    }
+    \strng{namehash}{HT+2}
+    \strng{fullhash}{HTTSTKGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{isbn}{978-0-9825442-0-4}
+    \field{title}{The Fourth Paradigm: Data-Intensive Scientific Discovery}
+    \verb{url}
+    \verb https://www.microsoft.com/en-us/research/publication/fourth-paradigm-
+    \verb data-intensive-scientific-discovery/
+    \endverb
+    \field{month}{10}
+    \field{year}{2009}
+  \endentry
 
-\bibitem{Hey2009}
-Tony Hey, Stewart Tansley, Kristin Tolle, and Jim Gray.
-\newblock {\em The Fourth Paradigm: Data-Intensive Scientific Discovery}.
-\newblock Microsoft Research, October 2009.
+  \entry{Mooney2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MKM}{%
+         family={Mooney},
+         familyi={M\bibinitperiod},
+         given={Kathleen\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MAE}{%
+         family={Morgan},
+         familyi={M\bibinitperiod},
+         given={Amy\bibnamedelima E.},
+         giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MAMT}{%
+         family={Mc\bibnamedelima Auley},
+         familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Mark\bibnamedelima T.},
+         giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKM+1}
+    \strng{fullhash}{MKMMAEMAMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1002/wsbm.1328
+    \endverb
+    \verb{eprint}
+    \verb https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/wsbm.1328
+    \endverb
+    \field{number}{2}
+    \field{pages}{123\bibrangedash 139}
+    \field{title}{Aging and computational systems biology}
+    \verb{url}
+    \verb https://wires.onlinelibrary.wiley.com/doi/abs/10.1002/wsbm.1328
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{WIREs Systems Biology and Medicine}
+    \field{year}{2016}
+  \endentry
 
-\bibitem{Jumper2021}
-John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov,
-  Olaf Ronneberger, Kathryn Tunyasuvunakool, Russ Bates, Augustin
-  {\v{Z}}{\'i}dek, Anna Potapenko, Alex Bridgland, Clemens Meyer, Simon A.~A.
-  Kohl, Andrew~J. Ballard, Andrew Cowie, Bernardino Romera-Paredes, Stanislav
-  Nikolov, Rishub Jain, Jonas Adler, Trevor Back, Stig Petersen, David Reiman,
-  Ellen Clancy, Michal Zielinski, Martin Steinegger, Michalina Pacholska, Tamas
-  Berghammer, Sebastian Bodenstein, David Silver, Oriol Vinyals, Andrew~W.
-  Senior, Koray Kavukcuoglu, Pushmeet Kohli, and Demis Hassabis.
-\newblock Highly accurate protein structure prediction with alphafold.
-\newblock {\em Nature}, 596(7873):583--589, Aug 2021.
+  \entry{Goelz2021a}{article}{}
+    \name{author}{9}{}{%
+      {{hash=GC}{%
+         family={Goelz},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mora},
+         familyi={M\bibinitperiod},
+         given={Karin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rudisch},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gaidai},
+         familyi={G\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=REM}{%
+         family={Reuter},
+         familyi={R\bibinitperiod},
+         given={Eva-Maria},
+         giveni={E\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Godde},
+         familyi={G\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Reinsberger},
+         familyi={R\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VRC}{%
+         family={Voelcker-Rehage},
+         familyi={V\bibinithyphendelim R\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vieluf},
+         familyi={V\bibinitperiod},
+         given={Solveig},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GC+1}
+    \strng{fullhash}{GCMKRJGRREMGBRCVRCVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.neunet.2021.04.029
+    \endverb
+    \field{title}{Classification of visuomotor tasks based on
+  electroencephalographic data depends on age-related differences in brain
+  activity patterns}
+    \field{volume}{142}
+    \field{journaltitle}{Neural Networks}
+    \field{month}{05}
+    \field{year}{2021}
+  \endentry
 
-\bibitem{Leonard2020}
-John~J Leonard, David~A Mindell, and Erik~L Stayton.
-\newblock Autonomous vehicles, mobility, and employment policy: the roads
-  ahead.
-\newblock {\em Massachusetts Inst. Technol., Cambridge, MA, Rep. RB02-2020},
-  2020.
+  \entry{Goelz2022}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GC}{%
+         family={Goelz},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=REM}{%
+         family={Reuter},
+         familyi={R\bibinitperiod},
+         given={Eva-Maria},
+         giveni={E\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fröhlich},
+         familyi={F\bibinitperiod},
+         given={Stefanie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rudisch},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vieluf},
+         familyi={V\bibinitperiod},
+         given={Solveig},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VRC}{%
+         family={Voelcker-Rehage},
+         familyi={V\bibinithyphendelim R\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GC+1}
+    \strng{fullhash}{GCREMFSRJVSVRC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Using machine learning to characterize electrophysiological
+  correlates of selective attention across the lifespan}
+    \field{journaltitle}{unpublished}
+    \field{year}{2022}
+  \endentry
 
-\bibitem{Liu2020}
-Yuan Liu, Ayush Jain, Clara Eng, David~H. Way, Kang Lee, Peggy Bui, Kimberly
-  Kanada, Guilherme de~Oliveira~Marinho, Jessica Gallegos, Sara Gabriele,
-  Vishakha Gupta, Nalini Singh, Vivek Natarajan, Rainer Hofmann-Wellenhof,
-  Greg~S. Corrado, Lily~H. Peng, Dale~R. Webster, Dennis Ai, Susan~J. Huang,
-  Yun Liu, R.~Carter Dunn, and David Coz.
-\newblock A deep learning system for differential diagnosis of skin diseases.
-\newblock {\em Nature Medicine}, 26(6):900--908, Jun 2020.
+  \entry{Goelz2021b}{article}{}
+    \name{author}{7}{}{%
+      {{hash=GC}{%
+         family={Goelz},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mora},
+         familyi={M\bibinitperiod},
+         given={Karin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Stroehlein},
+         familyi={S\bibinitperiod},
+         given={Julia},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Haase},
+         familyi={H\bibinitperiod},
+         given={Franziska},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dellnitz},
+         familyi={D\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Reinsberger},
+         familyi={R\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vieluf},
+         familyi={V\bibinitperiod},
+         given={Solveig},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GC+1}
+    \strng{fullhash}{GCMKSJHFDMRCVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/s11571-020-09656-9
+    \endverb
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{Electrophysiological signatures of dedifferentiation differ
+  between fit and less fit older adults}
+    \field{volume}{15}
+    \field{journaltitle}{Cognitive Neurodynamics}
+    \field{month}{10}
+    \field{year}{2021}
+  \endentry
 
-\bibitem{Macpherson2021}
-Tom Macpherson, Anne Churchland, Terry Sejnowski, James DiCarlo, Yukiyasu
-  Kamitani, Hidehiko Takahashi, and Takatoshi Hikida.
-\newblock Natural and artificial intelligence: A brief introduction to the
-  interplay between ai and neuroscience research.
-\newblock {\em Neural Networks}, 144:603--613, 2021.
+  \entry{Gaidai2022}{article}{}
+    \name{author}{9}{}{%
+      {{hash=GR}{%
+         family={Gaidai},
+         familyi={G\bibinitperiod},
+         given={Roman},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Goelz},
+         familyi={G\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mora},
+         familyi={M\bibinitperiod},
+         given={Karin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rudisch},
+         familyi={R\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=REM}{%
+         family={Reuter},
+         familyi={R\bibinitperiod},
+         given={Eva-Maria},
+         giveni={E\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Godde},
+         familyi={G\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Reinsberger},
+         familyi={R\bibinitperiod},
+         given={Claus},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VRC}{%
+         family={Voelcker-Rehage},
+         familyi={V\bibinithyphendelim R\bibinitperiod},
+         given={Claudia},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Vieluf},
+         familyi={V\bibinitperiod},
+         given={Solveig},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRGCMKRJREMGBRCVRCVS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.brainres.2022.148001
+    \endverb
+    \field{pages}{148001}
+    \field{title}{Classification characteristics of fine motor experts based on
+  electroencephalographic and force tracking data}
+    \field{volume}{1792}
+    \field{journaltitle}{Brain Research}
+    \field{month}{07}
+    \field{year}{2022}
+  \endentry
 
-\bibitem{Mooney2016}
-Kathleen~M. Mooney, Amy~E. Morgan, and Mark~T. Mc~Auley.
-\newblock Aging and computational systems biology.
-\newblock {\em WIREs Systems Biology and Medicine}, 8(2):123--139, 2016.
+  \entry{Samual1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SAL}{%
+         family={Samuel},
+         familyi={S\bibinitperiod},
+         given={A.\bibnamedelima L.},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAL1}
+    \strng{fullhash}{SAL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1147/rd.33.0210
+    \endverb
+    \field{number}{3}
+    \field{pages}{210\bibrangedash 229}
+    \field{title}{Some Studies in Machine Learning Using the Game of Checkers}
+    \field{volume}{3}
+    \field{journaltitle}{IBM Journal of Research and Development}
+    \field{year}{1959}
+  \endentry
 
-\bibitem{Samual1959}
-A.~L. Samuel.
-\newblock Some studies in machine learning using the game of checkers.
-\newblock {\em IBM Journal of Research and Development}, 3(3):210--229, 1959.
+  \entry{Hastie2009}{book}{}
+    \name{author}{3}{}{%
+      {{hash=HT}{%
+         family={Hastie},
+         familyi={H\bibinitperiod},
+         given={Trevor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Tibshirani},
+         familyi={T\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Friedman},
+         familyi={F\bibinitperiod},
+         given={Jerome},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag, New York}%
+    }
+    \strng{namehash}{HT+1}
+    \strng{fullhash}{HTTRFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/978-0-387-84858-7
+    \endverb
+    \field{edition}{Second}
+    \field{isbn}{978-0-387-84857-0}
+    \field{title}{The Elements of Statistical Learning. Data Mining, Inference,
+  and Prediction, Second Edition}
+    \verb{url}
+    \verb https://link.springer.com/book/10.1007/978-0-387-84858-7
+    \endverb
+    \field{year}{2009}
+  \endentry
 
-\end{thebibliography}
+  \entry{Macpherson2021}{article}{}
+    \name{author}{7}{}{%
+      {{hash=MT}{%
+         family={Macpherson},
+         familyi={M\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Churchland},
+         familyi={C\bibinitperiod},
+         given={Anne},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sejnowski},
+         familyi={S\bibinitperiod},
+         given={Terry},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={DiCarlo},
+         familyi={D\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KY}{%
+         family={Kamitani},
+         familyi={K\bibinitperiod},
+         given={Yukiyasu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Takahashi},
+         familyi={T\bibinitperiod},
+         given={Hidehiko},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hikida},
+         familyi={H\bibinitperiod},
+         given={Takatoshi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTCASTDJKYTHHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neunet.2021.09.018
+    \endverb
+    \field{issn}{0893-6080}
+    \field{pages}{603\bibrangedash 613}
+    \field{title}{Natural and Artificial Intelligence: A brief introduction to
+  the interplay between AI and neuroscience research}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0893608021003683
+    \endverb
+    \field{volume}{144}
+    \field{journaltitle}{Neural Networks}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Choi2022}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=CC}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={Chanyeol},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Hyunseok},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kang},
+         familyi={K\bibinitperiod},
+         given={Ji-Hoon},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=SMK}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Min-Kyu},
+         giveni={M\bibinithyphendelim K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yeon},
+         familyi={Y\bibinitperiod},
+         given={Hanwool},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CCS}{%
+         family={Chang},
+         familyi={C\bibinitperiod},
+         given={Celesta\bibnamedelima S},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SJM}{%
+         family={Suh},
+         familyi={S\bibinitperiod},
+         given={Jun\bibnamedelima Min},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shin},
+         familyi={S\bibinitperiod},
+         given={Jiho},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Kuangye},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PBI}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Bo-In},
+         giveni={B\bibinithyphendelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{CC+1}
+    \strng{fullhash}{CCKHKJHSMKYHCCSSJMSJLKPBI+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1038/s41928-022-00778-y
+    \endverb
+    \field{issn}{2520-1131}
+    \field{number}{6}
+    \field{pages}{386\bibrangedash 393}
+    \field{title}{Reconfigurable heterogeneous integration using stackable
+  chips with embedded artificial intelligence}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41928-022-00778-y
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Nature Electronics}
+    \field{year}{2022}
+  \endentry
+\enddatalist
+\endinput
