@@ -906,6 +906,58 @@
     \field{year}{2017}
   \endentry
 
+  \entry{Brunton_kutz_2019}{inbook}{}
+    \name{author}{2}{}{%
+      {{hash=BSL}{%
+         family={Brunton},
+         familyi={B\bibinitperiod},
+         given={Steven\bibnamedelima L.},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KJN}{%
+         family={Kutz},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima Nathan},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{BSLKJN1}
+    \strng{fullhash}{BSLKJN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Data-Driven Science and Engineering: Machine Learning,
+  Dynamical Systems, and Control}
+    \verb{doi}
+    \verb 10.1017/9781108380690.006
+    \endverb
+    \field{pages}{154–194}
+    \field{title}{Clustering and Classification}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Murphy2012}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MKP}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin\bibnamedelima P},
+         giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MKP1}
+    \strng{fullhash}{MKP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Machine learning: a probabilistic perspective}
+    \list{location}{1}{%
+      {Cambridge, MA}%
+    }
+    \field{year}{2012}
+  \endentry
+
   \entry{Macpherson2021}{article}{}
     \name{author}{7}{}{%
       {{hash=MT}{%
