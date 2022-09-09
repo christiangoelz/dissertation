@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.8.2)  24 AUG 2022 17:32
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2022.5.2)  9 SEP 2022 13:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -154,9 +154,9 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 105.
+(babel)             (\language43). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language16). Reported on input line 108.
+(babel)             (\language43). Reported on input line 108.
 )) (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
  (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -814,7 +814,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  20860 strings out of 476191
  370351 string characters out of 5812073
- 1150922 words of memory out of 5000000
+ 1150920 words of memory out of 5000000
  41291 multiletter control sequences out of 15000+600000
  474387 words of font info for 62 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
