@@ -12,6 +12,9 @@
 \usepackage[style=nature,backend=bibtex,maxbibnames=99]{biblatex}
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
+\usepackage{epigraph}
+\usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
+
 %------------------------------------ Settings ------------------------------------
 \addbibresource{literature.bib} 
 \graphicspath{{images/}}
@@ -19,9 +22,11 @@
 \setcounter{secnumdepth}{3}
 \hypersetup{colorlinks=true,
 linkcolor=black,
-filecolor=magenta,      
+filecolor=magenta,
 urlcolor=cyan
 }
+%------------------------------------ Abbreviations ------------------------------------
+\input{acronyms}
 %------------------------------------ Document ------------------------------------
 \begin{document}
 \input{chapters/0_Other/titlepage}
@@ -43,8 +48,7 @@ urlcolor=cyan
 \chapter*{Tables}
 \addcontentsline{toc}{chapter}{Tables}
 
-\chapter*{List of Abbreviations}
-\addcontentsline{toc}{chapter}{List of Abreviations}
+\printglossary[title={List of Abbreviations}]
 
 \chapter*{Publications and other scientific contributions}
 \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
@@ -56,7 +60,7 @@ urlcolor=cyan
     \section{Motivation}
     \input{chapters/1_introduction/1_motivation}
     \label{sec:motivation}
-
+    
     \section{Outline of the thesis}
     \label{sec:outline}
     \input{chapters/1_introduction/2_outline}
