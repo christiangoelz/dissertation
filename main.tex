@@ -14,17 +14,13 @@
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{epigraph}
 \usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
-\renewcommand{\baselinestretch}{1.5} 
+
 %------------------------------------ Settings ------------------------------------
+% references
 \addbibresource{literature.bib} 
+
+% figures
 \graphicspath{{images/}}
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{3}
-\hypersetup{colorlinks=true,
-linkcolor=black,
-filecolor=magenta,
-urlcolor=cyan
-}
 
 \newcommand{\dummyfig}[1]{
   \centering
@@ -34,6 +30,26 @@ urlcolor=cyan
     \end{minipage}
   }
 }
+
+% section numbers
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+
+% color
+\hypersetup{colorlinks=true,
+linkcolor=black,
+filecolor=magenta,
+urlcolor=black
+}
+
+
+% line spacing
+\renewcommand{\baselinestretch}{1.5} 
+
+% footnotes
+\renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+\setlength{\skip\footins}{1cm}
 
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
