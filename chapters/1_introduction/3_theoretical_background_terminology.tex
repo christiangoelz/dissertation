@@ -23,12 +23,7 @@ One aspect that explicitly determines the definition of reserve is the ability o
 The importance of these factors is also supported by other complementary concepts such as the maintenance or the scaffolding of aging theory. The concept of maintenance emphasizes the ability to repair. The \gls{stac} postulates that functional change with aging is part of a lifelong process. The concept of maintenance emphasizes the ability to repair. \Gls{stac} postulates that lifelong positive and negative plasticity define a framework that enables compensation and shapes an individual trajectory of aging \cite{Reuter-Lorenz2014}.
 
 \subsection{Methodological considerations}
-Several methods are available to study the brains' structure and function including \gls{pet}, \gls{smri} and \gls{fmri} as well as \gls{meg} and \gls{eeg}. Herein, \Gls{fmri}, which measures brain activation indirectly via changes in blood oxygenation, is the dominant neuroimaging method in the study of the functional reorganization described in previous sections \ref{theory:aging:brain} to \ref{theory:aging:reserve}. The high spatial resolution, however, comes at the expense of temporal resolution. \Gls{eeg} and \gls{meg} measure neuronal activity directly with high temporal resolution. Although it is  
-
-Describe how to study the aging brain. 
-What is needed for a ecological and fast implementation 
-Transition to Machine learning as a key to overcome the limitations
- % From a complex systems perspective this can be understood as progressive decline in the ability of an organism to maintain a stable state or equilibrium \cite{Cohen2022}
+Several noninvasive methods are available to study the brains' structure and function including \gls{pet}, \gls{smri} and \gls{fmri} as well as \gls{meg} and \gls{eeg}. Herein, \Gls{fmri}, which measures brain activation indirectly via changes in blood oxygenation, is the dominant neuroimaging method in the study of the functional reorganization described in previous sections \ref{theory:aging:brain} to \ref{theory:aging:reserve} \cite{Reuter-Lorenz2010}. The high spatial resolution, however, comes at the expense of temporal resolution. \Gls{eeg} and \gls{meg} measure neuronal activity directly with high temporal resolution which allows  for the detection of age-related changes in the temporal dynamics of brain activitiy and networks  \cite{Courtney2021}. Although the spatial resolution of these methods is limited compared to MRI, especially \gls{eeg}, which measures the synchronized electrical activity of large populations of neurons is easy, mobile and relatively inexpensive to use \cite{CohenX2017}. However, it is unclear how the changes, e.g., dedifferentiation and compensation, are reflected in electrophysiological markers. Furthermore, \gls{eeg} signals are temporally and spatially highly dimensional and have a low signal-to-noise ratio, which makes the detection and visualization of brain networks and their dynamics difficult and requires advanced signal analysis methods. Advanced methods such as methods from the field of \gls{ai} with machine learning, as a subbranch, could be of special interest in this context.
 
 \section{Machine learning}
 \label{theory:ML}
@@ -37,25 +32,25 @@ Machine Learning emerged in the 1950s as a subbranch of \gls{ai} to enable compu
 \subsection{Categories}
 \label{theory:ML:categories}
 Machine learning can be subdivided into three categories, supervised, unsupervised and reinforcement learning (see Figure \ref{fig1:ml_types}). In supervised machine learning the goal is to learn a function representing the relationship between data and associated information or descriptions, so-called labels or targets. This function also called model can be thought of a mathematical description of the real world \cite{Brunton2019}, which can than be used to predict the label of new data that not have been used during the process of learning. If the labels are categorical, it is called classification; for continuous labels, the term is regression. The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of the data, i.e. dimensionality reduction. 
-A formal description of supervised and unsupervised learning can be found in \cite{Brunton_kutz_2019} and \cite{Murphy2012}:\\
-Given an open bounded set \(\mathcal{D}\) of dimension \(n\) so that
-\begin{equation}
-    \mathcal{D}\subset\mathbb{R}^{n},
-\end{equation}
-as well as the subset \(\mathcal{D}^{'}\) 
-\begin{equation}
-    \mathcal{D}^{'}\subset\mathcal{D}^{n}
-\end{equation}
-the goal is to build a model from data \(\mathcal{D}^{'}\) that can generalize to \(\mathcal{D}\). As written above, in supervised learning this is to learn a mapping function \(f\) from inputs \(x\) (features) to outputs \(y\) (labels), i.e. \(y = f(x)\), based on the subset, or training data
-\begin{equation}
-    \mathcal{D}^{'}=\{(x_j, y_j), j \in Z := \{1,2,...m\}\}. 
-\end{equation}
-For classification \(y_j\) is a categorical finite set \(y_j \in \{1,2...C\}\) and for regression a real valued scalar \(y_j \in \mathbb R^{n}\). Each element \(x_j \in \mathbb R^{n}\) is a description of a sample and called feature vector.
-In the unsupervised case, however, only inputs are given and 
-\begin{equation}
-    \mathcal{D}^{'}=\{x_j, j \in Z := \{1,2,...m\}\}. 
-\end{equation}
-Rather than a specific label in reinforcement learning the goal is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action. However this type of machine learning is less commonly used in scientific enquiry and therefore not further described here.\\
+% A formal description of supervised and unsupervised learning can be found in \cite{Brunton_kutz_2019} and \cite{Murphy2012}:\\
+% Given an open bounded set \(\mathcal{D}\) of dimension \(n\) so that
+% \begin{equation}
+%     \mathcal{D}\subset\mathbb{R}^{n},
+% \end{equation}
+% as well as the subset \(\mathcal{D}^{'}\) 
+% \begin{equation}
+%     \mathcal{D}^{'}\subset\mathcal{D}^{n}
+% \end{equation}
+% the goal is to build a model from data \(\mathcal{D}^{'}\) that can generalize to \(\mathcal{D}\). As written above, in supervised learning this is to learn a mapping function \(f\) from inputs \(x\) (features) to outputs \(y\) (labels), i.e. \(y = f(x)\), based on the subset, or training data
+% \begin{equation}
+%     \mathcal{D}^{'}=\{(x_j, y_j), j \in Z := \{1,2,...m\}\}. 
+% \end{equation}
+% For classification \(y_j\) is a categorical finite set \(y_j \in \{1,2...C\}\) and for regression a real valued scalar \(y_j \in \mathbb R^{n}\). Each element \(x_j \in \mathbb R^{n}\) is a description of a sample and called feature vector.
+% In the unsupervised case, however, only inputs are given and 
+% \begin{equation}
+%     \mathcal{D}^{'}=\{x_j, j \in Z := \{1,2,...m\}\}. 
+% \end{equation}
+% Rather than a specific label in reinforcement learning the goal is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action. However this type of machine learning is less commonly used in scientific enquiry and therefore not further described here.\\
 \begin{figure*}[h]
   \dummyfig{Categories of ML} 
   \caption{Categories of ML}
@@ -71,14 +66,9 @@ In summary, the application of machine learning in neuroscience is diverse. In a
 
 
 \subsection{Methodological considerations}
-Start with short intro to aging and why there are plenty of interesting problems to solve with machine learning. Problems include
-1. Engineering perspective\\
-1.1. Concept of brain age as diagnostic marker\\  
-1.2. Tools to assist and develop elderly: BCIs for different purposes (improvement of cognitive function  , i.e. neurofeedback, control of smart homes, rehabilitation of motor disabilities... See review. 
-2. Scientific Perspective\\
-Brain age 
-MVPA of motor system Carp et al. 
-CCA of motor system Zapparoli et al.
+Methods from supervised and unsupervised machine learning are possible candidates. In unsupervised machine learning, the goal is to find structure in the data. This includes methods for dimensionality reduction and clustering. Dimensionality reduction for example allows us to describe the structure of high dimensional data in fewer properties [20]. Two common methods in the analysis of neurophysiological data are the principal component analysis (PCA) and independent component analysis (ICA). These allow the detection of spatial patterns in the data that represent the underlying network characteristics of neurophysiological data [8]. In addition, with dynamic mode decomposition (DMD), Brunton, Johnson, et al. [21] apply for the first time a method to electrophysiological data that allows us to map both the spatial and temporal structure of the network structure of neurophysiological data.
+In supervised machine learning, models are created that can predict a certain outcome based on input data. This method is used to detect neuronal representations of the environment or certain behaviors as well as group memberships and to identify relevant markers [22].
+In the context of lifespan changes, complex brain network behavior based on EEG data could be extracted and visualized using dimensionality reduction. Supervised machine learning methods could be used to detect representations of the environment and behavior and to draw conclusions about the differentiation of brain networks. Automatic detection of group membership could further provide new predictors of nervous system states.
 
 
 
