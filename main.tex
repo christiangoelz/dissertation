@@ -1,4 +1,4 @@
-\documentclass[12pt]{report}
+\documentclass{book}
 
 %------------------------------------ Packages ------------------------------------
 %\usepackage[utf8]{inputenc}
@@ -14,7 +14,7 @@
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{epigraph}
 \usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
-
+\usepackage{titlesec}
 %------------------------------------ Settings ------------------------------------
 % references
 \addbibresource{literature.bib} 
@@ -35,6 +35,7 @@
 % section numbers
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{2}
+% \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 
 % color
 \hypersetup{colorlinks=true,
@@ -45,7 +46,7 @@ urlcolor=black
 
 
 % line spacing
-\renewcommand{\baselinestretch}{1.5} 
+% \renewcommand{\baselinestretch}{1.5} 
 
 % footnotes
 \renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
