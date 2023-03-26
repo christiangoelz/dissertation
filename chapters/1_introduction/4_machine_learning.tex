@@ -1,25 +1,62 @@
-Machine Learning emerged in the 1950s as a subbranch of \gls{ai} to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms \cite{Von_luxburg2011}. These examples should represent machine-readable data and may contain few or multiple properties, so-called features, and may be multidimensional with variable sources for example sensor recordings or pixel values.
-The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}. However, the most widely used forms are supervised and unsupervised learning (see Figure \ref{fig1:ml_types} for an overview).
+Machine Learning emerged in the 1950s as a subbranch of \gls{ai} to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms \cite{Von_luxburg2011}. These examples should represent machine-readable data, may contain few or multiple properties, so-called features, and may be multidimensional with variable sources for example sensor recordings or pixel values.\\
+The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}. \\
+
+
+
+However, the most widely used forms are supervised and unsupervised learning (see Figure \ref{fig1:ml_types} for an overview).
 
 \paragraph{Supervised learning}
-In supervised machine learning the goal is to build a function or model that establishes a generalizable relationship between input variables, known as features, and their corresponding output, referred to as labels. A learning algorithm is provided with labeled examples to optimize its performance and improve accuracy, i.e. it receives feedback on the correctness of a prediction it has made \cite{Russell2015}. The notion of generalizability is critical here and describes the ability of the learned model to predict the labels of new or \textit{unseen} data \cite{Daumé2017}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like area, number of rooms, etc. \cite{Ng2022cs229notes}.
+In supervised machine learning the goal is to build a function or model that represents a generalizable relationship between input variables, known as features, and their corresponding output, referred to as labels. A learning algorithm is provided with labeled examples to optimize its performance and improve accuracy, i.e. it receives feedback on the correctness of a prediction it has made \cite{Russell2015}. The notion of generalizability is critical here and describes the ability of the learned model to predict the labels of new or \textit{unseen} data \cite{Daumé2017}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like the area or number of rooms \cite{Ng2022cs229notes}.
 
 \paragraph{Unsupervised learning}
 The goal of unsupervised learning is to find hidden structure or \textit{interesting patterns} in data without taking into account associated labels. Since there is no underlying truth defined, this type of learning is less well defined and is also referred to as \textit{knowledge discovery} \cite{Murphy2012}. Unsupervised machine learning includes many algorithms that can be further categorized according to their purpose, such as algorithms for clustering or dimensionality reduction. Clustering describes the automatically grouping of similar data points together in fewer subgroups or clusters. The goal of dimensionality reduction is to express the data in fewer properties without losing information characterizing the data \cite{Cunningham2014}. 
 
-\paragraph{Other forms of learning}
+\paragraph{Reinforcement and other forms of learning}
 Besides supervised and unsupervised, reinforcement learning is considered the third category of machine learning. The goal therein is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action \cite{Murphy2012}.\\
 There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}.
+ 
 
-\subsection{Applications in \gls{eeg} research}
-Traditionally, machine learning has been the core building block for the development of intelligent systems that can automate tasks or enhance and assist humans in performing their tasks. Probably the most widely researched area in this context is that of so-called \glspl{bci}. In \glspl{bci}, EEG signals are used to infer the intention of a user with the goal to generate commands for various external devices such as a computer or prosthetic limb\cite{Saha2021, Anumanchipalli2019}. This is achieved using supervised learning algorithms that learn the relationship between the user's intention and the corresponding EEG signals.
-
-
-
+\subsection{Applications in neuroscience}
+Various research approaches use machine learning to extract information from the highly complex brain data and to relate it to experimental conditions or phenomena or to detect brain states.
 
 
 
 
+Traditionally, machine learning has been the core building block for the development of intelligent systems that can automate tasks or enhance and assist humans in performing their tasks. Thus, machine learning algorithms have been used in developing intelligent medical systems to support clinical decision making, i.e. assist in diagnosis, risk assessment by predicting health status or forecasting of treatment responses \cite{Woo2017}. 
+
+With regard to the application on \gls{eeg} data it allows to address some of the main limitations of this method and automatically detect relevant patterns and their relation to a variables of interest
+. This is not only relevant for solving practical problems in biomedical engineering, but also gaining insights and drawing conclusions by testing the generalizability of hypotheses and developing new theories \cite{Glaser2019, Hastie2009}. Especially in areas where high-dimensional data is prevalent, such as in neuroscience, the use of supervised as well as unsupervised machine learning offers insight by extracting complex patterns purely data driven \cite{Bzdok2017}.
+\\
+Dimensionality reduction, for example, makes it possible to describe the structure of high-dimensional data with fewer properties \cite{Cunningham2014}. Two prevalent methods in the analysis of neuroscientific data are \gls{pca} and \gls{ica}, both of which are used to uncover meaningful patterns in the data. \Gls{ica}, in particular, has gained popularity for its ability to reveal brain networks and statistical sources in \gls{eeg}, enabling inferences to be made about both noise components and brain processes during behavior \cite{Strophal2018}. In addition, \gls{dmd}, as applied  by \citeauthor{Brunton2016} \cite{Brunton2016}, allows to map both the spatial and temporal structure of sleep spindle networks as well as task related brain networks involved in movements. Furthermore, non-linear methods like \gls{umap} offer to visualize the structure of high-dimensional EEG signals \cite{Banville2021}.\\
+\\
+Besides unsupervised, supervised approaches are being frequently used to map brain function to external variables, such as group membership, behavior or stimuli, with the ultimate goal to identify predictive variables or features \cite{Glaser2019}.
+This is often of interest to inform clinical theory in the development of novel biomarkers that enable the automatic diagnosis and characterization of age-related pathologies such as Alzheimer's or Parkinson's disease \cite{Babiloni_AlzCons2021,Mei2021}. In basic neuroscience the goal is to use classification and regression to draw inferences about underlying mechanisms of the phenomenon under study. In this context regression is used to predict the neural response to an external variable, such as a particular stimulus, to create a so-called encoding model, which can be used to test and compare brain computational theories \cite{Kriegskorte2019, Naselaris2011}. \citeauthor{Benjamin2018} \cite{Benjamin2018}, for example, show the superiority of using modern machine learning in predicting spike rates based on behavioral measurements. Contrary, decoding models are created with the goal to predict external variables from neural activity providing insights in the information content of neural measurements. This type of analysis is often referred to as \gls{mvpa} because its goal is to detect multivariate patterns, e.g., a set of voxels in \gls{fMRI} or an electrical pattern at a given time in \gls{eeg}, associated with an experimental condition based on goodness of classification or regression \cite{Holdgraf2017}. For example, neural dynamics in visual object perception \cite{Cauchoix2014} or working memory \cite{Bae2018} have been studied using decoding approaches applied to \gls{eeg} recordings.\\
+
+
+Beyond that, machine learning is used in developing devices with the goal to assist, augment or enhance humans capabilities such as \glspl{bci}. In \glspl{bci}, neural activity is decoded, using classification to generate control commands for various external devices such as computers or prosthetic limbs \cite{Saha2021, Anumanchipalli2019}.
+
+
+
+
+
+
+
+intelligent medical systems to support clinical decision making, i.e. assist in diagnosis, risk assessment by predicting health status or forecasting of treatment responses \cite{Woo2017}.
+% The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}. However, the most widely used forms are supervised and unsupervised learning (see Figure \ref{fig1:ml_types} for an overview).
+
+% \paragraph{Supervised learning}
+% In supervised machine learning the goal is to build a function or model that represents a generalizable relationship between input variables, known as features, and their corresponding output, referred to as labels. A learning algorithm is provided with labeled examples to optimize its performance and improve accuracy, i.e. it receives feedback on the correctness of a prediction it has made \cite{Russell2015}. The notion of generalizability is critical here and describes the ability of the learned model to predict the labels of new or \textit{unseen} data \cite{Daumé2017}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like the area or number of rooms \cite{Ng2022cs229notes}.
+
+% \paragraph{Unsupervised learning}
+% The goal of unsupervised learning is to find hidden structure or \textit{interesting patterns} in data without taking into account associated labels. Since there is no underlying truth defined, this type of learning is less well defined and is also referred to as \textit{knowledge discovery} \cite{Murphy2012}. Unsupervised machine learning includes many algorithms that can be further categorized according to their purpose, such as algorithms for clustering or dimensionality reduction. Clustering describes the automatically grouping of similar data points together in fewer subgroups or clusters. The goal of dimensionality reduction is to express the data in fewer properties without losing information characterizing the data \cite{Cunningham2014}. 
+
+% \paragraph{Other forms of learning}
+% Besides supervised and unsupervised, reinforcement learning is considered the third category of machine learning. The goal therein is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action \cite{Murphy2012}.\\
+% There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}.
+
+
+
+% Furthermore, a focus on biological age instead of chronological age promises the identification of atypical aging trajectories and the prediction of future health outcomes. The concept of \textit{brain age} describes the biological age of the brain \cite{Franke2019}. This is based on large population studies, which can be used to train regression models that model the relationship between chronological age and a measured variable, e.g. MRI scans or EEG data \cite{Engemann2022, Dadi2021}. The biological age of a person's brain can then then be estimated by the prediction of the model given the persons brain data and compared to the population distribution of brain data. An older appearing brain was thereby reported in connection with an unfavorable state of health \cite{Gonneaud2021}.\\
 
 
 
@@ -30,12 +67,7 @@ Traditionally, machine learning has been the core building block for the develop
 
 
 
-
-
-
-
-
-
+% Examples of automation can be found, among others, in relation to the processing of \gls{eeg} data addressing low reproducibility and subjectivity. \citeauthor{Jas2017} \cite{Jas2017} use unsupervised machine learning to automate data prepossessing, i.e. rejecting and interpolating bad data segments. In addition, machine learning is increasingly used for electrical source imaging to solve the inverse problem, i.e. finding neural sources that give rise to the recorded \gls{eeg} activity \cite{Cui2019,Hecker2021}.\\
 
 
 
@@ -93,15 +125,3 @@ Traditionally, machine learning has been the core building block for the develop
 % In supervised machine learning, models are created that can predict a certain outcome based on input data. This method is used to detect neuronal representations of the environment or certain behaviors as well as group memberships and to identify relevant markers [22].
 % In the context of lifespan changes, complex brain network behavior based on EEG data could be extracted and visualized using dimensionality reduction. Supervised machine learning methods could be used to detect representations of the environment and behavior and to draw conclusions about the differentiation of brain networks. Automatic detection of group membership could further provide new predictors of nervous system states.
 
-% Besides solving computational problems algorithms from machine learning offer additional value for scientific inquiry including the possibility for the automatic analysis of complex multidimensional data \cite{Brunton2019,Breiman2001}. In this approach, rather than assuming that data is generated by an underlying stochastic model as in classical statistical modelling the mechanisms are treated as unknown which may overcome inaccuracies in the analysis \cite{Breiman2001}. Furthermore, by extracting generalizable principles from the complex interaction of features it offers additional values to traditional hypothesis-driven approaches \cite{Vu1601,Bzdok2017}.\\
-
-% % SUBSUBSECTION {ABGRENZUNBG ZU KLASSISCH STATISTISCHEN VERFAHREN????}
-
-% % \subsection{Age related reorganization of the brain}
-% % \label{subsec:Aging}
-% % In general aging is an ongoing process that can be detected at multiple interacting biological systems operating on several spatial and temporal scales contributing to the complexity of the phenomenon \cite{Mooney2016}. The most prominent consequences of this are declines in cognitive and sensorimotor abilities challenging the daily life of older adults.
-% % Age related reorganization processes are detectable at the whole body. This is underpinned by multiple interacting biological systems operating on several spatial and temporal scales contributing to the complexity of the phenomenon \cite{Mooney2016}. At the behavioral level these processes are noticeable in changes in cognitive, motor and sensory functioning [QUELLE]. 
-% % On a structural level aging has been associated with a reduction in gray matter with an onset early in life 
-
-% % \subsubsection{Machine Learning usages in aging neuroscience}
-% % TEXT
