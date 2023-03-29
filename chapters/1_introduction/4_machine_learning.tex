@@ -1,7 +1,7 @@
 
 \subsection{A definition}
 Machine Learning emerged in the 1950s as a subbranch of \gls{ai} to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms \cite{Von_luxburg2011}. These examples should represent machine-readable data, may contain few or multiple properties, so-called features, and may be multidimensional with variable sources for example sensor recordings or pixel values.\\
-The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}.
+The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}. 
 
 \paragraph{Supervised learning}
 In supervised machine learning the goal is to build a function or model that represents a generalizable relationship between input variables, known as features, and their corresponding output, referred to as labels. A learning algorithm is provided with labeled examples to optimize its performance and improve accuracy, i.e. it receives feedback on the correctness of a prediction it has made \cite{Russell2015}. The notion of generalizability is critical here and describes the ability of the learned model to predict the labels of new or \textit{unseen} data \cite{Daumé2017}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like the area or number of rooms \cite{Ng2022cs229notes}.
@@ -11,13 +11,44 @@ The goal of unsupervised learning is to find hidden structure or \textit{interes
 
 \paragraph{Reinforcement and other forms of learning}
 Besides supervised and unsupervised, reinforcement learning is considered the third category of machine learning. The goal therein is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action \cite{Murphy2012}.\\
-There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}.
+There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. 
+
+\subsection{A mathematical framework of learning}
+The process of learning can be formally defined using statistical learning theory \cite{Von_luxburg2011,Shalev2014}. In this mathematical framework a learning task, be it classification, regression, dimensionality reduction or clustering shares a couple of fundamental building blocks. \\
+First there is an arbitrary set of examples, $\mathcal{Z}$, based on which learning can happen. . Then there is a space of potential solutions to the learning task, $\mathcal{H}$, also called hypothesis space. Last the \textit{cost} of a false prediction or an inaccurate representation of the data is quantified using a loss function, $\ell:\mathcal{H}\times\mathcal{Z}\rightarrow\mathbb{R}_+$, that guides the learning algorithm towards an optimal solution.\\
+
+With that we can formally define supervised learning as: 
+
+And unsupervised learning as: 
+
+
+In a general learning framwork for suppervised learning we assume an underlying 
+
+In unsupervised learning $\mathcal{Z}$ represents only a set of data $\mathcal{X}$, in supervised a set of associated labels $\mathcal{Y}$ is provided, i.e. $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$
+Further, $\mathcal{D}$ represents a random probability distribution over $\mathcal{Z}$ from which a training data set $S={z_1,...,z_n}$ is drawn at random.
+
+In supervised machine learning we assume 
+
+In general, the choice of loss function depends on the specific problem at hand and the nature of the target variable. For example, in a regression problem where the target variable is a continuous variable, a common choice of loss function is the squared error loss, which measures the squared difference between the prediction and the true value of the target variable. On the other hand, in a classification problem where the target variable is a categorical variable, a common choice of loss function is the cross-entropy loss, which measures the difference between the predicted probability distribution and the true probability distribution of the target variable.\\
+
+
+
+
+Thus, the goal of a learning algorithm can be defined as selecting $h \in \mathcal{H}$ that minimizing $\ell$. As the underlying distribution from which $D$ was drawn is unknown the empirical loss is typically defined as: 
+\begin{equation}
+EmpLoss_{L,D}(h)=\frac{1}{m}\sum_{(x,y)\in{D}}\elle(h,)).
+\end{equation}
+Following the best hypothesis $\hat{h}^*$ is chosen based on: 
+\begin{equation}
+\hat{h}^*=\operatorname{argmin}_{h\in{\mathcal{H}}}EmpLoss_{L,D}(h) .
+\end{equation}
 
 
 
 \subsection{Machine learning applied to electroencephalography}
-\subsection{Learning problem}
-The process of learning can be formally defined using statistical learning theory \cite{Von_luxburg2011,Shalev2014}. In this mathematical framework the learning task, be it classification, regression, dimensionality reduction or clustering share a couple of fundamental building blocks. First there is an arbitrary set of examples denoted $\mathcal{Z}$ based on which learning can happen. Then there is a space of potential solutions to the learning task, $\mathcal{H}$,  also called hypothesis space. Last we need way to measure the \textit{cost} of a false prediction or an inaccurate representation of the data which is called a loss function, $\ell$,\\
+BLABLA Was EEG Analysen mit ML denn generell bringen 
+
+In the case of \gls{eeg} $\mathcal{X}$ is a bounded set in $\mathbb{R}^{n\times m}$ often represented as matrix $X$ containing $n$ sensors recordings of voltage fluctuations in $\mu$V across $m$ time points. 
 
 
 \subsection{Applications}
@@ -30,8 +61,6 @@ In summary, the use of machine learning is very diverse and ranges from engineer
 Allerdings ist es nicht einfach geeignete Methoden auszuwählen, da diese von den zur Verfügung stehenden Daten sowie der Zielstellung der 
 
 \subsection{A general machine learning pipeline}
-
-
 
 
 
