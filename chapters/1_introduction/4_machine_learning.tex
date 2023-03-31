@@ -1,48 +1,51 @@
-
-\subsection{A definition}
-Machine Learning emerged in the 1950s as a subbranch of \gls{ai} to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms \cite{Von_luxburg2011}. These examples should represent machine-readable data, may contain few or multiple properties, so-called features, and may be multidimensional with variable sources for example sensor recordings or pixel values.\\
-The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning. In application, however, a clear distinction is often difficult, so that mixed forms such as semi-supervised learning find application \cite{Russell2015}. 
-
+Machine Learning emerged in the 1950s to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms with the goal to solve a certain task or problem. Often, in its basic form these tasks involve making predictions based on learned relationships or the extraction of information based on automatically detected patterns and structures from data. The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning.
 \paragraph{Supervised learning}
-In supervised machine learning the goal is to build a function or model that represents a generalizable relationship between input variables, known as features, and their corresponding output, referred to as labels. A learning algorithm is provided with labeled examples to optimize its performance and improve accuracy, i.e. it receives feedback on the correctness of a prediction it has made \cite{Russell2015}. The notion of generalizability is critical here and describes the ability of the learned model to predict the labels of new or \textit{unseen} data \cite{Daumé2017}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like the area or number of rooms \cite{Ng2022cs229notes}.
-
+In supervised machine learning, the goal is to learn a generalizable relationship between input data and a corresponding description or label also called output. This relationship often is represented as function or model. In other words, it is a matter of estimating a function that, given data, can predict the corresponding label. This should work in a generalized way, i.e. also for data that was not used for learning, so called \textit{unseen} data. For this purpose, a learning algorithm is provided with labeled data examples to learn, i.e., as it learns, it receives feedback on the accuracy of a prediction it has made, based on which it can optimize its performance \cite{Russell2015}. If the labels are categorical the learning task is called classification and if the labels are continuous the task at hand is regression. A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like the area or number of rooms or the neighbourhood is is located \cite{Ng2022cs229notes}.
 \paragraph{Unsupervised learning}
-The goal of unsupervised learning is to find hidden structure or \textit{interesting patterns} in data without taking into account associated labels. Since there is no underlying truth defined, this type of learning is less well defined and is also referred to as \textit{knowledge discovery} \cite{Murphy2012}. Unsupervised machine learning includes many algorithms that can be further categorized according to their purpose, such as algorithms for clustering or dimensionality reduction. Clustering describes the automatically grouping of similar data points together in fewer subgroups or clusters. The goal of dimensionality reduction is to express the data in fewer properties without losing information characterizing the data \cite{Cunningham2014}. 
+The goal of unsupervised learning is to find hidden structure or \textit{interesting patterns} in data without taking into account associated labels. Since there is no underlying ground truth defined, no explicit feedback is available. This type of learning is less well defined and is also referred to as \textit{knowledge discovery} \cite{Murphy2012}. Unsupervised machine learning includes many algorithms that can be further categorized according to their purpose, such as algorithms for clustering or dimensionality reduction. Clustering describes the automatically grouping of similar data points together in fewer subgroups or clusters. The goal of dimensionality reduction is to express the data in fewer properties without losing information characterizing the data \cite{Cunningham2014}. 
+\paragraph{Reinforcement learning}
+Reinforcement learning describes the task to to learn optimal actions to solve a certain problem by maximizing the reward linked to that action \cite{Murphy2012}. \\
+\\
+There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. In the context of this thesis the tasks considered involve the processing of a large amount of information with the goal to learn meaningful patterns and relationships in data. The most commonly used forms in this context are supervised and unsupervised learning for this reason other forms will not be considered further in the following.
 
-\paragraph{Reinforcement and other forms of learning}
-Besides supervised and unsupervised, reinforcement learning is considered the third category of machine learning. The goal therein is to learn optimal actions to solve a certain problem by maximizing the reward linked to that action \cite{Murphy2012}.\\
-There are also mixed forms of learning types. In Semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. 
+\subsection{How does a machine learn}
+The process of learning a task, such as classification, regression, clustering or dimensionality reduction, can be formally defined by statistical learning theory \cite{Von_luxburg2011,Shalev2014}. A learning algorithm has access to a set of example data or training data $S={z_i,...,z_m}$, where $i = 1,\dots,m$, and each $z_i$ is sampled independently from a space $\mathcal{Z}$ according to an underlying probability distribution $\mathcal{D}$.\\
+\\
+In supervised learning $\mathcal{Z}$ comprises the space of input data $\mathcal{X}$ and the space of labels or output $\mathcal{Y}$. The example data $S\in\mathcal{Z}^m$ consists of labeled input-output pairs $z_i=x_i,y_i$, where $x_i$ is an input data point and $y_i$ is its corresponding output label. The pairs are sampled by some unknown joint probability distribution $\mathcal{D}$ on the space $\mathcal{X}\times\mathcal{Y}$.\\
+The space $\mathcal{Z}$ in unsupervised learning comprises the input data space $\mathcal{X}$ only and the example set $S\in\mathcal{Z}^m$ consists of unlabelled examples $z_i=x_i$, sampled according to some unknown probability distribution $\mathcal{D}$ on the space $\mathcal{X}$.\\
+\\
+Learning ultimately can be thought of as approximating an underlying ground truth function $f$ that represents the relationship between input and output in supervised learning, i.e., $f:\mathcal{X}\rightarrow\mathcal{Y}$, or the mapping to a space of hidden patterns or structure $\mathcal{W}$, i.e $f:\mathcal{X}\rightarrow\mathcal{W}$. Formally this can be thought of selecting a possible solution also called hypothesis $h$ from a space of potential solutions $\mathcal{H}$, i.e. $\mathcal{H}=\{h:\mathcal{X}\rightarrow\mathcal{Y}\}$ in supervised learning and $\mathcal{H}=\{h:\mathcal{X}\rightarrow\mathcal{W}\}$ in unsupervised learning. To select the best hypothesis the cost of a false prediction or an inaccurate representation of the data is quantified using a loss function, $\ell:\mathcal{H}\times\mathcal{Z}\rightarrow\mathbb{R}_+$.  As such, the expected risk, as measure of the average loss of a hypothesis, $\mathcal{h}\in\mathcal{H}$ with respect to the probability distribution $\mathcal{D}$ over $\mathcal{Z}$,  can be defined as:
+\begin{equation}
+L_{D}(h):=\mathbb{E}_{z\sim D}[\ell(h,z)]
+\end{equation}
+Theoretically a learning algorithm should select a hypothesis with lowest possible expectation loss. However it only has access to training data, i.e., $m$ random examples $S\in\mathcal{Z}^m$ sampled according to $\mathcal{D}$ which is unknown to the learner. Therefore, the expected risk is estimated by using the empirical risk over the training data:
+\begin{equation}
+L_{S}(h):=\frac{1}{m}\sum_{i=1}^m\ell(h,z_i)).
+\end{equation}
+Following this, learning can be formalized solving the an optimization problem of the form: 
+\begin{equation}
+\hat{h}=\arg\min_{h\in\mathcal{H}}L_{S}(h).
+\end{equation}
+The solution $\hat{h}$ is then the learned model that can be used to solve the task at hand, e.g. predicting the label of new input data or uncovering patterns or structure in data. This process is known as empirical risk minimization. \\
+Due to the limited size of ..... 
 
-\subsection{A mathematical framework of learning}
-The process of learning can be formally defined using statistical learning theory \cite{Von_luxburg2011,Shalev2014}. In this mathematical framework a learning task, be it classification, regression, dimensionality reduction or clustering shares a couple of fundamental building blocks. \\
-First there is an arbitrary set of examples, $\mathcal{Z}$, based on which learning can happen. . Then there is a space of potential solutions to the learning task, $\mathcal{H}$, also called hypothesis space. Last the \textit{cost} of a false prediction or an inaccurate representation of the data is quantified using a loss function, $\ell:\mathcal{H}\times\mathcal{Z}\rightarrow\mathbb{R}_+$, that guides the learning algorithm towards an optimal solution.\\
+However, simply minimizing the empirical risk is not always sufficient to achieve good generalization performance. This is because the empirical risk is a biased estimator of the true risk $L_D(h)$, due to the limited size and randomness of the training data. This can lead to overfitting, where the learned hypothesis performs well on the training data but poorly on unseen test data.
 
-With that we can formally define supervised learning as: 
+To address overfitting, regularization techniques can be applied. Regularization involves adding a penalty term to the empirical risk function that discourages overly complex hypotheses that may be prone to overfitting. The regularized empirical risk function is of the form:
+\begin{equation}
+L_S(h)+\lambda R(h),
+\end{equation}
+where $R(h)$ is a regularization term that penalizes complex hypotheses, and $\lambda$ is a hyperparameter that controls the strength of the regularization.
 
-And unsupervised learning as: 
+Common regularization techniques include L1 and L2 regularization, which add penalties proportional to the absolute and squared magnitudes of the model parameters, respectively. Other techniques include dropout, early stopping, and data augmentation.
+
+In addition to regularization, other techniques can be used to improve generalization performance, such as cross-validation, ensemble methods, and transfer learning. Cross-validation involves splitting the training data into multiple subsets, training on different subsets and testing on the remaining subset to get a better estimate of the true risk. Ensemble methods combine multiple hypotheses to improve performance, while transfer learning involves reusing knowledge from a related task or domain to improve performance on a new task or domain.
 
 
-In a general learning framwork for suppervised learning we assume an underlying 
 
-In unsupervised learning $\mathcal{Z}$ represents only a set of data $\mathcal{X}$, in supervised a set of associated labels $\mathcal{Y}$ is provided, i.e. $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$
-Further, $\mathcal{D}$ represents a random probability distribution over $\mathcal{Z}$ from which a training data set $S={z_1,...,z_n}$ is drawn at random.
 
-In supervised machine learning we assume 
 
 In general, the choice of loss function depends on the specific problem at hand and the nature of the target variable. For example, in a regression problem where the target variable is a continuous variable, a common choice of loss function is the squared error loss, which measures the squared difference between the prediction and the true value of the target variable. On the other hand, in a classification problem where the target variable is a categorical variable, a common choice of loss function is the cross-entropy loss, which measures the difference between the predicted probability distribution and the true probability distribution of the target variable.\\
-
-
-
-
-Thus, the goal of a learning algorithm can be defined as selecting $h \in \mathcal{H}$ that minimizing $\ell$. As the underlying distribution from which $D$ was drawn is unknown the empirical loss is typically defined as: 
-\begin{equation}
-EmpLoss_{L,D}(h)=\frac{1}{m}\sum_{(x,y)\in{D}}\elle(h,)).
-\end{equation}
-Following the best hypothesis $\hat{h}^*$ is chosen based on: 
-\begin{equation}
-\hat{h}^*=\operatorname{argmin}_{h\in{\mathcal{H}}}EmpLoss_{L,D}(h) .
-\end{equation}
-
 
 
 \subsection{Machine learning applied to electroencephalography}
