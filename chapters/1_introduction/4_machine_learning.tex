@@ -1,165 +1,24 @@
+\subsection{Forms of Machine learning}
 Machine Learning emerged in the 1950s to enable computers to learn without being explicitly programmed \cite{Samual1959}. It is defined by computational methods combining fundamental concepts from computer science, statistics, probability and optimization that automatically extract patterns and trends, i.e., \textit{learn} from data \cite{Hastie2009}. The notion of \textit{learning} therein describes the automated inference of general rules based on the observation of examples using algorithms with the goal to solve a certain task or problem \cite{Von_luxburg2011}. Often, in its basic form these tasks involve making predictions based on learned relationships or the extraction of information based on automatically detected patterns and structures from data. The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning \cite{Shalev2014}.\\
 \\
-In supervised machine learning the goal is to learn a generalizable relationship between data and associated information, so-called labels or target. This can than be used to predict the label of new data that not have been used during the process of learning. If the labels are categorical, the task of learning called classification; for continuous labels, the term is regression.\\
-The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of the data, i.e. dimensionality reduction. This type of learning is also referred to as \textit{knowledge discovery}.\\
+In supervised machine learning the goal is to learn a generalizable relationship between data and associated information, so-called labels or target. This can then be used to predict the label of new data that not have been used during the process of learning. If the labels are categorical, the task of learning called classification; for continuous labels, the term is regression.\\
+The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of the data, i.e. dimensionality reduction. This type of learning is also referred to as \textit{knowledge discovery}\cite{Murphy2012}.\\
 Reinforcement learning describes the task to to learn optimal actions to solve a certain problem by maximizing the reward linked to that action.\\
-\\
 \begin{figure*}[h]
   \dummyfig{Categories of ML} 
   \caption{Categories of ML}
   \label{fig1:ml_types}
 \end{figure*}
-
-In practice however a clear separation is often not possible. In semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the model contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. In the context of this thesis the tasks considered involve the processing of a large amount of information with the goal to learn meaningful patterns and relationships in data. The most commonly used forms in this context are supervised and unsupervised learning for this reason these forms will be the focus in the following chapters. %ADD SOME NOTIONS ON EEG TASKS
-
-\subsection{Applications}
-Especially in areas where high-dimensional data is prevalent, such as in neuroscience, the use of supervised as well as unsupervised machine learning offers insight by extracting complex patterns purely data driven \cite{Bzdok2017}. With regard to the application on \gls{eeg} data it allows to address some of the main limitations of this method and automatically detect relevant patterns and their relation to variables of interest. Various research approaches use machine learning to extract information from the highly complex data and to relate it to experimental conditions or phenomena or to detect brain states.\\
-\\
-Traditionally, machine learning has been the core building block for the development of intelligent systems that can automate tasks or enhance and assist humans in performing their tasks. In the medical field the hope is to develop intelligent medical systems to inform clinical theory and support clinical decision making, i.e. assist in diagnosis, risk assessment by predicting health status or forecasting of treatment responses \cite{Woo2017}. In this context supervised learning is frequently use to identify biomarkers from \gls{eeg} by identifying signal characteristics that are predictive of a certain disease or health condition \cite{Babiloni_AlzCons2021,Mei2021}. An exciting application in the context of this work is the estimation of biological age based on regression models trained on the basis on neural data, e.g. \gls{eeg}, recorded in large population studies \cite{Engemann2022}. Using data of an individual person, a model can predict the age of the person. If the brain appears older than it would chronologically, this can be an early indication of an unfavorable state of health \cite{Gonneaud2021}. Another in the context of healthy aging highly relevant application is the development of devices with the goal to assist, augment or enhance humans capabilities such as \glspl{bci}. In \glspl{bci}, neural activity is decoded, using classification to generate control commands for various external devices such as computers or prosthetic limbs \cite{Saha2021, Anumanchipalli2019}.\\
-Decoding hereby refers to learning a classification or regression model that is capable of predicting behavioral outcomes or cognitive states characteristics. Beyond the application in \glspl{bci}, decoding techniques are widely used in neuroscientific research to gain insights into the neural mechanisms underlying perception, cognition, and behavior. This type of analysis is often referred to as \gls{mvpa} because its goal is to detect multivariate patterns, e.g., a set of voxels in \gls{fmri} or an electrical pattern at a given time in \gls{eeg}, associated with an experimental condition based on goodness of classification or regression \cite{Holdgraf2017}. This can also be applied to study the reorganization of the brain of aging individuals. \Citeauthor{Carb2011}\cite{Carb2011} for example applied machine learning to \gls{fmri} to decode brain activation during a motor task and detected age-related changes such as dedifferentiation of the motor system. Furthermore, the classification of group membership or group level regression can provide information about interesting relationships and their generalizability. Particularly for \gls{eeg} markers representing functional network characteristics, this can reveal insightful findings about the relationship to age-related changes \cite{Petti2016}.\\
-Unsupervised methods are often used as a preprocessing step to reduce the complexity of the underlying data or provide a framework for statistical source imaging, but can also provide interesting insights into the structure of data sets. Clustering is used in aging research to identify clinical subgroups or phenotype of healthy aging \cite{Marron2019}. Furthermore, dimensionality reduction algorithms can provide insights into high-dimensional data and, for example, into the temporal structure of \gls{eeg} signals of Alzheimer's patients \cite{Smailovic2019}.\\
-In summary, the use of machine learning is very diverse and ranges from engineering applications to scientific knowledge discovery. Especially in the latter case, it offers the advantage of automated extraction of patterns from highly complex data that can contribute to the study of age-related changes. 
-
-
-Insgesammt ist das Feld der Anwendungen von Maschinellen Lernverfahren... Dabei ist die Verwendung maschineller Lernverfahren stark von der Entwicklung im Kontext BCI und damit sehr anwendungsbezogen. Die Entwicklung von 
-
-\subsection{A formal definition of learning}
-To guide the problem definition formulated in the subsequent chapter and guide the selection of methods in this a theoretical concept of learning has to be defined.\\ %so far only for me not to lose focus....
-% .....................
-"A computer program is said to learn from experience $E$ with respect to some task $T$ and some performance measure $P$, if its performance on $T$, as measured by $P$, improves with experience $E$" \cite{Mitchell1997}. In other words learning in the context of machine learning typically involves using solving a specific task by using algorithms that improve their performance by using example data. There are numerous algorithms designed to solve the problems outlined above. Thereby some basic building blocks can be defined which can be used to describe computational learning in a formal way. In this thesis the view of statistical learning theory is considered, notation is adapted from \citeauthor{Shalev2014}\cite{Shalev2014}, \citeauthor{Von_luxburg2011}\cite{Von_luxburg2011} as well as "STATISTICAL LEARNING VL LMU MUNCHEN"/Brunton.\\
-\\
-Learning always is based on data, i.e. measurable information of some phenomenon, which consists of attributes of the phenomenon, so called features, and in supervised learning an associated label. It can mathematically defined as open bounded set $\mathcal{Z}\subset\mathbb{R}^n$ of dimension $n$. Typically there is only a set of examples or training data $S=\{z_i,...,z_m\}\subset{Z}^m$ available, where $i = 1,\dots,m$, and each $z_i$ is sampled independently from $\mathcal{Z}$ according to an underlying probability distribution $\mathcal{D}$. Thus the only assumption made is that the example data are independent and identically distributed. No assumption on $D$ is made.\\
-\\
-In supervised learning $\mathcal{Z}$ comprises the space of input data $\mathcal{X}$ and the space of labels or output $\mathcal{Y}$. The example data $S$ consists of labeled input-output pairs $z_i=x_i,y_i\in(\mathcal{X}\times\mathcal{Y})^m$, where $x_i$ is an input data vector and $y_i$ is its corresponding output label. The pairs are sampled by some unknown joint probability distribution $\mathcal{D}$ on the space $\mathcal{X}\times\mathcal{Y}$.\\
-The space $\mathcal{Z}$ in unsupervised learning comprises the input data space $\mathcal{X}$ only and the example set $S$ consists of unlabelled examples $z_i=x_i\in\mathcal{X}^m$, sampled according to some unknown probability distribution $\mathcal{D}$ on the space $\mathcal{X}$.\\
-\\
-Learning ultimately can be thought of as approximating an underlying ground truth function $f$, also called model, that represents the relationship between input and output in supervised learning, i.e., 
-\begin{equation}
-f:\mathcal{X}\rightarrow\mathcal{Y},
-\end{equation}
-or the mapping to a space of hidden patterns or structure $\mathcal{W}\subset\mathbb{R}^p$, where $p$ can be equal or smaller than $n$, i.e,
-\begin{equation}
-f:\mathcal{X}\rightarrow\mathcal{W}.
-\end{equation}
-\\
-The learning task can be conceptualized as searching through the space of all possible solution functions. As this is not feasible a finite class of functions or hypotheses is typically selected a priory. Thus, learning can also be thought of as selecting a hypothesis $h$ from a space of potential solutions $\mathcal{H}$, i.e. $\mathcal{H}=\{h:\mathcal{X}\rightarrow\mathcal{Y}\}$ in supervised learning and $\mathcal{H}=\{h:\mathcal{X}\rightarrow\mathcal{W}\}$ in unsupervised learning. \\
-A learner or learning algorithm is the means of selecting the best element from $\mathcal{H}$.
-The cost of a false prediction or an inaccurate representation of the data is quantified using a loss function, $\ell:\mathcal{H}\times\mathcal{Z}\rightarrow\mathbb{R}_+$. In other words it measures how well a specific hypothesis is doing.\\
-\\
-The expected risk, as measure of the average loss of a hypothesis, $h\in\mathcal{H}$ with respect to the probability distribution $\mathcal{D}$ over $\mathcal{Z}$ and can be defined as
-\begin{equation}
-L_{D}(h):=\mathbb{E}_{z\sim D}[\ell(h,z)]
-\end{equation}
-Theoretically a learner should select a hypothesis with lowest possible expected risk. 
-However the underlying probability distribution is unknown. Nevertheless by using $S$ the expected risk can be estimated by using the empirical risk over the training data. This is defined by:
-\begin{equation}
-L_{S}(h):=\frac{1}{m}\sum_{i=1}^m\ell(h,z_i).
-\end{equation}
-Following this, learning can be formalized solving an optimization problem of the form: 
-\begin{equation}
-\hat{h}=\arg\min_{h\in\mathcal{H}}L_{S}(h),
-\end{equation}
-which can be solved computationally. In parameterized models, this often involves the automated selection of those parameters $\theta\in\Theta$  of a chosen class of models that minimize $L_{S}(h_\theta)$. This optimization problem can then be solved by various methods such as gradient descent,  or e.g., analytically using least squares estimation. The solution $\hat{h}$ is the learned model that can be used to solve the task at hand, e.g. predicting the label of new input data or uncovering patterns or structure in data. This is known as \gls{erm}.\\
-Upon \gls{erm} more complex learning paradigms can be used addressing common problems such as overfitting, in which the learned hypothesis to closely relies on the training data and therefore has low generalization performance, e.g. regularized risk minimization which introduces regularization to \gls{erm} or structural risk minimization that penalizes complex models and encourages simplicity.\\
-\\
-Although most machine learning can conceptualized within the framework of \gls{erm} there are models that instead of minimizing risk assume that the underlying distribution over the data has a specific parametric form and the goal is to estimate these parameters by using \gls{mle} 
-which seeks to find the model parameters that maximize the likelihood of the observed data under the assumed parametric distribution, i.e. \\
-\begin{equation}
-\hat{\theta}_{\text{MLE}} = \arg\max_{\theta\in\Theta}\prod_{i=1}^{m}p_{\theta}(z_i),
-\end{equation}
-
-where $p_{\theta}(z)$ is the joint probability function of the assumed parametric distribution and $\hat{\theta}_{\text{MLE}}$ is the estimated value of the parameter vector $\theta$
-\\
-In summary, learning is based on the use of learning algorithms whose operation is determined by their hypothesis space, an objective function, in the form of the minimization of the risk or maximization of the probability of the observed data as well as the principle to optimize it.
-
-\subsection{Challanges}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+In practice however a clear separation is often not possible. In semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the relationship contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. In the context of this thesis the tasks considered involve the processing of a large amount of information with the goal to learn meaningful patterns and relationships in data. The most commonly used forms are supervised and unsupervised learning. For this reason these forms will be the focus in the following chapters. 
 
 \subsection{Machine learning applied to electroencephalography}
-BLABLA Was EEG Analysen mit ML denn generell bringen 
-
-In the case of \gls{eeg} $\mathcal{X}$ is a bounded set in $\mathbb{R}^{n\times m}$ often represented as matrix $X$ containing $n$ sensors recordings of voltage fluctuations in $\mu$V across $m$ time points. 
-
-
-\subsection{Applications}
-Especially in areas where high-dimensional data is prevalent, such as in neuroscience, the use of supervised as well as unsupervised machine learning offers insight by extracting complex patterns purely data driven \cite{Bzdok2017}. With regard to the application on \gls{eeg} data it allows to address some of the main limitations of this method and automatically detect relevant patterns and their relation to variables of interest. Various research approaches use machine learning to extract information from the highly complex data and to relate it to experimental conditions or phenomena or to detect brain states.\\
+Especially in areas where high-dimensional data is prevalent, such as in neuroscience, the use of supervised as well as unsupervised machine learning offers insight by extracting complex patterns purely data driven \cite{Bzdok2017}. In terms of \gls{eeg} this means that machine learning can help identify subtle patterns and relationships from the multidimensional complex structure of \gls{eeg} data, allowing for more accurate and efficient analysis of brain activity. As such various research approaches use machine learning to extract information from the highly complex data and to relate it to experimental conditions or phenomena or to detect brain states.\\
 \\
-Traditionally, machine learning has been the core building block for the development of intelligent systems that can automate tasks or enhance and assist humans in performing their tasks. In the medical field the hope is to develop intelligent medical systems to inform clinical theory and support clinical decision making, i.e. assist in diagnosis, risk assessment by predicting health status or forecasting of treatment responses \cite{Woo2017}. In this context supervised learning is frequently use to identify biomarkers from \gls{eeg} by identifying signal characteristics that are predictive of a certain disease or health condition \cite{Babiloni_AlzCons2021,Mei2021}. An exciting application in the context of this work is the estimation of biological age based on regression models trained on the basis on neural data, e.g. \gls{eeg}, recorded in large population studies \cite{Engemann2022}. Using data of an individual person, a model can predict the age of the person. If the brain appears older than it would chronologically, this can be an early indication of an unfavorable state of health \cite{Gonneaud2021}. Another in the context of healthy aging highly relevant application is the development of devices with the goal to assist, augment or enhance humans capabilities such as \glspl{bci}. In \glspl{bci}, neural activity is decoded, using classification to generate control commands for various external devices such as computers or prosthetic limbs \cite{Saha2021, Anumanchipalli2019}.\\
-Decoding hereby refers to learning a classification or regression model that is capable of predicting behavioral outcomes or cognitive states characteristics. Beyond the application in \glspl{bci}, decoding techniques are widely used in neuroscientific research to gain insights into the neural mechanisms underlying perception, cognition, and behavior. This type of analysis is often referred to as \gls{mvpa} because its goal is to detect multivariate patterns, e.g., a set of voxels in \gls{fmri} or an electrical pattern at a given time in \gls{eeg}, associated with an experimental condition based on goodness of classification or regression \cite{Holdgraf2017}. This can also be applied to study the reorganization of the brain of aging individuals. \Citeauthor{Carb2011}\cite{Carb2011} for example applied machine learning to \gls{fmri} to decode brain activation during a motor task and detected age-related changes such as dedifferentiation of the motor system. Furthermore, the classification of group membership or group level regression can provide information about interesting relationships and their generalizability. Particularly for \gls{eeg} markers representing functional network characteristics, this can reveal insightful findings about the relationship to age-related changes \cite{Petti2016}.\\
+Traditionally, machine learning has been the core building block for the development of intelligent systems that can automate tasks or enhance and assist humans in performing their tasks. In the medical field the hope is to develop intelligent medical systems to inform clinical theory and support clinical decision making, i.e. assist in diagnosis, risk assessment by predicting health status or forecasting of treatment responses \cite{Woo2017}. In this context supervised learning is frequently use to identify biomarkers from \gls{eeg} by identifying signal characteristics that are predictive of a certain disease or health condition \cite{Babiloni_AlzCons2021,Mei2021}. An exciting application in the context of this work is the estimation of biological age based on regression models trained on the basis on neural data, e.g. \gls{eeg}, recorded in large population studies \cite{Engemann2022}. Using data of an individual person, a model can predict the age of that person. If the brain appears older than it would chronologically, this can be an early indication of an unfavorable state of health \cite{Gonneaud2021}. Another in the context of healthy aging highly relevant application is the development of devices with the goal to assist, augment or enhance humans capabilities such as \glspl{bci}. In \glspl{bci}, neural activity is decoded, using classification to generate control commands for various external devices such as computers or prosthetic limbs \cite{Saha2021, Anumanchipalli2019}.\\
+Decoding hereby refers to learning a classification or regression model that is capable of predicting behavioral outcomes or cognitive states characteristics based on neural data. Beyond the application in \glspl{bci}, decoding techniques are widely used in neuroscientific research to gain insights into the neural mechanisms underlying perception, cognition, and behavior. This type of analysis is often referred to as \gls{mvpa} because its goal is to detect multivariate patterns, e.g., a set of voxels in \gls{fmri} or an electrical pattern at a given time in \gls{eeg}, associated with an experimental condition based on goodness of classification or regression \cite{Holdgraf2017}. This can also be applied to study the reorganization of the brain of aging individuals. \Citeauthor{Carb2011}\cite{Carb2011} for example applied machine learning to \gls{fmri} to decode brain activation during a motor task and detected age-related changes such as dedifferentiation of the motor system. Furthermore, the classification of group membership or group level regression can provide information about interesting relationships and their generalizability. Particularly for \gls{eeg} markers representing functional network characteristics, this can reveal insightful findings about the relationship to age-related changes \cite{Petti2016}.\\
 Unsupervised methods are often used as a preprocessing step to reduce the complexity of the underlying data or provide a framework for statistical source imaging, but can also provide interesting insights into the structure of data sets. Clustering is used in aging research to identify clinical subgroups or phenotype of healthy aging \cite{Marron2019}. Furthermore, dimensionality reduction algorithms can provide insights into high-dimensional data and, for example, into the temporal structure of \gls{eeg} signals of Alzheimer's patients \cite{Smailovic2019}.\\
 In summary, the use of machine learning is very diverse and ranges from engineering applications to scientific knowledge discovery. Especially in the latter case, it offers the advantage of automated extraction of patterns from highly complex data that can contribute to the study of age-related changes. 
-Allerdings ist es nicht einfach geeignete Methoden auszuwählen, da diese von den zur Verfügung stehenden Daten sowie der Zielstellung der 
 
-\subsection{A general machine learning pipeline}
-
-
-
-% space of examples, $\mathcal{Z}$, the space of potential solutions, $\mathcal{H}$,  also called hypothesis space and a \textit{loss function}, $\ell$, which measures the "cost" of a false prediction or an inaccurate representation of the data in supervised and unsupervised learning respectively. \\
-% In classification for example 
-
-
-% \Citeauthor{Russell2015} \cite{Russell2015} define the process and with that the basic formal principle of supervised machine learning algorithms as follows. Learning typically is based on a training set $D=\{(x_i, y_i)\}_{i=1}^{m}$ containing $m$ examples $(x_i , y_i)$ in which $x_i$ is a feature vector and $y_i$ the associated label for the \({i}^{th}\) example. It is assumed that $y_i$ was generated by some unknown function $y=f(x)$ and the goal of learning is to discover a function $h$ from a given hypothesis space $\mathcal{H}$ that approximates the true function $f$. Note that $f$ does not necessarily represent a function but can also be stochastic in nature, so that the goal is to learn a probability distribution, i.e. $P(Y,x)$. In this process a loss function $L(y,\hat{y})$ is defined, which determines the error between the actual label, $y$ and the models prediction $\hat{y}$. Thus, the goal of a learning algorithm can be defined as minimizing $L$. As the underlying distribution from which $D$ was drawn is unknown the empirical loss is typically defined as: 
-% \begin{equation}
-% EmpLoss_{L,D}(h)=\frac{1}{m}\sum_{(x,y)\in{D}}L(y,h(x)) .
-% \end{equation}
-% Following the best hypothesis $\hat{h}^*$ is chosen based on: 
-% \begin{equation}
-% \hat{h}^*=\operatorname{argmin}_{h\in{\mathcal{H}}}EmpLoss_{L,D}(h) .
-% \end{equation}
-% In practice, this often involves the automated selection of those parameters $\theta$ of a chosen class of models ($\mathcal{H}$) that minimize $EmpLoss$. This optimization problem can then be solved by various algorithms such as gradient descent, stochastic gradient descent and sequential minimal optimization. The choice depends on the problem to be solved as well as the selected model. 
-
-
-  
-
-% \begin{figure*}[h]
-%   \dummyfig{Categories of ML} 
-%   \caption{Categories of ML}
-%   \label{fig1:ml_types}
-% \end{figure*}
-
-% % \subsection{A formal description of learning}
-% % A formal definition of how a machine learns, can be made based on statistical learning theory. \citeauthor{Von_luxburg2011}\cite{Von_luxburg2011} describe this framework for supervised learning as follows. Given a learning problem, \(\mathcal{X}\) denotes the space of inputs and \(\mathcal{Y}\) the space outputs. The goal of learning is then to learn a functional relationship $f:\mathcal{X}\rightarrow\mathcal{Y}$. 
-% % Further, $\mathcal{P}$ represents a random probability distribution over $\mathcal{Z}=\mathcal{X}\times\mathcal{Y}$ from which a training data set $S$ is drawn at random. Using $S$ the goal of supervised machine learning is to learn a function $h:\mathcal{X}\rightarrow\mathcal{Y}$. The performance of this function can be measured using a so called loss function $ell$ measuring the error a prediction 
-% % The learning process typically involves adjusting the parameters defining the model by presenting the input-output pairings in the training data set to minimize the error, called loss, between the actual value and the models prediction. This is done by optimizing a cost function, defined as the summarized loss over the training examples. Often used optimization algorithms are gradient descent, stochastic gradient descent and sequential minimal optimization\footnote{Since the focus of this work is rather on the application and the evaluation with regard to scientific knowledge gain, a detailed mathematical introduction of the different algorithms is omitted at this point (see \cite{Ng2022cs229notes} for a detailed description).} and the choice depends on the problem to be solved as well as the selected model. It should be noted that not all learning algorithms are based on minimizing a defined cost function, but that there are also algorithms that implicitly optimize a certain criterion, such as Decision Trees or the K-Neirest Neighbor algorithm.\\
-% % More formally, supervised learning is to learn a function, also called hypothesis, mapping the space of input values \(\mathcal{X}\) to the space of output values \(\mathcal{Y}\), i.e. \(h_{\theta}:\mathcal{X}\rightarrow\mathcal{Y}\). by minimizing a cost function \(J(\theta)\). 
-% % Here \(\theta\) are the parameters, or weights, defining the space of functions and the cost function can be defined as 
-% % $$J(\theta) = \frac{1}{m} \sum_{i=1}^{m} L(h_{\theta}(x_i),y_i)$$.  
-% % Here \(L\) is called loss function which quantifies the error between true label \(y_i\) and predicted label 
-
-% % A standard example found in many text books is the task of email classification. Therein the input data might be emails associated with labels spam/not spam and the task is to produce a function that is able to automatically label new incoming emails \cite{Shalev2014}. For regression a standard example would be to predict the price of a house based on some features like area, number of rooms, etc. \cite{Ng2022cs229notes}.
-% % Inductive reasoning is central to this process and involves using labelled input-output pairs known as training data set $S=\{(x_i, y_i)\}_{i=1}^{m}$, in which $x_i \in \mathbb R^{n}$ is a ${n}$-dimensional feature vector and $y_i$ the associated label for the \({i}^{th}\) example generated by some unknown function $y_i=f(x_i)$ \cite{Russell2015, Saha2021}. An algorithm is then used to induce a function $h$ approximating the true function $f$ \cite{Daumé2017}. Note that $f$ does not necessarily represent a function but can also be stochastic in nature, so that the goal is to learn a probability distribution, i.e. $P(Y,x)$ \cite{Russell2015}. 
 
 % \subsection{Methodological considerations}
 % Methods from supervised and unsupervised machine learning are possible candidates. In unsupervised machine learning, the goal is to find structure in the data. This includes methods for dimensionality reduction and clustering. Dimensionality reduction for example allows us to describe the structure of high dimensional data in fewer properties [20]. Two common methods in the analysis of neurophysiological data are the principal component analysis (PCA) and independent component analysis (ICA). These allow the detection of spatial patterns in the data that represent the underlying network characteristics of neurophysiological data [8]. In addition, with dynamic mode decomposition (DMD), Brunton, Johnson, et al. [21] apply for the first time a method to electrophysiological data that allows us to map both the spatial and temporal structure of the network structure of neurophysiological data.
