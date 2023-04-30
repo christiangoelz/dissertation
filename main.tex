@@ -16,6 +16,7 @@
 \usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
 \usepackage{titlesec}
 \usepackage[most]{tcolorbox}
+\usepackage[font=small,labelfont=bf]{caption}
 
 %------------------------------------ Settings ------------------------------------
 % references
@@ -24,7 +25,7 @@
 
 % figures
 \graphicspath{{figures/}}
-
+\captionsetup[figure]{font=small,justification=raggedright,singlelinecheck=false}
 \newcommand{\dummyfig}[1]{
   \centering
   \fbox{
