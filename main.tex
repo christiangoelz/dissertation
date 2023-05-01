@@ -17,6 +17,7 @@
 \usepackage{titlesec}
 \usepackage[most]{tcolorbox}
 \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{titlesec}
 
 %------------------------------------ Settings ------------------------------------
 % references
@@ -49,11 +50,11 @@ urlcolor=black
 
 
 % line spacing
-\renewcommand{\baselinestretch}{1.5} 
+\renewcommand{\baselinestretch}{1.5}
 
 % footnotes
 \renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
-\setlength{\skip\footins}{1cm}
+
 
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
@@ -104,25 +105,26 @@ urlcolor=black
     \input{chapters/1_introduction/4_machine_learning} 
     
 \chapter{Aims and scope}
-\label{aims_scope}
+\label{chap:aims_scope}
 \input{chapters/1_introduction/5_aims_scope}
 
 \chapter{General methodology}
-\label{methods}
+\label{chap:methods}
 \input{chapters/1_introduction/6_general_methodology}
 
 \chapter{Results}
+\label{chap:results}
     \section{Paper 1}
-    \label{chap:paper1}
+    \label{results:paper1}
 
     \section{Paper 2}
-    \label{chap:paper2}
+    \label{results:paper2}
 
     \section{Paper 3}
-    \label{chap:paper3}
+    \label{results:paper3}
 
     \section{Paper 4}
-    \label{chap:paper4}
+    \label{results:paper4}
     
 \chapter{General discussion}
 \label{chap:discussion}
