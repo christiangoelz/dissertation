@@ -1695,13 +1695,13 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264645;stroke-linecap:butt;stroke-linejoin:round"
        x="40.392998"
-       y="40.739445"
+       y="39.151943"
        id="text44614-3"><tspan
          sodipodi:role="line"
          id="tspan44612-6"
          style="font-size:2.11667px;stroke-width:0.264645"
          x="40.392998"
-         y="40.739445">Activation: $f(z) =  \dfrac{1}{1 + e^{-gz}}$ </tspan></text><text
+         y="39.151943">Activation: $f(z) =  \dfrac{1}{1 + e^{-gz}}$ </tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264645;stroke-linecap:butt;stroke-linejoin:round"
        x="135.63208"
@@ -1735,14 +1735,14 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11658px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264634;stroke-linecap:butt;stroke-linejoin:round"
        x="40.203461"
-       y="32.758179"
+       y="31.170746"
        id="text44614-3-7"
        transform="scale(0.999959,1.000041)"><tspan
          sodipodi:role="line"
          id="tspan44612-6-5"
          style="font-size:2.11658px;stroke-width:0.264634"
          x="40.203461"
-         y="32.758179">Input: $z=\sum_{i=1}^{n}{w_ix_i+b}$ </tspan></text><text
+         y="31.170746">Input: $z=\sum_{i=1}^{n}{w_ix_i+b}$ </tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="77.035675"
@@ -2135,11 +2135,11 @@
          y="84.731529">S4</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="54.083923"
-       y="24.838512"
+       x="53.554756"
+       y="26.955181"
        id="text1055"><tspan
          sodipodi:role="line"
          id="tspan1053"
          style="font-size:2.11667px;stroke-width:0.264583"
-         x="54.083923"
-         y="24.838512">Input \mid Activation</tspan></text></g></svg>
+         x="53.554756"
+         y="26.955181">Input \mid Activation</tspan></text></g></svg>
