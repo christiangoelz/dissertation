@@ -65,7 +65,7 @@
     \put(0.29706207,0.29302225){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{x}\textit{2}\textit{ }\end{tabular}}}}%
     \put(0.29706207,0.24296748){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}xn \end{tabular}}}}%
     \put(0.36598634,0.27877971){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$sum$\end{tabular}}}}%
-    \put(0.29956825,0.38809827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$$f(z) =  \dfrac{1}{1 + e^{-gz}}$$\end{tabular}}}}%
+    \put(0.29956825,0.38809827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f(z) =  \dfrac{1}{1 + e^{-gz}}$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{dedifferentiation.pdf}}%
     \put(0.63385796,0.18450804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
     \put(0.85627336,0.18450804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
