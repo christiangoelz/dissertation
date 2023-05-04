@@ -29,9 +29,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showguides="false"
-     inkscape:zoom="18.895952"
-     inkscape:cx="228.40871"
-     inkscape:cy="81.393093"
+     inkscape:zoom="1.670182"
+     inkscape:cx="226.92138"
+     inkscape:cy="84.421938"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -1665,13 +1665,13 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264645;stroke-linecap:butt;stroke-linejoin:round"
        x="40.392998"
-       y="38.093609"
+       y="37.648659"
        id="text44614-3"><tspan
          sodipodi:role="line"
          id="tspan44612-6"
          style="font-size:2.11667px;stroke-width:0.264645"
          x="40.392998"
-         y="38.093609">Activation: $f(z) =  \dfrac{1}{1 + e^{-gz}}$ </tspan></text><text
+         y="37.648659">Activation: $f(z) =  \dfrac{1}{1 + e^{-gz}}$ </tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264645;stroke-linecap:butt;stroke-linejoin:round"
        x="135.63208"
@@ -1736,13 +1736,13 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="18.710037"
-       y="37.138596"
+       y="37.821259"
        id="text44618-6"><tspan
          sodipodi:role="line"
          id="tspan44616-8"
          style="font-size:2.11667px;stroke-width:0.264583"
          x="18.710037"
-         y="37.138596">Neuron</tspan></text><text
+         y="37.821259">Neuron</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.101185"
        x="1.5472599"
@@ -1795,7 +1795,7 @@
          y="52.844715">E</tspan></text><g
        id="patch_7-8"
        style="stroke-linecap:butt;stroke-linejoin:round"
-       transform="matrix(0.12991289,-0.11890154,0.12967062,0.14167929,-18.648452,56.215096)"><path
+       transform="matrix(0.14642028,-0.09785723,0.1067203,0.15968177,-21.66298,51.089835)"><path
          d="m 235.90398,44.746444 q 0,-6.977879 0,-12.837723"
          style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
          id="path2823-9" /><path
@@ -2105,14 +2105,14 @@
          y="84.731529">S4</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.11667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="53.49226"
+       x="53.392262"
        y="23.251011"
        id="text1055"><tspan
          sodipodi:role="line"
          id="tspan1053"
          style="font-size:2.11667px;stroke-width:0.264583"
-         x="53.49226"
-         y="23.251011">Input \mid Activation</tspan></text><g
+         x="53.392262"
+         y="23.251011">Input \vert Activation</tspan></text><g
        id="figure_1-3"
        transform="matrix(0.31633981,0,0,0.31633981,-53.710105,-21.966845)"
        style="stroke-width:0.601364;stroke-dasharray:none"><g
