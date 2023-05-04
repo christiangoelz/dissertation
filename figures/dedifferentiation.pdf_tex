@@ -78,7 +78,7 @@
     \put(0.85541191,0.10897784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Young network\end{tabular}}}}%
     \put(0.85464325,0.08165121){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Older network\end{tabular}}}}%
     \put(0.25126133,0.37098214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input: $z=\sum_{i=1}^{n}{w_ix_i+b}$ \end{tabular}}}}%
-    \put(0.48147297,0.22748976){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation response to the same input\end{tabular}}}}%
+    \put(0.48147297,0.22748976){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation of one neuron to the same input\end{tabular}}}}%
     \put(0.0556654,0.50046985){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Hidden layer\end{tabular}}}}%
     \put(0.11693773,0.33038378){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Neuron\end{tabular}}}}%
     \put(0.00967037,0.52952509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
@@ -120,7 +120,7 @@
     \put(0.27198982,0.03292794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S2\end{tabular}}}}%
     \put(0.30839458,0.03292794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
     \put(0.34462364,0.03292794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
-    \put(0.33471723,0.41718118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input \mid Activation\end{tabular}}}}%
+    \put(0.33432662,0.41718118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input \mid Activation\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{dedifferentiation.pdf}}%
   \end{picture}%
 \endgroup%
