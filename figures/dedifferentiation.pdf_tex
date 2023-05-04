@@ -82,10 +82,9 @@
     \put(0.0556654,0.50046985){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Hidden layer\end{tabular}}}}%
     \put(0.11693773,0.32611713){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Neuron\end{tabular}}}}%
     \put(0.00967037,0.52952509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.20618038,0.53015039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
-    \put(0.54362721,0.5293804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
-    \put(0.00728034,0.23222053){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
-    \put(0.42795916,0.23222053){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}E\end{tabular}}}}%
+    \put(0.54362721,0.5293804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.00728034,0.23222053){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.42795916,0.23222053){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{dedifferentiation.pdf}}%
     \put(0.6912518,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}−5.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{dedifferentiation.pdf}}%

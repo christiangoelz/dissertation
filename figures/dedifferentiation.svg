@@ -30,8 +30,8 @@
      showgrid="false"
      showguides="false"
      inkscape:zoom="1.670182"
-     inkscape:cx="226.92138"
-     inkscape:cy="84.421938"
+     inkscape:cx="149.08555"
+     inkscape:cy="84.421937"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -1754,16 +1754,6 @@
          x="1.5472599"
          y="5.2759852">A</tspan></text><text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0969877;stroke-linecap:butt;stroke-linejoin:round"
-       x="32.988861"
-       y="5.1759372"
-       id="text54375-7-5"><tspan
-         sodipodi:role="line"
-         id="tspan54373-0-6"
-         style="font-size:4.23333px;stroke-width:0.0969877"
-         x="32.988861"
-         y="5.1759372">B</tspan></text><text
-       xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.122851;stroke-linecap:butt;stroke-linejoin:round"
        x="86.980354"
        y="5.2991366"
@@ -1772,7 +1762,7 @@
          id="tspan54373-3"
          style="font-size:4.23333px;stroke-width:0.122851"
          x="86.980354"
-         y="5.2991366">C</tspan></text><text
+         y="5.2991366">B</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0857334;stroke-linecap:butt;stroke-linejoin:round"
        x="1.1648546"
@@ -1782,7 +1772,7 @@
          id="tspan54373-0"
          style="font-size:4.23333px;stroke-width:0.0857334"
          x="1.1648546"
-         y="52.844715">D</tspan></text><text
+         y="52.844715">C</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.23333px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0857334;stroke-linecap:butt;stroke-linejoin:round"
        x="68.473465"
@@ -1792,7 +1782,7 @@
          id="tspan54373-0-5"
          style="font-size:4.23333px;stroke-width:0.0857334"
          x="68.473465"
-         y="52.844715">E</tspan></text><g
+         y="52.844715">D</tspan></text><g
        id="patch_7-8"
        style="stroke-linecap:butt;stroke-linejoin:round"
        transform="matrix(0.14642028,-0.09785723,0.1067203,0.15968177,-21.66298,51.089835)"><path
