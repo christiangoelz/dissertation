@@ -7,11 +7,20 @@ In supervised machine learning the goal is to learn a generalizable relationship
 The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of the data, i.e. dimensionality reduction. This type of learning is also referred to as \textit{knowledge discovery}\cite{Murphy2012}.\\
 Reinforcement learning describes the task to learn optimal actions to solve a certain problem by maximizing the reward linked to that action.
 
-\begin{figure*}[h]
-  \dummyfig{Categories of ML} 
-  \caption{Categories of ML}
-  \label{fig1:ml_types}
-\end{figure*}
+\begin{tikzpicture}
+  \path[mindmap,concept color=blue!10,scale=0.3,text width=2.7cm, align=flush center]
+    node[concept] {Machine learning};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \path[mindmap,concept color=blue!10,scale=0.1,text width=2.7cm, align=flush center]
+    node[concept] {Machine learning};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \path[mindmap,concept color=blue!10,scale=1,text width=2.7cm, align=flush center]
+    node[concept] {Machine learning};
+\end{tikzpicture}
 
 In practice however a clear separation is often not possible. As such, dimensionality reduction can also be supervised, i.e. labels are provided to learn a new representation of the data \cite{mcinnes2018umap}. Besides, in semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the relationship contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. \\
 In addition traditional machine learning is often contrasted to deep learning methods involving the use of artificial neural networks which are composed of many layers of interconnected nodes often used in an end to end fashion in which features are extracted within the network. Usually they require huge amount of data and computational power. In the context of this thesis the tasks considered involve the processing of a \gls{eeg} from experiments with mid to small sample sizes with the goal to learn meaningful patterns and relationships in data. The most commonly used forms in this contexts are supervised and unsupervised learning focusing traditional machine learning. For this reason these forms will be the focus in the following chapters.
