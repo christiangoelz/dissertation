@@ -54,72 +54,73 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{dedifferentiation.pdf}}%
-    \put(0.21674883,0.37696186){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
-    \put(0.21674883,0.37006839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
-    \put(0.21674701,0.36317622){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0.26085302,0.42426664){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0.26085302,0.41737317){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
+    \put(0.2608512,0.410481){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}.\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{dedifferentiation.pdf}}%
-    \put(0.27217879,0.43531096){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$w_2$}\end{tabular}}}}%
-    \put(0.27217879,0.39858207){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$w_1$}\end{tabular}}}}%
-    \put(0.27219496,0.3659201){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$w_n$\end{tabular}}}}%
-    \put(0.21120787,0.43807231){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$x_n$}\end{tabular}}}}%
-    \put(0.21120787,0.3918988){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$x_2$}\end{tabular}}}}%
-    \put(0.21120787,0.34050785){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_n$ \end{tabular}}}}%
-    \put(0.32457409,0.38531594){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sum$\end{tabular}}}}%
-    \put(0.32334581,0.32299418){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f(z) =  \dfrac{1}{1 + e^{-gz}}$\end{tabular}}}}%
-    \put(0.31893402,0.46067561){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$z=\sum_{i=1}^{n}{w_ix_i+b}$\end{tabular}}}}%
+    \put(0.30636136,0.48261574){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$w_2$}\end{tabular}}}}%
+    \put(0.30636136,0.44588685){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$w_1$}\end{tabular}}}}%
+    \put(0.30637753,0.41322488){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$w_n$\end{tabular}}}}%
+    \put(0.25531206,0.48537709){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$x_n$}\end{tabular}}}}%
+    \put(0.25531206,0.43920358){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textit{$x_2$}\end{tabular}}}}%
+    \put(0.25531206,0.38781263){\color[rgb]{0,0,0}\transparent{0.75}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x_n$ \end{tabular}}}}%
+    \put(0.37529269,0.43262072){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sum$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{dedifferentiation.pdf}}%
-    \put(0.08545843,0.02600484){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
-    \put(0.05843607,0.05277162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S1\end{tabular}}}}%
-    \put(0.09517437,0.05277162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S2\end{tabular}}}}%
-    \put(0.12953978,0.05277162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
-    \put(0.16690044,0.05277162){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
+    \put(0.08545843,0.01608295){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
+    \put(0.05579581,0.04284973){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S1\end{tabular}}}}%
+    \put(0.09055486,0.04284973){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S2\end{tabular}}}}%
+    \put(0.12581316,0.04284973){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
+    \put(0.16104555,0.04284973){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{dedifferentiation.pdf}}%
-    \put(0.05920478,0.26179705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation pattern hidden layer\end{tabular}}}}%
-    \put(0.40892491,0.49917548){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation\end{tabular}}}}%
+    \put(0.10552828,0.24972827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation pattern hidden layer\end{tabular}}}}%
+    \put(0.25245624,0.31780035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation: $f(z) =  \dfrac{1}{1 + e^{-gz}}$ \end{tabular}}}}%
     \put(0.8477005,0.15699563){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation\end{tabular}}}}%
     \put(0.85541191,0.10897784){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Young network\end{tabular}}}}%
     \put(0.85464325,0.08165121){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Older network\end{tabular}}}}%
-    \put(0.26939279,0.50066118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input\end{tabular}}}}%
-    \put(0.42139831,0.25286918){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation response to the same input\end{tabular}}}}%
+    \put(0.25126133,0.34500682){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input: $z=\sum_{i=1}^{n}{w_ix_i+b}$ \end{tabular}}}}%
+    \put(0.48147297,0.24972827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activation response to the same input\end{tabular}}}}%
     \put(0.0556654,0.50046985){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Hidden layer\end{tabular}}}}%
     \put(0.11693773,0.33038378){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Neuron\end{tabular}}}}%
-    \put(0.01145111,0.52952509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.00967037,0.52952509){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
     \put(0.20618038,0.53015039){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
     \put(0.54362721,0.5293804){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
-    \put(0.37594328,0.24350593){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.00728034,0.25537159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}D\end{tabular}}}}%
+    \put(0.42795916,0.25537159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}E\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{dedifferentiation.pdf}}%
-    \put(0.69536472,0.32402329){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}−5.0\end{tabular}}}}%
+    \put(0.6912518,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}−5.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{dedifferentiation.pdf}}%
-    \put(0.75078358,0.32402329){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}−2.5\end{tabular}}}}%
+    \put(0.74439954,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}−2.5\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{dedifferentiation.pdf}}%
-    \put(0.80620242,0.32402329){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.0\end{tabular}}}}%
+    \put(0.79754726,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{dedifferentiation.pdf}}%
-    \put(0.86162127,0.32402329){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
+    \put(0.85069499,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{dedifferentiation.pdf}}%
-    \put(0.91704013,0.32402329){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}5.0\end{tabular}}}}%
-    \put(0.80620242,0.30436858){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}z (Input)\end{tabular}}}}%
+    \put(0.90384273,0.33268393){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}5.0\end{tabular}}}}%
+    \put(0.79754726,0.3138347){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}$z$ (Input)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.30195064){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
+    \put(0.6482283,0.31151585){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}−0.2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.33902558){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.0\end{tabular}}}}%
+    \put(0.6482283,0.34707141){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=12]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.37610052){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
+    \put(0.6482283,0.38262698){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=13]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.41317545){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
+    \put(0.6482283,0.41818255){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=14]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.45025039){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.6\end{tabular}}}}%
+    \put(0.6482283,0.45373812){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.6\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.48732532){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.8\end{tabular}}}}%
+    \put(0.6482283,0.48929368){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.8\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{dedifferentiation.pdf}}%
-    \put(0.65050273,0.52440026){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}1.0\end{tabular}}}}%
-    \put(0.60621873,0.41878382){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}f(z) (Activation)\end{tabular}}}}}%
+    \put(0.6482283,0.52484925){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}1.0\end{tabular}}}}%
+    \put(0.60575911,0.42356108){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}$f(z)$ (Activation)\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{dedifferentiation.pdf}}%
-    \put(0.89043907,0.47959159){\transparent{0.75}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}g\end{tabular}}}}%
+    \put(0.87171722,0.4785696){\transparent{0.75}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}g\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{dedifferentiation.pdf}}%
-    \put(0.2691185,0.02600503){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
-    \put(0.2385685,0.05277171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S1\end{tabular}}}}%
-    \put(0.27361641,0.05277171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S2\end{tabular}}}}%
-    \put(0.30865889,0.05277171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
-    \put(0.34367418,0.05277171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
+    \put(0.2658112,0.01608315){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
+    \put(0.23540018,0.04284983){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S1\end{tabular}}}}%
+    \put(0.27198982,0.04284983){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S2\end{tabular}}}}%
+    \put(0.30839458,0.04284983){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
+    \put(0.34462364,0.04284983){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
+    \put(0.34117177,0.52778226){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input\end{tabular}}}}%
+    \put(0.4189888,0.5271242){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Activatioon\end{tabular}}}}%
   \end{picture}%
 \endgroup%
