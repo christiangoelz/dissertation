@@ -3,18 +3,36 @@ In science machine learning is increasingly used as a complementary method to cl
 
 \subsection{Forms of machine learning}
 The three main forms of machine learning are supervised, unsupervised, and reinforcement learning which are defined by the type of feedback a machine learning algorithm has access to during learning \cite{Shalev2014}.\\
-In supervised machine learning the goal is to learn a generalizable relationship between data and associated information, so-called labels or target. This can then be used to predict the label of new data that not have been used during the process of learning. If the labels are categorical, the prediction task is called classification; for continuous labels, the term is regression.\\
-The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of the data, i.e. dimensionality reduction. This type of learning is also referred to as \textit{knowledge discovery}\cite{Murphy2012}.\\
-Reinforcement learning describes the task to learn optimal actions to solve a certain problem by maximizing the reward linked to that action.
+In supervised machine learning the goal is to learn a generalizable relationship between data and associated information, so-called labels or target. This can then be used to predict the label of new data that not have been used during the process of learning. If the labels are categorical, the prediction task is called classification; for continuous labels, the term is regression. The goal of unsupervised machine learning is to find hidden structure in data without taking into account associated labels. This could be grouping similar data points, i.e. clustering, or uncovering a meaningful low dimensional representation of high dimensional data, i.e. dimensionality reduction. This type of learning is also referred to as \textit{knowledge discovery}\cite{Murphy2012}. Reinforcement learning describes the task to learn optimal actions to solve a certain problem by maximizing the reward linked to that action. See \autoref{fig:ml_forms} for an overview.
 
 \begin{figure}[h]
-\def\svgwidth{\columnwidth}
-\input{figures/ml_forms.pdf_tex}
-\caption{Computational model proposed by Li and colleagues \cite{Li2000,Li2002}. The authors used a feedforward backpropagation neural network model with logistic activation function $f(z)$ and simulated altered neuromodulation by varying the gain parameter $g$ in $f(z)$ of each neuron (A). Deficient neuromodulation and responsiveness due to aging is simulated by lower $g$ values resulting in a dampened activation of a neuron (B). Simulations show that the activation pattern of simulated neurons differs less for different stimuli, i.e. the hidden layer of the network shows a less distinctive representation of the stimulus (C). The activation of a single neurons is more variable for multiple stimulations with the same stimulus (E).}
-\label{fig:dedifferentiation}
+\begin{center}
+\begin{tikzpicture}[grow cyclic,
+	level 2/.append style={level distance=2cm},]
+\node[draw,ellipse,align=center,font=\bfseries\large]{Machine\\learning}
+child[grow=145,level distance=4cm] { node[draw,ellipse,align=center] {Reinforcement\\learning}
+}
+child[grow=35, level distance=4cm] {  node[draw,ellipse,align=center] {Supervised\\learning}
+	child[grow=-30, level distance=3.8cm] { node {Classification}}
+	child[grow=-90]{ node {Regression}}
+}
+child[grow=-90, level distance=2.5cm] {node[draw,ellipse,align=center] {Unsupervised\\learning}
+	child[grow=south west,level distance=2.5cm] { node[align=center] {Dimensionality\\reduction}}
+	child[grow=south east] { node {Clustering}}
+}
+node at (-3.5,-0.5)[scale=0.9]{\input{figures/reinforcement.pdf_tex}}
+node at (1.75,-6)[scale=0.25]{\input{figures/clustering.pdf_tex}}
+node at (-1.6,-6)[scale=0.25]{\input{figures/dim_red.pdf_tex}}
+node at (3.5,-1)[scale=0.25]{\input{figures/regression.pdf_tex}}
+node at (6.5,-1.125)[scale=0.25]{\input{figures/classification.pdf_tex}}
+;
+\end{tikzpicture}
+\end{center}
+\caption[The three main forms of machine learning]{The three main forms of machine learning}
+\label{fig:ml_forms}
 \end{figure}
 
-In practice however a clear separation is often not possible. As such, dimensionality reduction can also be supervised, i.e. labels are provided to learn a new representation of the data \cite{mcinnes2018umap}. Besides, in semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the relationship contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. \\
+\noindent In practice however a clear separation is often not possible. As such, dimensionality reduction can also be supervised, i.e. labels are provided to learn a new representation of the data \cite{mcinnes2018umap}. Besides, in semi-supervised learning, for example, the goal is the same as for supervised learning. However the data set used to learn the relationship contains both, labeled and unlabeled examples and the hope is to build a stronger representation by providing more information in form of data \cite{Burkov2019}. \\
 In addition traditional machine learning is often contrasted to deep learning methods involving the use of artificial neural networks which are composed of many layers of interconnected nodes often used in an end to end fashion in which features are extracted within the network. Usually they require huge amount of data and computational power. In the context of this thesis the tasks considered involve the processing of a \gls{eeg} from experiments with mid to small sample sizes with the goal to learn meaningful patterns and relationships in data. The most commonly used forms in this contexts are supervised and unsupervised learning focusing traditional machine learning. For this reason these forms will be the focus in the following chapters.
 
 \begin{tcolorbox}[breakable, enhanced]
@@ -72,11 +90,5 @@ Selecting a suitable learning algorithm for classification, i.e. classifier, inv
 While deep neural networks are capable of learning on the basis of raw data their advantage comes into play with large labeled data resources, which are often expensive to acquire in the case of \gls{eeg} \cite{Banville2021}. Traditional learning approaches can be more efficient with good performance and promise better interpretability, especially for comparatively smaller data sets and limited computational resources \cite{Gemein2020}. Due to the low signal-to-noise ratio and high complexity of \gls{eeg} data, the inputs in these approaches are typically represented by well known \gls{eeg} characteristics, or features, that are believed to be related to the problem being learned. Typical features include parameters of time, frequency, time-frequency, connectivity and information theoretical parameters extracted for each sensor (see \cite{Gemein2020} for common choices). However, this approach may lead to less flexible and generalizable models with low spatial resolution and vulnerability to low signal-to-noise ratios \cite{Saeidi2021}.\\
 To address this, some approaches compute the sources of the \gls{eeg} signals in the brain using biophysical models as a preprocessing step prior to feature extraction \cite{Khan2018, Westner2018}. Other approaches use supervised and unsupervised decomposition techniques belonging to the field of dimensionality reduction as a preprocessing step for further prediction tasks or provide information themselves in the sense of knowledge discovery. These methods aim at \textit{unmixing} the highly correlated sensor time series by assumptions about the underlying signal components. For example, \gls{ica} assumes statistical independence, while \gls{pca} assumes that the extracted components are maximally uncorrelated to each other, capturing the largest amount of variance in the data \cite{CohenX2017}. \Gls{dmd} is a method that explicitly considers the temporal structure of the signals, which requires the extracted signal patterns (modes) to be temporally coherent, thus accounting for the network character of the brain \cite{Brunton2016}. Additionally, supervised methods such as \gls{csp} \cite{Blankertz2008} or xDAWN \cite{rivet2009xdawn} extract signal components that correlate with the labels to be predicted.\\
 While supervised and unsupervised ways of examining the complex \gls{eeg} signals in terms of components and patterns to generate knowledge, non-linear methods such as \gls{tsne} and \gls{umap} take into account the non-linear relationships between the data points and provide a lower-dimensional representation of the data that is often easier to interpret and visualize \cite{mcinnes2018umap}. These methods can be particularly useful for exploring the relationships between different \gls{eeg} features or for identifying subgroups within a dataset.\\
-It is important to note that these methods can be applied not only to the \gls{eeg} signals itself, but also to previously extracted \gls{eeg} parameters or in combination in terms of knowledge discovery. Thus, supervised and unsupervised dimension reduction provides data-driven insights into the complex underlying information, but also serves as preprocessing for further tasks such as prediction. Figure \ref{fig1:ml_approoaches} summarizes these common approaches.
-
-\begin{figure*}[h]
-  \dummyfig{Typical cross validation workflow } 
-  \caption{State of the art approaches}
-  \label{fig1:ml_approoaches}
-\end{figure*}
+It is important to note that these methods can be applied not only to the \gls{eeg} signals itself, but also to previously extracted \gls{eeg} parameters or in combination in terms of knowledge discovery. Thus, supervised and unsupervised dimension reduction provides data-driven insights into the complex underlying information, but also serves as preprocessing for further tasks such as prediction.
 
