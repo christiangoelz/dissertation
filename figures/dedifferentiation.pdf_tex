@@ -112,7 +112,7 @@
     \put(0.6482283,0.52484925){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}1.0\end{tabular}}}}%
     \put(0.60575911,0.42356108){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}$f(z)$ (Activation)\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{dedifferentiation.pdf}}%
-    \put(0.87171722,0.4785696){\transparent{0.75}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}g\end{tabular}}}}%
+    \put(0.87171722,0.4785696){\transparent{0.75}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}$g$\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{dedifferentiation.pdf}}%
     \put(0.2658112,0.00616126){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus\end{tabular}}}}%
     \put(0.23540018,0.03292794){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S1\end{tabular}}}}%
