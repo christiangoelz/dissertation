@@ -8,7 +8,7 @@ In supervised machine learning the goal is to learn a generalizable relationship
 \begin{figure}[h]
 \begin{center}
 \begin{tikzpicture}[grow cyclic,
-	level 2/.append style={level distance=2cm},]
+	level 2/.append style={level distance=2cm}]
 \node[draw,ellipse,align=center,font=\bfseries\large]{Machine\\learning}
 child[grow=145,level distance=4cm] { node[draw,ellipse,align=center] {Reinforcement\\learning}
 }
@@ -20,11 +20,11 @@ child[grow=-90, level distance=2.5cm] {node[draw,ellipse,align=center] {Unsuperv
 	child[grow=south west,level distance=2.5cm] { node[align=center] {Dimensionality\\reduction}}
 	child[grow=south east] { node {Clustering}}
 }
-node at (-3.5,-0.5)[scale=0.75]{\input{figures/reinforcement.pdf_tex}}
-node at (1.75,-6)[scale=0.17]{\input{figures/clustering.pdf_tex}}
-node at (-1.6,-6)[scale=0.17]{\input{figures/dim_red.pdf_tex}}
-node at (3.5,-1)[scale=0.17]{\input{figures/regression.pdf_tex}}
-node at (6.5,-1.125)[scale=0.17]{\input{figures/classification.pdf_tex}}
+node at (-3.5,-0.2)[scale=0.8]{\input{figures/reinforcement.pdf_tex}}
+node at (1.6,-5.5)[scale=0.2]{\input{figures/clustering.pdf_tex}}
+node at (-2.75,-5.5)[scale=0.2]{\input{figures/dim_red.pdf_tex}}
+node at (3.25,-0.75)[scale=0.2]{\input{figures/regression.pdf_tex}}
+node at (6.25,-0.75)[scale=0.2]{\input{figures/classification.pdf_tex}}
 ;
 \end{tikzpicture}
 \end{center}
@@ -37,7 +37,7 @@ In addition traditional machine learning is often contrasted to deep learning me
 
 \begin{tcolorbox}[breakable, enhanced]
     \subsection*{Excursus: How does a machine learn?}
-    "A computer program is said to learn from experience $E$ with respect to some task $T$ and some performance measure $P$, if its performance on $T$, as measured by $P$, improves with experience $E$" \cite{Mitchell1997}. In other words learning in the context of machine learning typically involves solving a specific task by using algorithms that improve their performance by using example data. There are numerous algorithms designed to solve the problems outlined above. Thereby some basic building blocks can be defined which can be used to describe computational learning in a formal way. In the following description the view of statistical learning theory is considered, notation is adapted from \citeauthor{Shalev2014}\cite{Shalev2014}, \citeauthor{Von_luxburg2011}\cite{Von_luxburg2011}.\\
+    "A computer program is said to learn from experience $E$ with respect to some task $T$ and some performance measure $P$, if its performance on $T$, as measured by $P$, improves with experience $E$" \cite{Mitchell1997}. In other words learning in the context of machine learning typically involves solving a specific task by using algorithms that improve their performance by using example data. There are numerous algorithms designed to solve the problems outlined above. Thereby some basic building blocks can be defined which can be used to describe computational learning in a formal way. In the following description the view of statistical learning theory is considered, notation is adapted from \citeauthor{Shalev2014} \cite{Shalev2014}, \citeauthor{Von_luxburg2011} \cite{Von_luxburg2011}.\\
     \\
     Learning always is based on data, i.e. measurable information of some phenomenon, which consists of attributes of the phenomenon, so called features, and in supervised learning an associated label. It can mathematically defined as open bounded set $\mathcal{Z}\subset\mathbb{R}^n$ of dimension $n$. Typically there is only a set of examples or training data $S=\{z_i,...,z_m\}\subset{\mathcal{Z}}^m$ available, where $i = 1,\dots,m$, and each $z_i$ is sampled independently from $\mathcal{Z}$ according to an underlying probability distribution $\mathcal{D}$. Thus the only assumption made is that the example data are independent and identically distributed. No assumption on $D$ is made.\\
     In supervised learning $\mathcal{Z}$ comprises the space of input data $\mathcal{X}$ and the space of labels or output $\mathcal{Y}$. The example data $S$ consists of labeled input-output pairs $z_i=x_i,y_i\in(\mathcal{X}\times\mathcal{Y})^m$, where $x_i$ is an input data vector and $y_i$ is its corresponding output label. The pairs are sampled by some unknown joint probability distribution $\mathcal{D}$ on the space $\mathcal{X}\times\mathcal{Y}$.\\
