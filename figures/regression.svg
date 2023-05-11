@@ -24,15 +24,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1860"
-     inkscape:window-height="1011"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
      id="namedview4052"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="211"
+     inkscape:cx="81"
      inkscape:cy="157"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="axes_1"
      inkscape:showpageshadow="2"
@@ -10112,10 +10112,10 @@
       <g
          id="patch_3"
          transform="matrix(1,0,0,0.96322828,13.624396,0.37579221)"
-         style="stroke-width:0.981515;stroke-dasharray:none">
+         style="stroke-width:1.01890897;stroke-dasharray:none">
         <path
            d="M 21.456,205.2 V 10.8"
-           style="fill:none;stroke:#000000;stroke-width:0.981515;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none"
+           style="fill:none;stroke:#000000;stroke-width:1.01890897;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none"
            id="path4031" />
       </g>
       <g

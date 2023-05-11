@@ -29,7 +29,7 @@
      id="namedview12049"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="143.5"
+     inkscape:cx="13"
      inkscape:cy="148"
      inkscape:window-x="1920"
      inkscape:window-y="32"
@@ -30117,10 +30117,11 @@
          id="matplotlib.axis_2" />
       <g
          id="patch_3"
-         transform="matrix(1,0,0,0.95453849,227.54129,0.46387389)">
+         transform="matrix(1,0,0,0.95453849,227.54129,0.44987391)"
+         style="stroke-width:1.02353636;stroke-dasharray:none">
         <path
            d="M 23.485714,207.16021 V 10.804025"
-           style="fill:none;stroke:#000000;stroke-width:0.804015;stroke-linecap:square;stroke-linejoin:miter"
+           style="fill:none;stroke:#000000;stroke-width:1.02353636;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none"
            id="path12028" />
       </g>
       <g
@@ -30133,10 +30134,11 @@
       </g>
       <g
          id="patch_5"
-         transform="matrix(0.84682577,0,0,1,225.83541,-16.656467)">
+         transform="matrix(0.84682577,0,0,1,225.83541,-13.714467)"
+         style="stroke-width:1.08668323;stroke-dasharray:none">
         <path
            d="M 7.5982093,195.94286 H 277.1952"
-           style="fill:none;stroke:#000000;stroke-width:0.804786;stroke-linecap:square;stroke-linejoin:miter"
+           style="fill:none;stroke:#000000;stroke-width:1.08668323;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none"
            id="path12034" />
       </g>
       <g
