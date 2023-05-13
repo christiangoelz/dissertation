@@ -56,7 +56,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_1.pdf}}%
     \put(0.13498725,1.00702975){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
     \put(0.69797156,1.00116817){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
-    \put(0.24405422,1.15067968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}left or right hand\end{tabular}}}}%
-    \put(0.47330807,0.86565151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
+    \put(0.28185188,1.15067968){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}left or right hand\end{tabular}}}}%
+    \put(0.4673996,0.86565151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
   \end{picture}%
 \endgroup%
