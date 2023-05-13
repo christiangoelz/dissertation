@@ -12,7 +12,12 @@ The dataset consists of recordings from 59 participants as a subset of the Breme
 Based on their age and occupation, participants were labeled as young novice (N=xY, age=XY), middle-aged novice (N=xY, age=XY), old novice (N=xY, age=XY), middle-aged expert (N=xY, age=XY) or old expert (N=xY, age=XY). Novices were defined as occupational profiles whose daily routine does not require fine motor control of the hands, such as service personnel, insurance agents, office workers, and students. Experts, on the other hand, referred to persons with more than 10 years of professional experience in a job with pronounced fine motor requirements for hand control such as opticians, goldsmiths, dentists, dental technicians, or hearing aid technicians. This criterion was selected in accordance with \cite{Ericsson1991}. 
 
 \subsubsection{Experimental Procedures}
-
+\begin{figure}[h]
+\floatbox[{\capbeside\thisfloatsetup{capbesideposition={right,top},capbesidewidth=5cm}}]{figure}[\FBwidth]
+{\input{figures/paradigma1.pdf_tex}}
+{\caption[The force tracking experiment.]{The force tracking experiment.}
+\label{fig:ml_forms}}
+\end{figure}
 
 % To approximate the performance of a predictive model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of a learning algorithms, so called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
 
