@@ -23,7 +23,7 @@
 \usepackage{titlesec}
 \usepackage{tikz}
 \usetikzlibrary{trees,fit,shapes}
-
+\usepackage[official]{eurosym}
 %------------------------------------ Settings ------------------------------------
 % references
 \addbibresource{literature.bib} 
@@ -60,6 +60,9 @@ urlcolor=black
 % footnotes
 \renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
 
+% numbering
+\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+\newcommand{\lowroman}[1]{\romannumeral#1\relax}
 
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
