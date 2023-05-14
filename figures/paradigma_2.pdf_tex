@@ -1,0 +1,73 @@
+%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'paradigma_2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{453.54330709bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.5625)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_2.pdf}}%
+    \put(0.78707666,0.47217675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trial type\end{tabular}}}}%
+    \put(0.76098819,0.29108996){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_2.pdf}}%
+    \put(0.23224563,0.07396826){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_2.pdf}}%
+    \put(0.30510656,0.13137203){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_2.pdf}}%
+    \put(0.44288176,0.23991873){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_2.pdf}}%
+    \put(0.37550241,0.18510276){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{paradigma_2.pdf}}%
+    \put(0.57543869,0.34262325){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{paradigma_2.pdf}}%
+    \put(0.50769023,0.29097821){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.76082807,0.06967425){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%

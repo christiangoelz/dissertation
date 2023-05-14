@@ -50,15 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.11111111)%
+  \begin{picture}(1,1.06666667)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_1.pdf}}%
-    \put(0.14387105,1.03756703){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
-    \put(0.18842926,0.73790254){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
-    \put(0.07123937,0.80710607){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
-    \put(0.70769636,1.0316967){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
-    \put(0.47678002,0.87245933){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
+    \put(0.19806277,1.00991489){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
+    \put(0.20882782,0.71697663){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
+    \put(0.06450462,0.79745039){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
+    \put(0.69142685,1.00404455){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
+    \put(0.47675709,0.85251753){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_1.pdf}}%
   \end{picture}%
 \endgroup%
