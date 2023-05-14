@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{453.54330709bp}%
+    \setlength{\unitlength}{303.30708661bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,24 +50,24 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.5625)%
+  \begin{picture}(1,0.51401869)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_2.pdf}}%
-    \put(0.78707666,0.47217675){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trial type\end{tabular}}}}%
-    \put(0.76098819,0.29108996){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
+    \put(0.8469944,0.46867955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trial type\end{tabular}}}}%
+    \put(0.81742586,0.26343649){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_2.pdf}}%
-    \put(0.23224563,0.07396826){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.23793304,0.0173516){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_2.pdf}}%
-    \put(0.30510656,0.13137203){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.32051333,0.0824128){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_2.pdf}}%
-    \put(0.44288176,0.23991873){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
+    \put(0.4766672,0.20543921){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_2.pdf}}%
-    \put(0.37550241,0.18510276){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0.40029971,0.14331101){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{paradigma_2.pdf}}%
-    \put(0.57543869,0.34262325){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0.62690671,0.32184411){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{paradigma_2.pdf}}%
-    \put(0.50769023,0.29097821){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
-    \put(0.76082807,0.06967425){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.55012086,0.26330983){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.81724433,0.01248479){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
   \end{picture}%
 \endgroup%
