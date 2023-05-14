@@ -55,7 +55,7 @@
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_2.pdf}}%
     \put(0.8469944,0.46867955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trial type\end{tabular}}}}%
-    \put(0.81742586,0.26343649){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
+    \put(0.81742586,0.25554037){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_2.pdf}}%
     \put(0.23793304,0.0173516){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_2.pdf}}%
@@ -68,6 +68,7 @@
     \put(0.62690671,0.32184411){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{paradigma_2.pdf}}%
     \put(0.55012086,0.26330983){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
-    \put(0.81724433,0.01248479){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.81687198,0.01394614){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{paradigma_2.pdf}}%
   \end{picture}%
 \endgroup%

@@ -55,8 +55,8 @@
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_1.pdf}}%
     \put(0.20915865,0.94592204){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
-    \put(0.22023488,0.63649841){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
-    \put(0.07173984,0.72731603){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
+    \put(0.22023488,0.62046305){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
+    \put(0.07173982,0.71128068){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
     \put(0.71678394,0.93988202){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
     \put(0.49590892,0.78397493){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_1.pdf}}%
