@@ -1,4 +1,4 @@
-%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'paradigma_2.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{303.30708661bp}%
+    \setlength{\unitlength}{357.16535433bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,25 +50,26 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.51401869)%
+  \begin{picture}(1,0.43650794)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_2.pdf}}%
-    \put(0.8469944,0.46867955){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Trial type\end{tabular}}}}%
-    \put(0.81742586,0.25554037){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
+    \put(0.72852292,0.39800565){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Stimulus types\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_2.pdf}}%
-    \put(0.23793304,0.0173516){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.20762918,0.01473507){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_2.pdf}}%
-    \put(0.32051333,0.0824128){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.2777569,0.06998548){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_2.pdf}}%
-    \put(0.4766672,0.20543921){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
+    \put(0.41036377,0.17446026){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_2.pdf}}%
-    \put(0.40029971,0.14331101){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0.34551201,0.12170061){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{paradigma_2.pdf}}%
-    \put(0.62690671,0.32184411){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
+    \put(0.5379481,0.27331206){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{paradigma_2.pdf}}%
-    \put(0.55012086,0.26330983){\color[rgb]{0,0,0}\rotatebox{-1.010048}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
-    \put(0.81687198,0.01394614){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.4727411,0.22360436){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
+    \put(0.67873949,0.23859545){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
+    \put(0.67826913,0.02368659){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.85861203,0.15520276){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Neutral\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{paradigma_2.pdf}}%
   \end{picture}%
 \endgroup%
