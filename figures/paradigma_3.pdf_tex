@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{224.29417167bp}%
+    \setlength{\unitlength}{226.77165354bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,17 +50,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.50837907)%
+  \begin{picture}(1,0.50282502)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_3.pdf}}%
-    \put(0.62234641,0.1799576){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Foot switch\end{tabular}}}}%
+    \put(0.62100977,0.17799157){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Foot switch\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_3.pdf}}%
-    \put(0.63781446,0.09907831){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
+    \put(0.63630883,0.09799588){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_3.pdf}}%
-    \put(0.05768803,0.25521973){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Braille device\end{tabular}}}}%
+    \put(0.06252029,0.25243145){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Braille device\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_3.pdf}}%
-    \put(0.22158687,0.01492551){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{\textit{A}}B\textbf{A}C\end{tabular}}}}%
+    \put(0.22462853,0.01476244){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{\textit{A}}B\textbf{A}C\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_3.pdf}}%
   \end{picture}%
 \endgroup%
