@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{226.77165354bp}%
+    \setlength{\unitlength}{283.46456693bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,15 +50,15 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.50282502)%
+  \begin{picture}(1,0.50282501)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.47323934,0.35127171){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
-    \put(0.48237727,0.13827466){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
-    \put(0.4004142,0.19254631){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
-    \put(0.80603969,0.34628867){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
-    \put(0.664364,0.24333256){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
+    \put(0.50185214,0.36525666){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
+    \put(0.50512885,0.15991019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
+    \put(0.42954399,0.21977762){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
+    \put(0.79621131,0.36241874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
+    \put(0.67307547,0.25862695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_1.pdf}}%
-    \put(0.03663568,0.24020005){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
+    \put(0.06990586,0.23392253){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
   \end{picture}%
 \endgroup%
