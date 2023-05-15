@@ -55,7 +55,7 @@
     \setlength\tabcolsep{0pt}%
     \put(0.50185214,0.36525666){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}steady\end{tabular}}}}%
     \put(0.50512885,0.15991019){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Time [s]\end{tabular}}}}%
-    \put(0.42954399,0.21977762){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
+    \put(0.41366899,0.20919424){\color[rgb]{0,0,0}\rotatebox{89.804381}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force [N]\end{tabular}}}}}%
     \put(0.79621131,0.36241874){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}sine\end{tabular}}}}%
     \put(0.67307547,0.25862695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}or\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_1.pdf}}%

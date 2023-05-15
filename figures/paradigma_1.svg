@@ -25,14 +25,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.5500841"
-     inkscape:cx="170.31334"
+     inkscape:cx="80.640786"
      inkscape:cy="102.57508"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g3529" />
+     inkscape:current-layer="g2787" />
   <defs
      id="defs26803">
     <marker
@@ -1708,15 +1708,15 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.12945px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.257058"
-           x="-34.711224"
-           y="17.618095"
+           x="-35.774975"
+           y="16.034218"
            id="text31241-6-5"
            transform="rotate(-89.804381)"><tspan
              sodipodi:role="line"
              id="tspan31239-7-3"
              style="font-size:2.12945px;stroke-width:0.257058"
-             x="-34.711224"
-             y="17.618095">Force [N]</tspan></text>
+             x="-35.774975"
+             y="16.034218">Force [N]</tspan></text>
         <text
            xml:space="preserve"
            style="font-style:normal;font-weight:normal;font-size:2.928px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.257058"
