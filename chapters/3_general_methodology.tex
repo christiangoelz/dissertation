@@ -1,5 +1,3 @@
-As stated previously diverse datasets containing \gls{eeg} data from individuals spanning different life stages and lifestyle backgrounds were analyzed by using methods from the field of supervised and unsupervised machine learning. Unsupervised learning was used to generate a low-dimensional representation of the EEG that can be used to gain insight and as input to supervised learning. Different age groups and groups with different lifestyle factors were considered, and tested with different paradigms so that both task-related and resting EEG were used in the analyses. Supervised learning consequently took place at the individual level as well as at the group level. The former means that one model was trained per subject, which for each subject individually the cortical representation of the task for each subject individually and finally allows conclusions about e.g. dedifferentiation. The latter means that one model was trained for the whole group to detect general overlapping patterns in the group structure. This approach is visualized in Figure XY
-
 \section{Datasets}
 The data sets were selected from experiments in published projects in which different study paradigms were used to investigate age-related differences between age groups and groups with different lifestyle backgrounds.
 
@@ -16,7 +14,7 @@ Based on their age and occupation, participants were labeled as young novice (N=
 \label{methods:datasets:I:experiment}
 The experiment conducted was a force-tracking experiment conducted blockwise (see \autoref{fig:DSI_exp1}. Participants sat about 80 cm in front of a computer screen (19’’, frame rate 60 Hz). Their arms rested on arm pads. Thumb and index finger grasped a force transducer (model Mini-40, ATI Industrial Automation, Garner, NC, United States) in a pinch grip. Using the right- or left hand, the task was to follow a target force level for five seconds by applying the required amount of force to the force transducer. The target line was either presented as a constant level (steady), i.e., a straight line, corresponding to 2 N, or as a sinusoidal curve (sine) ranging from 2 N to 12 N with a frequency of 1 Hz on the y-axis whereas time was presented on the x-axis. The time axis (x-axis) covered 5 s, allowing participants to see one second of the upcoming target line and 4 s of the preceding target line and the applied force. A total of 160 trials were carried out, each trial lasting 5 s with an individual break of 5 s to 7 s during which participants were instructed to focus on a fixation cross on the screen in front of them. Initially, 80 trials were performed with the right hand. The first 40 trials involved the steady force level and the following 40 trials the sine force level. The sequence was then repeated with the left hand. The participants had an individual break between each task block. Prior to the experiment, the \gls{mvc} was recorded with three maximum precision grip trials. Each grip lasted 5 s with approximately 2 min break in between. The experiments and grip force acquisition were realized using customized LabVIEW (National Instruments, Austin) software.\\
 Grip force was recorded with 120 Hz sampling rate and amplitude resolution of 0.06 N via the force transducer.
-EEG was recorded with 32 active electrodes (ActiveTwo, BioSemi, Amsterdam, Netherlands) placed on the scalp according to the international 10–20 System. Ocular artifacts as well as mastoid potential were recorded with additionally placed electrodes. Common Mode Sense (CMS) and Driven Right Leg (DRL) electrodes were placed next to Cz. All EEG signals were recorded with a sampling rate of 2048 Hz applying an online filter between 0.16 and 100 Hz. Prior to the experiments resting \glspl{eeg} with eyes open and eyes closed were recorded for 30 s each while participants sat comfortably on a chair.
+\gls{eeg} was recorded with 32 active electrodes (ActiveTwo, BioSemi, Amsterdam, Netherlands) placed on the scalp according to the international 10–20 System. Ocular artifacts as well as mastoid potential were recorded with additionally placed electrodes. Common Mode Sense (CMS) and Driven Right Leg (DRL) electrodes were placed next to Cz. All \gls{eeg} signals were recorded with a sampling rate of 2048 Hz applying an online filter between 0.16 and 100 Hz. Before the experiments resting \glspl{eeg} with eyes open and eyes closed were recorded for 30 s each while participants sat comfortably on a chair.
 
 \begin{figure}[h]
 \begin{center}
@@ -33,7 +31,7 @@ Study 1 is the Bremen-Hand-Study@Jacobs presented above. Study 2 is the Re-LOAD 
 
 \subsubsection{Participants}
 \label{methods:datasets:II:participants}
-The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3. The data were first analyzed in a comprehensive manner by \citeauthor{Reuter2019} \cite{Reuter2019}. All adult participants gave their written informed consent. For children, guardians gave their written informed consent, and children agreed to participate.  Participants older than 65 scored higher than 27 in the, \cite{Folstein1975}) or at least 23 in the \gls{moca} \cite{Julayanont2017, Nasreddine2005}. Participants are separated into the following age categories \cite{Reuter2019}: children (8 to 10 years), young adults (20 to 29 years), early middle-aged adults (36 to 48 years), late middle-aged adults (55 to 64), old adults $<$75 (66 to 75 years), very old adults $>$75 (76 to 83 years). Eight participants were excluded as they had less than 35 correct trials in one of the conditions. Due to poor EEG data quality, we further excluded five participants. Group characteristics included in the final dataset are displayed in Table XYZ.
+The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3. The data were first analyzed in a comprehensive manner by \citeauthor{Reuter2019} \cite{Reuter2019}. All adult participants gave their written informed consent. For children, guardians gave their written informed consent, and children agreed to participate. Participants older than 65 scored higher than 27 in the, \cite{Folstein1975}) or at least 23 in the \gls{moca} \cite{Julayanont2017, Nasreddine2005}. Participants are separated into the following age categories \cite{Reuter2019}: children (8 to 10 years), young adults (20 to 29 years), early middle-aged adults (36 to 48 years), late middle-aged adults (55 to 64), old adults $<$75 (66 to 75 years), very old adults $>$75 (76 to 83 years). Eight participants were excluded as they had less than 35 correct trials in one of the conditions. Due to poor \gls{eeg} data quality, we further excluded five participants. Group characteristics included in the final dataset are displayed in Table XYZ.
 
 \subsubsection{Experimental Procedures}
 \label{methods:datasets:II:experiment}
@@ -75,18 +73,126 @@ The motor task corresponded to a force tracking experiment as described in \auto
 
 \paragraph{Cognitive task}
 Participants were asked to listen to a sequence of letters presented via two speakers behind them and press the foot
-switch with the right foot, if a letter appeared again two letters later (2-back; see Fig. 1c). The sequences consisted of 60 letters in predefined randomized selections with 20\% matching rate (Bopp and Verhaeghen 2018; Gajewski and Falkenstein 2014).
+switch with the right foot if a letter appeared again two letters later (2-back; see Fig. 1c). The sequences consisted of 60 letters in predefined randomized selections with 20\% matching rate (Bopp and Verhaeghen 2018; Gajewski and Falkenstein 2014).
 
 \paragraph{Sensory task}
 The braille device presented two stimuli (see Fig. 1a and 1b) to the participants with a randomized inter stimulus
-interval of 0.8–1.2 s (mean 1 s) and a duration of 0.5 s each. In this passive oddball design no response was
-required from the participants. Pattern (a) was set to 80\% occurrence and pattern (b) to 20\% (Reuter et al. 2012, 2013, 2014).
+interval of 0.8–1.2 s (mean 1 s) and a duration of 0.5 s each. In this passive oddball design, no response was
+required from the participants. Pattern (a) was set to 80\% occurrence and pattern (b) to 20\% (Reuter et al. 2012, 2013, 2014).\\
+\\
+All \gls{eeg} measurements were recorded with an actiCap electrode cap and BrainAmp standard amplifiers (Brain Products, Munich, Germany). We recorded brain activity at 128 electrodes with a sampling rate of 500 Hz. Ground and reference electrodes were fixed at FPz and FCz, respectively. Impedance was kept below 15 k$\Omega$. Prior to the tasks, \gls{eeg} was recorded for four minutes in a rest condition in a supine position with eyes closed
+
+\subsection{Machine learning procedures} 
+We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of classification as well as dimensionality reduction methods. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. Following state of the art approaches, different dimensionality reduction methods have been applied, which on the one hand allow a suitable representation of the \gls{eeg} signals, i.e. as feature extraction, for the following classification, and on the other hand, allow the visualization of hidden patterns. The selection of a suitable method was based on the data set, i.e. data structure and experimental conditions. For the decoding of the continuous force control experiments, a combination of DMD and Common Spatial Patterns was used, while the decoding of ERP responses was performed using the xDAWN algorithm. The overall analysis approach and the selected methods are summarized in Figure XY. 
+
+In the following, the methods will be briefly described. The exact pipelines are described in the appended research papers. This general approach is represented in Figure \autoref{fig:ML_appreoach}
+\begin{figure}
+  \dummyfig{Machine learning approach} 
+  \caption{Machine learning approach}
+  \label{fig:ML_appreoach}
+\end{figure}
+
+\subsubsection{Dynamic mode decomposition}
+To extract a relevant representation of the continous \gls{eeg} activity, we chose \gls{dmd} because it is able to decompose the signals into spatial activation patterns that are dynamically coherent, reflecting the network nature of the underlying brain activity \cite{Brunton2016}. \Gls{dmd} was developed in the field of fluid mechanics and was applied to various fields to model time varying dynamical systems including neuroscience proving to extract physiological valid signal patterns \cite{Brunton2016, Kunert-Graf2019}. The activation patterns (modes) extracted from \gls{dmd} analysis can reveal key features such as the spatial distribution of coherent dynamics in relation to oscillation frequencies and mechanisms of growth and attenuation. This provides a deeper understanding of the functional reorganization of the brain and can serve as a starting point for further analysis \cite{Brunton2016}.\\
+\indent \citeauthor{Brunton2016}\cite{Brunton2016} describes \gls{dmd} as follows. Given a measurement of \gls{eeg} data sampled with $m$ electrodes over $n$ time points $t$ consecutively every $\Delta t$ we can construct two matrices 
+\begin{equation}
+X = \begin{bmatrix}
+    | & | &  & |\\
+    x_1 & x_2 & \dots & x_{n-1}\\
+    | & | &  & |
+\end{bmatrix}
+\label{eqn:X}
+\end{equation}
+and
+\begin{equation}
+X' = \begin{bmatrix}
+    | & | &  & |\\
+    x_2 & x_3 & \dots & x_n\\
+    | & | &  & |
+\end{bmatrix},
+\label{eqn:X'}
+\end{equation}
+where $X'$ are the data points of $X$ shifted by one $\Delta t$. The relationship between the matrices $X$ and $X' $ can be represented by a linear operator $A$, i.e. $X' = AX$, which characterizes the underlying dynamics. $A$ can be approximated as proposed by \cite{Tu2014} and described in \cite{Brunton2016}. By eigenvalue decomposition of $A$, one finally obtains the spatial modes described above, which are associated with a certain dynamics. From this, a linear dynamic model can be defined approximating $X$,
+\begin{equation}
+    \hat{X}=\Phi exp(\Omega t) z
+\end{equation}
+To enhance the approximation accuracy and increase the number of calculated DMD modes, we employed the delay embedding technique, as described in \cite{Tu2014,Brunton2016}. This involves augmenting the data matrices (\ref{eqn:X}) and (\ref{eqn:X'}) $h$ times with shifted versions of themselves enlarging the data matrices to be of size $hn \times (m-h)$.  
 
 
-% To approximate the performance of a predictive model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of a learning algorithms, so called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
 
-% \begin{figure*}[h]
-%   \dummyfig{Cross-validation procedures} 
-%   \caption{Cross-validation procedures}
-%   \label{fig1:CV}
-% \end{figure*}
+
+% applied in this work. Basically, DMD is an algorithm that allows to approximate the relation of all signals in pairs of consecutive time instances of a measurement X ∈ Rn×m , where n denotes sensors and m denotes measurement points at time t. With DMD it is possible to decompose X to extract spatio-temporal patterns of coherent brain activation (Brunton et al., 2016). To increase the number of calculated DMD modes and thus improve the approximation accuracy we used the delay embedding technique as applied by Brunton et al. (2016); stacking depth h = 4 was selected. Since the DMD algorithm takes advantage of the Singular Value Decomposition (SVD), the optimal rank r of the input matrix and therefor the number of SVD modes was determined using the method of Donoho and Gavish (2014). The decomposed spatial patterns are organized in a matrix Φ ∈ Chn×r , containing all DMD modes (i.e., spatial patterns) and a diagonal matrix Λ ∈ Cr ×r, containing the corresponding DMD eigenvalues. From this, the original measurement X can be approximated by the model:
+% X̂ = Φ exp(Ω t)z, where Ω contains the continuous eigenvalues transformed with  = log(3)/1t .The variable t denotes time whereby ∆t = 0.005 s and z is
+% computed from the first data point x1 of X with x1 = Φ z. From
+% Ω we calculated the frequencies in cycles per second (Hz) f = |imag()/2π|for all DMD modes. The optimal stacking depth h as well as window size and overlap were determined by an error analysis of the data of
+% five randomly selected subjects. As unique spatial information is present in the first n rows of a mode, we used Φ ∈ Cn×r .
+
+\subsubsection{xDAWN}
+
+\subsection{Classification}
+
+
+
+
+
+
+
+
+% Approach learn a representation from EEG data by leveraging tools from dimensionality reduction 
+% \subsubsection{Dimensionality reduction methods}
+% As source separation problem 
+% X = WS 
+
+% DMD 
+
+% CSP 
+
+% xDAWN
+
+% Dimensionality reduction for visualizing EEG data 
+% - PCA 
+% - UMAP
+
+% Classification Pipeline 
+
+% How to get features
+% DMD: 
+% The formula for the xDAWN algorithm is as follows:
+
+% X_D = W^T * X
+
+% Where:
+
+%     X_D is the filtered EEG data (dimension: channels x time points)
+%     W is the xDAWN spatial filter matrix (dimension: channels x channels)
+%     X is the original raw EEG data (dimension: channels x time points)
+%     ^T denotes matrix transpose operation
+
+% W = P^(-1/2) * U^T
+
+% Where:
+
+%     W is the xDAWN spatial filter matrix (dimension: channels x channels)
+%     P is a diagonal matrix containing the eigenvalues of C in descending order (dimension: channels x channels)
+%     U is the matrix of eigenvectors of C corresponding to the eigenvalues in P (dimension: channels x channels)
+%     ^(-1/2) denotes the inverse square root of a matrix, which is computed by taking the inverse square root of each diagonal element of P
+
+% The matrix W applies a linear transformation to the original EEG data X, as shown in the formula X_D = W^T * X, where X_D is the filtered EEG data.
+
+% This formula allows the xDAWN algorithm to spatially filter the EEG data by projecting it onto the selected eigenvectors (U) and scaling the contribution of each channel by the corresponding eigenvalue (P). The resulting W matrix represents the set of xDAWN spatial filters that capture the most discriminative information in the EEG data.
+
+
+% By applying the xDAWN algorithm, you can obtain a set of spatial filters that emphasize the relevant EEG activity while suppressing noise and artifacts, leading to improved signal quality for further analysis or classification tasks.
+
+
+% \subsubsection{Machine learning pipelines}
+% Training testing 
+% Evaluation
+
+% % To approximate the performance of a predictive model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of a learning algorithms, so called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
+
+% % \begin{figure*}[h]
+% %   \dummyfig{Cross-validation procedures} 
+% %   \caption{Cross-validation procedures}
+% %   \label{fig1:CV}
+% % \end{figure*}
