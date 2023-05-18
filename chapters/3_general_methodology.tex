@@ -69,7 +69,7 @@ In preceding appointments, participants’ cardiorespiratory fitness was assesse
 \end{figure}
 
 \paragraph{Motor task}
-The motor task corresponded to a force tracking experiment as described in \autoref{methods:datasets:I:experiment}. Here, the visual target was a line that moved from the right to the left on the screen for 90 s and changed level every 3 s in randomized order between heights that represented 10\%, 20\% and 30\% of participants individual \gls{mvc} (see Fig. XYZ). The \gls{mvc} was asssesed prior to the experiment started and consisted of three 5 s lasting maximum precision grip trials.
+The motor task corresponded to a force tracking experiment as described in \autoref{methods:datasets:I:experiment}. Here, the visual target was a line that moved from the right to the left on the screen for 90 s and changed level every 3 s in randomized order between heights that represented 10\%, 20\% and 30\% of participants individual \gls{mvc} (see Fig. XYZ). The \gls{mvc} was assessed prior to the experiment started and consisted of three 5 s lasting maximum precision grip trials.
 
 \paragraph{Cognitive task}
 Participants were asked to listen to a sequence of letters presented via two speakers behind them and press the foot
@@ -92,104 +92,69 @@ In the following, the methods will be briefly described. The exact pipelines are
   \label{fig:ML_appreoach}
 \end{figure}
 
-\subsubsection{Dynamic mode decomposition}
-To extract a relevant representation of the continous \gls{eeg} activity, we chose \gls{dmd} because it is able to decompose the signals into spatial activation patterns that are dynamically coherent, reflecting the network nature of the underlying brain activity \cite{Brunton2016}. \Gls{dmd} was developed in the field of fluid mechanics and was applied to various fields to model time varying dynamical systems including neuroscience proving to extract physiological valid signal patterns \cite{Brunton2016, Kunert-Graf2019}. The activation patterns (modes) extracted from \gls{dmd} analysis can reveal key features such as the spatial distribution of coherent dynamics in relation to oscillation frequencies and mechanisms of growth and attenuation. This provides a deeper understanding of the functional reorganization of the brain and can serve as a starting point for further analysis \cite{Brunton2016}.\\
-\indent \citeauthor{Brunton2016}\cite{Brunton2016} describes \gls{dmd} as follows. Given a measurement of \gls{eeg} data sampled with $m$ electrodes over $n$ time points $t$ consecutively every $\Delta t$ we can construct two matrices 
-\begin{equation}
-X = \begin{bmatrix}
-    | & | &  & |\\
-    x_1 & x_2 & \dots & x_{n-1}\\
-    | & | &  & |
-\end{bmatrix}
-\label{eqn:X}
-\end{equation}
-and
-\begin{equation}
-X' = \begin{bmatrix}
-    | & | &  & |\\
-    x_2 & x_3 & \dots & x_n\\
-    | & | &  & |
-\end{bmatrix},
-\label{eqn:X'}
-\end{equation}
-where $X'$ are the data points of $X$ shifted by one $\Delta t$. The relationship between the matrices $X$ and $X' $ can be represented by a linear operator $A$, i.e. $X' = AX$, which characterizes the underlying dynamics. $A$ can be approximated as proposed by \cite{Tu2014} and described in \cite{Brunton2016}. By eigenvalue decomposition of $A$, one finally obtains the spatial modes described above, which are associated with a certain dynamics. From this, a linear dynamic model can be defined approximating $X$,
-\begin{equation}
-    \hat{X}=\Phi exp(\Omega t) z
-\end{equation}
-To enhance the approximation accuracy and increase the number of calculated DMD modes, we employed the delay embedding technique, as described in \cite{Tu2014,Brunton2016}. This involves augmenting the data matrices (\ref{eqn:X}) and (\ref{eqn:X'}) $h$ times with shifted versions of themselves enlarging the data matrices to be of size $hn \times (m-h)$.  
+\subsubsection{Approaches based on dynamic mode decomposition}
+To extract a relevant representation of the continuous \gls{eeg} activity, we chose \gls{dmd} because it is able to decompose the signals into spatial activation patterns that are dynamically coherent, reflecting the network nature of the underlying brain activity \cite{Brunton2016}. \Gls{dmd} was developed in the field of fluid mechanics and was applied to various fields to model time-varying dynamical systems including neuroscience proving to extract physiological valid signal patterns \cite{Brunton2016, Kunert-Graf2019}. The activation patterns (modes) extracted from \gls{dmd} analysis can reveal key features such as the spatial distribution of coherent dynamics in relation to oscillation frequencies and mechanisms of growth or decay. This provides a deeper understanding of the functional reorganization of the brain and can serve as a starting point for further analysis \cite{Brunton2016}.\\
+For the computation of the DMD, the \textit{exact \gls{dmd}} algorithm introduced by \citeauthor{Tu2014} \cite{Tu2014} and described in \cite{Brunton2016} as applied to electrophysiological data. The analysis was based on the windowed preprocessed \gls{eeg} data considered \gls{dmd} modes associated with the frequency ranges $\theta$ (4 to $<$ 7 Hz), $\alpha$ (7 to $<$ 12 Hz), $\beta_1$ (12 to $<$ 16 Hz), and $\beta_1$ (16 to $<$ 30 Hz). We calculated the \gls{dmd} mode magnitude (absolute value) to obtain the influence of each electrode in a \gls{dmd} mode representing spatially coherent activation \cite{Brunton2016}.
 
+\paragraph{DMD mean modes}
+The \gls{dmd} mean mode represents the arithmetic mean over all windows and modes per frequency band, task, and participant. These were used for group classification as well as the statistical description of the input features and as a starting point for knowledge discovery.
 
-
-
-% applied in this work. Basically, DMD is an algorithm that allows to approximate the relation of all signals in pairs of consecutive time instances of a measurement X ∈ Rn×m , where n denotes sensors and m denotes measurement points at time t. With DMD it is possible to decompose X to extract spatio-temporal patterns of coherent brain activation (Brunton et al., 2016). To increase the number of calculated DMD modes and thus improve the approximation accuracy we used the delay embedding technique as applied by Brunton et al. (2016); stacking depth h = 4 was selected. Since the DMD algorithm takes advantage of the Singular Value Decomposition (SVD), the optimal rank r of the input matrix and therefor the number of SVD modes was determined using the method of Donoho and Gavish (2014). The decomposed spatial patterns are organized in a matrix Φ ∈ Chn×r , containing all DMD modes (i.e., spatial patterns) and a diagonal matrix Λ ∈ Cr ×r, containing the corresponding DMD eigenvalues. From this, the original measurement X can be approximated by the model:
-% X̂ = Φ exp(Ω t)z, where Ω contains the continuous eigenvalues transformed with  = log(3)/1t .The variable t denotes time whereby ∆t = 0.005 s and z is
-% computed from the first data point x1 of X with x1 = Φ z. From
-% Ω we calculated the frequencies in cycles per second (Hz) f = |imag()/2π|for all DMD modes. The optimal stacking depth h as well as window size and overlap were determined by an error analysis of the data of
-% five randomly selected subjects. As unique spatial information is present in the first n rows of a mode, we used Φ ∈ Cn×r .
+\paragraph{DMD and CSP}
+To extract the information from the \gls{dmd} modes that would allow the best possible differentiation between the tasks we leveraged supervised dimensionality reduction (see \autoref{theory:ml:applications_eeg}). This approach is based on \gls{fbcsp} a widely used algorithm for the classification of continuous tasks that extracts a weighting for each \gls{eeg} channel that maximizes the class discriminative energy for selected frequency bands. By multiplying these weights with the channel values, meaningful features are generated. These weightings were calculated based on \gls{dmd} magnitudes in each frequency band (see research paper \uproman{1} \cite{Goelz2021a} for details on the implementation).\\
+Essentially this algorithm solves the generalized eigenvalue problem 
 
 \subsubsection{xDAWN}
+To process the event-related \gls{eeg} data we relied on the xDAWN algorithm. Similar to \gls{csp} by applying the xDAWN algorithm it is possible to obtain a set of weights that emphasize the relevant \gls{eeg} activity while suppressing noise and artifacts, leading to improved signal quality for further analysis or classification tasks. In this way, it is possible to induce spatial patterns, i.e. neural responses to external stimuli at the level of individual trials with non-phase-locked dynamics and is therefore advantageous compared to averaging across trials.\\
 
 \subsection{Classification}
+Approaches 
+DATA
+To approximate the performance of a classification model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of learning algorithms, so-called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparameters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
+
+% % \begin{figure*}[h]
+% %   \dummyfig{Cross-validation procedures} 
+% %   \caption{Cross-validation procedures}
+% %   \label{fig1:CV}
+% % \end{figure*}
+\subsection{Extraction of feature space characteristics}
+PCA and UMAP
 
 
 
-
-
-
-
-
-% Approach learn a representation from EEG data by leveraging tools from dimensionality reduction 
-% \subsubsection{Dimensionality reduction methods}
-% As source separation problem 
-% X = WS 
-
-% DMD 
-
-% CSP 
-
-% xDAWN
-
-% Dimensionality reduction for visualizing EEG data 
-% - PCA 
-% - UMAP
-
-% Classification Pipeline 
-
-% How to get features
-% DMD: 
-% The formula for the xDAWN algorithm is as follows:
-
-% X_D = W^T * X
-
-% Where:
-
-%     X_D is the filtered EEG data (dimension: channels x time points)
-%     W is the xDAWN spatial filter matrix (dimension: channels x channels)
-%     X is the original raw EEG data (dimension: channels x time points)
-%     ^T denotes matrix transpose operation
-
-% W = P^(-1/2) * U^T
-
-% Where:
-
-%     W is the xDAWN spatial filter matrix (dimension: channels x channels)
-%     P is a diagonal matrix containing the eigenvalues of C in descending order (dimension: channels x channels)
-%     U is the matrix of eigenvectors of C corresponding to the eigenvalues in P (dimension: channels x channels)
-%     ^(-1/2) denotes the inverse square root of a matrix, which is computed by taking the inverse square root of each diagonal element of P
-
-% The matrix W applies a linear transformation to the original EEG data X, as shown in the formula X_D = W^T * X, where X_D is the filtered EEG data.
-
-% This formula allows the xDAWN algorithm to spatially filter the EEG data by projecting it onto the selected eigenvectors (U) and scaling the contribution of each channel by the corresponding eigenvalue (P). The resulting W matrix represents the set of xDAWN spatial filters that capture the most discriminative information in the EEG data.
-
-
-% By applying the xDAWN algorithm, you can obtain a set of spatial filters that emphasize the relevant EEG activity while suppressing noise and artifacts, leading to improved signal quality for further analysis or classification tasks.
-
+% Given \gls{eeg} data containing measurements $x_k$ sampled every $\Delta t$ by $n$ electrodes over $m$ time points, two matrices $X$ and $X'$ can be constructed, where $X'$ are the data points of $X$ shifted by one $\Delta t$, i.e,
+% \begin{equation}
+% X = \begin{bmatrix}
+%     | & | &  & |\\
+%     x_1 & x_2 & \dots & x_{n-1}\\
+%     | & | &  & |
+% \end{bmatrix}
+% \label{eqn:X}
+% \end{equation}
+% and
+% \begin{equation}
+% X' = \begin{bmatrix}
+%     | & | &  & |\\
+%     x_2 & x_3 & \dots & x_n\\
+%     | & | &  & |
+% \end{bmatrix},
+% \label{eqn:X'}
+% \end{equation}
+% The relationship between the matrices $X$ and $X'$ can be represented by a linear operator $A$ which characterizes the underlying dynamics in terms of the relationship between $x_k$ and $x_{k+1}$, such that
+% \begin{equation}
+% \label{eq:dmd_model}
+% X' = AX.
+% \end{equation}
+% The eigendecomposition of $A$ is referred to as \gls{dmd} and yields the spatial patterns, i.e. \gls{dmd} modes, and associated eigenvalues. In this thesis, the \textit{exact \gls{dmd}} algorithm as reported by \cite{Brunton2016} was applied to compute these quantities. Based on this an approximation $\hat{X}$ of the observed measurements $X$ by defining the dynamical model
+% \begin{equation}
+%     \hat{X}=\Phi exp(\Omega t) z
+% \end{equation}
+% Every column of $\Phi$ is a DMD mode $\phi_i$ and the matrix $\Omega$, expressed by $\Omega=\log(\lambda)/\Delta t$, reveals the dynamics of the system, where the diagonal matrix $\Lambda$ contains the DMD eigenvalues, i.e., eigenvalues of $A$, on its diagonal. The variable $t$ represents time and $z$ is a constant vector that can be determined from the first time point in each channel, i.e., $x_i = \Phi z$. Each value $\omega_i$ in $\Omega$ corresponds to $\phi_i$ and describes its dynamic behavior in terms of growth, decay, and oscillation. Thus, the oscillation frequency in cycles per second (Hz) of each mode can be determined by $f_i = imag(\omega_i)/2\pi$.
 
 % \subsubsection{Machine learning pipelines}
 % Training testing 
 % Evaluation
 
-% % To approximate the performance of a predictive model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of a learning algorithms, so called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
+% % To approximate the performance of a classification model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of a learning algorithms, so called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
 
 % % \begin{figure*}[h]
 % %   \dummyfig{Cross-validation procedures} 
