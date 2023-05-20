@@ -7,7 +7,7 @@ Dataset \uproman{1} was collected as part of the Bremen Hand Study@Jacobs, which
 
 \subsubsection{Participants}
 \label{methods:datasets:I:participants}
-The dataset contains recordings from 59 participants, Based on their age and occupation, participants were labeled as young novice (N=xY, age=XY), middle-aged novice (N=xY, age=XY), old novice (N=xY, age=XY), middle-aged expert (N=xY, age=XY) or old expert (N=xY, age=XY). Novices were defined as occupational profiles whose daily routine does not require fine motor control of the hands, such as service personnel, insurance agents, office workers, and students. Experts, on the other hand, referred to persons with more than 10 years of professional experience in a job with pronounced fine motor requirements for hand control such as opticians, goldsmiths, dentists, dental technicians, or hearing aid technicians. This criterion was selected in accordance with \cite{Ericsson1991}. 
+The dataset contains recordings from 59 participants, Based on their age and occupation, participants were labeled as young novice, middle-aged novice, old novice, middle-aged expert, or old expert. Novices were defined as occupational profiles whose daily routine does not require fine motor control of the hands, such as service personnel, insurance agents, office workers, and students. Experts, on the other hand, referred to persons with more than 10 years of professional experience in a job with pronounced fine motor requirements for hand control such as opticians, goldsmiths, dentists, dental technicians, or hearing aid technicians \cite{Ericsson1991}. In research paper \uproman{1} only the young novices (N=13, age: 18 to 25 years) and old novices (N=13, age: 55 to 65 years) were considered. In research paper \uproman{2} all middle-aged and old experts (N=21, age: ) as well as all middle-aged and old novices (N=21, age: )
 
 \subsubsection{Experimental Procedures}
 \label{methods:datasets:I:experiment}
@@ -29,7 +29,7 @@ Study 1 is the Bremen-Hand-Study@Jacobs presented above. Study 2 is the Re-LOAD 
 
 \subsubsection{Participants}
 \label{methods:datasets:II:participants}
-The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3. Participants are separated into the following age categories \cite{Reuter2019}: children (8 to 10 years), young adults (20 to 29 years), early middle-aged adults (36 to 48 years), late middle-aged adults (55 to 64), old adults $<$75 (66 to 75 years), very old adults $>$75 (76 to 83 years).
+The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3.\footnote{In the sample used here 13 participants were excluded due to bad data quality.}. Participants are separated into the following age categories \cite{Reuter2019}: children (N=46, age: 8 to 10 years), young adults (N=39, age: 20 to 29 years), early middle-aged adults (N=21, age: 36 to 48 years), late middle-aged adults (N=25, 55 to 64), old adults $<$75 (N=40, age: 66 to 75 years), very old adults $>$75 (N=38, age: 76 to 83 years).
 
 \subsubsection{Experimental Procedures}
 \label{methods:datasets:II:experiment}
@@ -49,7 +49,7 @@ Dataset \uproman{3} was collected during an intervention study at Paderborn Univ
 
 \subsubsection{Participants}
 \label{methods:datasets:III:participants}
-The dataset contains recordings from 41 participants. Based on their performance on a 6 min walking test participants’ cardiorespiratory fitness was assessed in preceding appointments and two gorups were formed, a low fit (N=XY,age) and a high fit group (N=XY,age) (see research paper \uproman{3} \cite{Goelz2021b} for details).
+The dataset contains recordings from 41 elderly participants. Based on their performance on a 6 min walking test participants’ cardiorespiratory fitness was assessed in preceding appointments and two gorups were formed, a less fit (N=16, age: ) and a fit group (N=15, age: ) (see research paper \uproman{3} \cite{Goelz2021b} for details).
 
 \subsubsection{Experimental Procedures}
 \label{methods:datasets:II:experiment}
@@ -70,14 +70,17 @@ Participants were stimulated with the pins of a braille device presenting to pin
 \end{figure}
 
 \section{Machine learning procedures} 
-We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of classification as well as dimensionality reduction methods. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. Following state of the art approaches, different dimensionality reduction methods have been applied, which on the one hand allow a suitable representation of the \gls{eeg} signals, i.e. as feature extraction, for the following classification, and on the other hand, allow the visualization of hidden patterns. The selection of a suitable method was based on the data set, i.e. data structure and experimental conditions. For the decoding of the continuous force control experiments, a combination of DMD and Common Spatial Patterns was used, while the decoding of ERP responses was performed using the xDAWN algorithm. The overall analysis approach and the selected methods are summarized in Figure XY. 
-
-In the following, the methods will be briefly described. The exact pipelines are described in the appended research papers. This general approach is represented in Figure \autoref{fig:ML_appreoach}
+We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification as well. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. This approach is visualized in \autoref{fig:ML_approach} 
 \begin{figure}
   \dummyfig{Machine learning approach} 
   \caption{Machine learning approach}
-  \label{fig:ML_appreoach}
+  \label{fig:ML_approach}
 \end{figure}
+
+The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and aim of the analysis. Table XY summarizes the used methods for each research paper.
+
+
+In the following, the methods will be briefly described. The exact pipelines are described in the appended research papers \uproman{1} to \uproman{4}.
 
 \subsection{Dimensionality reduction}
 
