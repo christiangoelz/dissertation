@@ -62,7 +62,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=4]{ml_approach.pdf}}%
     \put(0.80612347,0.10959071){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Group membership\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ml_approach.pdf}}%
-    \put(0.72624286,0.10806619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Task\end{tabular}}}}%
+    \put(0.71739446,0.10806619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Task\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{ml_approach.pdf}}%
   \end{picture}%
 \endgroup%
