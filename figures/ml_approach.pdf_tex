@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{503.65134412bp}%
+    \setlength{\unitlength}{357.16535433bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,18 +50,19 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.36583238)%
+  \begin{picture}(1,0.43650794)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{ml_approach.pdf}}%
-    \put(0.78627148,0.32214702){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Classification\end{tabular}}}}%
+    \put(0.39370291,0.38214388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dimensionality reduction\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{ml_approach.pdf}}%
-    \put(0.40273764,0.32368656){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Dimensionality reduction\end{tabular}}}}%
-    \put(0.05235519,0.32368656){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Preprocessed \gls{eeg data}\end{tabular}}}}%
+    \put(0.04133932,0.38214388){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Preprocessed \gls{eeg} data\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{ml_approach.pdf}}%
-    \put(0.83009147,0.09934246){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Group membership\end{tabular}}}}%
+    \put(0.78542175,0.38061937){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Classification\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{ml_approach.pdf}}%
-    \put(0.74942404,0.09780295){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Task\end{tabular}}}}%
+    \put(0.80612347,0.10959071){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Group membership\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ml_approach.pdf}}%
+    \put(0.72624286,0.10806619){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Task\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{ml_approach.pdf}}%
   \end{picture}%
 \endgroup%
