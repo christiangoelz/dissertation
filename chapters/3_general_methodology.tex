@@ -71,10 +71,12 @@ Participants were stimulated with the pins of a braille device presenting to pin
 
 \section{Machine learning procedures} 
 We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification as well. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. This approach is visualized in \autoref{fig:ML_approach} 
-\begin{figure}
-  \dummyfig{Machine learning approach} 
-  \caption{Machine learning approach}
-  \label{fig:ML_approach}
+\begin{figure}[h]
+\begin{center}
+\input{figures/ml_approach.pdf_tex}
+\caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis.}
+\label{fig:ML_approach}
+\end{center}
 \end{figure}
 
 The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and aim of the analysis. Table XY summarizes the used methods for each research paper.
