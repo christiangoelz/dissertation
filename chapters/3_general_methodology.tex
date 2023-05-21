@@ -70,7 +70,8 @@ Participants were stimulated with the pins of a braille device presenting to pin
 \end{figure}
 
 \section{Machine learning procedures} 
-We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification as well. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. This approach is visualized in \autoref{fig:ML_approach} 
+We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification as well. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. he selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and aim of the analysis. This approach is visualized in \autoref{fig:ML_approach} and Table \autoref{tab:ml_methods}  summarizes the used methods for each research paper.
+
 \begin{figure}[h]
 \begin{center}
 \input{figures/ml_approach.pdf_tex}
@@ -79,9 +80,25 @@ We aimed at uncovering brain reorganization by using methods from the field of m
 \end{center}
 \end{figure}
 
-The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and aim of the analysis. Table XY summarizes the used methods for each research paper.
-
-
+\begin{table}[h]
+\centering
+\caption{Methods utilized}
+\label{tab:ml_methods}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Research Paper} & \textbf{Dimensionality Reduction} & \textbf{Classification} \\
+\hline
+Research paper \uproman{1} & \gls{dmd}, \gls{csp} & task: \gls{lda} \\
+\hline
+Research paper \uproman{2} & xDAWN & task: \gls{svm}, group: \gls{svm} \\
+\hline
+Research paper \uproman{3} & \gls{dmd}, \gls{csp}, \gls{umap} & task: \gls{lda}, group: \gls{svm} \\
+\hline
+Research paper \uproman{4} & \gls{dmd}, \gls{pca} & - \\
+\hline
+\end{tabular}
+\end{table}
+\\
 In the following, the methods will be briefly described. The exact pipelines are described in the appended research papers \uproman{1} to \uproman{4}.
 
 \subsection{Dimensionality reduction}
@@ -105,12 +122,12 @@ To process the event-related \gls{eeg} data we relied on the xDAWN algorithm. Si
 
 
 \subsection{Classification}
-Classification was performed on a trial-by-trial basis, i.e. models should be learned that can predict for each participant to which task a given trial belongs or cross-participant to which group the performing subject belongs. Typically, different classification algorithms and their parameters are selected from the literature and tested for their performance on a portion of the data, the so-called training data. The training data can further be divided into a training and validation portion in order to compare different model type or user defined settings of learning algorithms, so-called hyperparameters. Finally, the best model configuration is tested for its predictive performance on an unknown part of the data, the so-called test data, and reported. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparameters and the model and hyperparameter performing best on average are selected for final testing. We used a more advanced method denoted nested cross-validation, which adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures). 
+Classification was performed on a trial-by-trial basis, i.e. models should be learned that can predict for each participant to which task a given trial belongs or cross-participant to which group the performing subject belongs. Typically, different classification algorithms and their parameters are selected from the literature and tested for their performance on a portion of the data, the so-called training data. The training data can further be divided into a training and validation portion in order to compare different model type or user defined settings of learning algorithms, so-called hyperparameters. Finally, the best model configuration is tested for its predictive performance on an unknown part of the data, the so-called test data, and reported. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparameters and the model and hyperparameter performing best on average are selected for final testing. We used a more advanced method denoted nested cross-validation, which adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig:CV} for a visual representation of the procedures). 
 
 \begin{figure*}[h]
-  \dummyfig{Cross-validation procedures} 
-  \caption{Cross-validation procedures}
-  \label{fig1:CV}
+  \input{Cross-validation procedures} 
+  \caption{Cross-validation procedure}
+  \label{fig:CV}
 \end{figure*}
 
 For all datasets, 10 splits were used in the inner and outer loops, keeping 80\% of the dataset for training and 20\% for testing. In the inner loop, hyperparameters were tuned according to a grid search procedure in which a given parameter space is provided to comprehensively select the best fitting parameters \cite{VAROQUAUX2017166}. Consequently, one model was tested for each of the 10 outer splits. The final metrics are the average over the outer splits and represent the performance of the classification algorithm. For classifiers, these can be derived using a so-called confusion matrix (\autoref{tab:confusion-matrix}), which summarizes all correct and false predicted instances of the test set.  
