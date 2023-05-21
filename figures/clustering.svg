@@ -29,12 +29,12 @@
      id="namedview2880"
      showgrid="false"
      inkscape:zoom="1.1582556"
-     inkscape:cx="-216.70519"
+     inkscape:cx="-389.37865"
      inkscape:cy="94.107035"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="axes_1"
+     inkscape:current-layer="patch_4"
      inkscape:document-rotation="0"
      inkscape:showpageshadow="2"
      inkscape:pagecheckerboard="0"
@@ -6100,7 +6100,7 @@
         <path
            clip-path="url(#p164c7cbb95)"
            d="M 201.046245 201.03641  C 216.158531 201.03641 230.653891 195.366331 241.339891 185.274942  C 252.025891 175.183552 258.030065 161.49477 258.030065 147.223391  C 258.030065 132.952011 252.025891 119.263229 241.339891 109.17184  C 230.653891 99.08045 216.158531 93.410371 201.046245 93.410371  C 185.933959 93.410371 171.438599 99.08045 160.752599 109.17184  C 150.066599 119.263229 144.062425 132.952011 144.062425 147.223391  C 144.062425 161.49477 150.066599 175.183552 160.752599 185.274942  C 171.438599 195.366331 185.933959 201.03641 201.046245 201.03641  z "
-           style="fill:none;opacity:0.3;stroke:#bf00bf;stroke-linejoin:miter;stroke-width:4.5;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;opacity:0.6;stroke:#bf00bf;stroke-linejoin:miter;stroke-width:4.5;stroke-miterlimit:4;stroke-dasharray:none"
            id="path2851" />
       </g>
       <g
@@ -6108,7 +6108,7 @@
         <path
            clip-path="url(#p164c7cbb95)"
            d="M 113.67993 122.431462  C 129.150241 122.431462 143.98901 116.627053 154.928171 106.296589  C 165.867333 95.966125 172.013752 81.953043 172.013752 67.34356  C 172.013752 52.734078 165.867333 38.720995 154.928171 28.390531  C 143.98901 18.060067 129.150241 12.255659 113.67993 12.255659  C 98.20962 12.255659 83.370851 18.060067 72.431689 28.390531  C 61.492528 38.720995 55.346108 52.734078 55.346108 67.34356  C 55.346108 81.953043 61.492528 95.966125 72.431689 106.296589  C 83.370851 116.627053 98.20962 122.431462 113.67993 122.431462  z "
-           style="fill:none;opacity:0.3;stroke:#00bfbf;stroke-linejoin:miter;stroke-width:4.5;stroke-miterlimit:4;stroke-dasharray:none"
+           style="fill:none;opacity:0.6;stroke:#00bfbf;stroke-linejoin:miter;stroke-width:4.5;stroke-miterlimit:4;stroke-dasharray:none"
            id="path2854" />
       </g>
       <g
