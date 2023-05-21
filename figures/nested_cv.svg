@@ -25,15 +25,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="142.48201"
-     inkscape:cy="110.30865"
-     inkscape:window-width="1860"
-     inkscape:window-height="1011"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="-15.556349"
+     inkscape:cy="199.40411"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g7552" />
   <defs
      id="defs2">
     <marker
@@ -689,21 +689,21 @@
          x="3.8232203"
          y="53.657551"
          id="tspan6116-4" /></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="120.7942"
-       y="49.099792"
-       id="text7172-5"><tspan
-         sodipodi:role="line"
-         id="tspan7170-4"
-         style="stroke-width:0.264583"
-         x="120.7942"
-         y="49.099792">...</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="120.7942"
-         y="62.328918"
-         id="tspan7174-7" /></text>
+    <g
+       aria-label="...
+"
+       id="text7172-5"
+       style="font-size:10.5833px;line-height:1.25;stroke-width:0.264583"
+       transform="matrix(0.83948537,0,0,0.83948537,21.536184,7.362276)">
+      <path
+         d="m 121.92591,47.787215 h 1.09037 v 1.312577 h -1.09037 z"
+         id="path396" />
+      <path
+         d="m 125.29003,47.787215 h 1.09037 v 1.312577 h -1.09037 z"
+         id="path398" />
+      <path
+         d="m 128.65416,47.787215 h 1.09037 v 1.312577 h -1.09037 z"
+         id="path400" />
+    </g>
   </g>
 </svg>
