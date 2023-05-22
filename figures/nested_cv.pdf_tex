@@ -50,16 +50,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.42857143)%
+  \begin{picture}(1,0.45714286)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.27726029,0.11124995){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
-    \put(0.19458515,0.38438899){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
-    \put(0.3001018,0.38675057){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
-    \put(0.4225175,0.11159875){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
+    \put(0.27726029,0.11714279){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.4225175,0.11749159){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{nested_cv.pdf}}%
-    \put(0.02730872,0.27496504){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\\end{tabular}}}}%
-    \put(0.02730872,0.07680125){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\\end{tabular}}}}%
+    \put(0.19458515,0.4242997){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
+    \put(0.3001018,0.42666128){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{nested_cv.pdf}}%
+    \put(0.02993561,0.31487577){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\\end{tabular}}}}%
+    \put(0.44809715,0.18517876){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
+    \put(0.02730872,0.08269408){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{nested_cv.pdf}}%
   \end{picture}%
 \endgroup%
