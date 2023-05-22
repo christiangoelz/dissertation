@@ -61,7 +61,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_3.pdf}}%
     \put(0.03863132,0.2775417){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Braille device\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_3.pdf}}%
-    \put(0.20390401,0.02094403){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{\textit{A }}B \textbf{A }C\end{tabular}}}}%
+    \put(0.20390401,0.02094403){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{A} B \textbf{A} C\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_3.pdf}}%
   \end{picture}%
 \endgroup%

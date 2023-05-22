@@ -25,7 +25,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="5.6568544"
-     inkscape:cx="136.82516"
+     inkscape:cx="108.18733"
      inkscape:cy="174.83215"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
@@ -956,13 +956,17 @@
            id="text5544"><tspan
              sodipodi:role="line"
              id="tspan5542"
-             style="font-size:2.88716px;stroke-width:0.264584"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264584"
              x="-13.040655"
              y="45.51144"><tspan
-   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#000080;stroke-width:0.264584"
-   id="tspan5546">A </tspan>B <tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000080;stroke-width:0.264584"
-   id="tspan5548">A </tspan>C</tspan></text>
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000080;stroke-width:0.264584"
+   id="tspan5546"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan1117">A</tspan> </tspan>B <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000080;stroke-width:0.264584"
+   id="tspan5548"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
+   id="tspan1119">A</tspan> </tspan>C</tspan></text>
         <g
            id="g5540"
            transform="matrix(1.1815995,-0.5252743,0.5252743,1.1815995,-82.202858,-9.9321738)">
