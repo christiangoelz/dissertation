@@ -91,13 +91,13 @@ Participants' index fingertip of the left hand were stimulated with the pins of 
 \section{Machine learning procedures} 
 We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and the aim of the analysis. This approach is visualized in \autoref{fig:ML_approach} and Table \autoref{tab:ml_methods}  summarizes the used methods for each research article. In the following, the methods will be briefly described. The exact pipelines are described in the appended research articles \uproman{1} to \uproman{4}.
 
-\begin{figure}[h]
-\begin{center}
-\input{figures/ml_approach.pdf_tex}
-\caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally Classification was used to classify either the task at individual level or the group membership (2) using either the results of 1a or 1b.
-\label{fig:ML_approach}
-\end{center}
-\end{figure}
+% \begin{figure}[h]
+% \begin{center}
+% \input{figures/ml_approach.pdf_tex}
+% \caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally Classification was used to classify either the task at individual level or the group membership (2) using either the results of 1a or 1b.
+% \label{fig:ML_approach}
+% \end{center}
+% \end{figure}
 
 \begin{table}[ht]
   \begin{threeparttable}
