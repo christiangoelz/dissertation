@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="270.82189"
-     inkscape:cy="17.677669"
+     inkscape:zoom="5.6568544"
+     inkscape:cx="136.82516"
+     inkscape:cy="174.83215"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -950,18 +950,18 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.62469px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
+           style="font-style:normal;font-weight:normal;font-size:2.88716px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584"
            x="-13.040655"
            y="45.51144"
            id="text5544"><tspan
              sodipodi:role="line"
              id="tspan5542"
-             style="font-size:2.62469px;stroke-width:0.264584"
+             style="font-size:2.88716px;stroke-width:0.264584"
              x="-13.040655"
              y="45.51144"><tspan
-   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.62469px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#000080;stroke-width:0.264584"
+   style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#000080;stroke-width:0.264584"
    id="tspan5546">A </tspan>B <tspan
-   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.62469px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000080;stroke-width:0.264584"
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#000080;stroke-width:0.264584"
    id="tspan5548">A </tspan>C</tspan></text>
         <g
            id="g5540"
@@ -1681,18 +1681,14 @@
              transform="matrix(0.19513807,0,0,0.34848204,-1.9424262,9.8750939)"
              sodipodi:nodetypes="csccc" />
         </g>
-        <circle
-           style="opacity:0.65;fill:#0000ff;fill-opacity:0.284464;stroke:#bf00bf;stroke-width:0.0971002;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.490196;paint-order:stroke markers fill"
-           id="path836"
-           cx="-12.033428"
-           cy="44.713043"
-           r="1.2970338" />
-        <circle
-           style="opacity:0.65;fill:#0000ff;fill-opacity:0.284464;stroke:#bf00bf;stroke-width:0.0971002;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.490196;paint-order:stroke markers fill"
-           id="path836-3"
-           cx="-6.4474587"
-           cy="44.713043"
-           r="1.2970338" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.31992255;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+           d="m -13.40268,46.393785 h 3.129156"
+           id="path856" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.31992255;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+           d="m -7.3832927,46.393785 h 3.1291555"
+           id="path856-3" />
       </g>
     </g>
   </g>
