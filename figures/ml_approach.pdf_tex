@@ -64,8 +64,8 @@
     \put(0,0){\includegraphics[width=\unitlength,page=5]{ml_approach.pdf}}%
     \put(0.78651029,0.09725958){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Task\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{ml_approach.pdf}}%
-    \put(0.54590114,0.0307282){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2b\end{tabular}}}}%
-    \put(0.36111698,0.23416345){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.69591956,0.23473118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2a\end{tabular}}}}%
+    \put(0.54590114,0.0307282){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{1b}\end{tabular}}}}%
+    \put(0.35364786,0.23416345){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{1a}\end{tabular}}}}%
+    \put(0.69591956,0.23473118){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{2}\end{tabular}}}}%
   \end{picture}%
 \endgroup%
