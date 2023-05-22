@@ -30,6 +30,7 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage[flushleft]{threeparttable}
+\usepackage{pdfpages}
 %------------------------------------ Settings ------------------------------------
 % references
 \addbibresource{literature.bib} 
@@ -141,4 +142,7 @@ urlcolor=black
 \label{chap:discussion}
 
 \printbibliography
+
+\chapter{Published research paper}
+\includepdf[pages=-]{myfile.pdf}
 \end{document}
