@@ -76,24 +76,25 @@ urlcolor=black
 %------------------------------------ Document ------------------------------------
 \begin{document}
 \input{chapters/0_Other/titlepage}
-
+\pagenumbering{Roman}
 \tableofcontents
-
 \chapter*{Acknowledgement}
 \addcontentsline{toc}{chapter}{Acknowledgement}
 \input{chapters/0_Other/acknowledgement}
 
+
 \chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
 \setcounter{page}{3}
+\addcontentsline{toc}{chapter}{Abstract}
 \input{chapters/0_Other/abstract}
 
-\chapter*{Figures}
-\addcontentsline{toc}{chapter}{Figures}
-\listoffigures
 
-\chapter*{Tables}
-\addcontentsline{toc}{chapter}{Tables}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
 
 \printglossary[title={List of Abbreviations}]
 
@@ -141,8 +142,25 @@ urlcolor=black
 \chapter{General discussion}
 \label{chap:discussion}
 
-\printbibliography
+\printbibliography[heading=bibintoc,title={References}]
 
-\chapter{Published research paper}
-\includepdf[pages=-]{myfile.pdf}
+\chapter*{Published research articles}
+\addcontentsline{toc}{chapter}{Published research articles}
+    \newpage
+    \section*{Research article \uproman{1}}
+    \label{paperI}
+        \addcontentsline{toc}{section}{Research article \uproman{1}}
+        \includepdf[pages=-]{published_paper/ForceControl.pdf}
+    \section*{Research article \uproman{2}}
+        \addcontentsline{toc}{section}{Research article \uproman{2}}
+        \label{paperII}
+        \includepdf[pages=-]{published_paper/Attention.pdf}
+    \section*{Research article \uproman{3}}
+        \addcontentsline{toc}{section}{Research article \uproman{3}}
+        \label{paperIII}
+        \includepdf[pages=-]{published_paper/Fitness.pdf}
+    \section*{Research article \uproman{4}}
+        \addcontentsline{toc}{section}{Research article \uproman{4}}
+        \label{paperIV}
+        \includepdf[pages=-]{published_paper/Expertise.pdf}
 \end{document}
