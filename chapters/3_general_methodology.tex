@@ -148,11 +148,11 @@ To process the event-related \gls{eeg} data we relied on the xDAWN algorithm \ci
 \subsection{Classification}
 Classification was performed on a trial-by-trial basis, i.e. models were learned that can predict for each participant to which task a given trial belongs or cross-participant to which group the performing subject belongs. Typically, different classification algorithms and their parameters are selected, trained on one portion of the data, the so-called training data, and then tested for their performance on data not used for training, the so-called testing data \cite{Daumé2017}. The training data can further be divided into a training and validation portion in order to compare different model types or user defined settings of learning algorithms, so-called hyperparameters. Finally, the best model configuration is tested for its predictive performance on the test data and reported. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split \cite{VAROQUAUX2017166}. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually, this is repeated for a range of models and subsequent hyperparameters and the model and hyperparameter performing best on average are selected for final testing. We used a more advanced method denoted nested cross-validation, which adds a second cross-validation loop for the final model evaluation (see Figure \ref{fig:CV} for a visual representation of the procedures).
 
-\begin{figure*}[h]
-  \input{figures/nested_cv.pdf_tex} 
-  \caption[Nested cross-validation procedure]{Nested cross-validation procedure. CV: cross-validation, Val: Validation}
-  \label{fig:CV}
-\end{figure*}
+% \begin{figure*}[h]
+%   \input{figures/nested_cv.pdf_tex} 
+%   \caption[Nested cross-validation procedure]{Nested cross-validation procedure. CV: cross-validation, Val: Validation}
+%   \label{fig:CV}
+% \end{figure*}
 
 For all datasets, 10 splits were used in the inner and outer cross-validation loops, keeping 80\% of the dataset for training and 20\% for testing. In the inner loop, hyperparameters were tuned according to a grid search procedure in which a given parameter space is provided to comprehensively select the best fitting parameters \cite{VAROQUAUX2017166}. Consequently, one model was tested for each of the 10 outer splits. The final metrics are the average over the outer splits and represent the performance of the classification algorithm. For classifiers, these can be derived using a so-called confusion matrix (\autoref{tab:confusion-matrix}), which summarizes all correct and false predicted instances of the test set \cite{Fawcett2006}.  
 
