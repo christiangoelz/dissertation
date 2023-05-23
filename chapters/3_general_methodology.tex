@@ -1,25 +1,6 @@
 \section{Datasets}
 The datasets were selected from experiments in published projects in which different study paradigms were used to investigate age-related differences between age groups and groups with different lifestyle backgrounds. The following is a brief description of the datasets. \autoref{tab:overview-ds} gives an overview of which datasets were used in the respective research articles \uproman{1} to \uproman{4}.
 
-\begin{table}[ht]
-  \begin{threeparttable}
-  \renewcommand{\arraystretch}{1.75}
-    \caption{Overview on the utilization of datasets}
-    \label{tab:overview-ds}
-    \captionsetup{justification=raggedright,singlelinecheck=false}
-    \begin{tabular}{@{}p{3.5cm}p{2cm}p{4.5cm}p{4.5cm}@{}}
-        \toprule
-        \textbf{Research article} & \textbf{Dataset} & \multicolumn{1}{c}{\textbf{Paradigm}} & \multicolumn{1}{c}{\textbf{Participants}}\\
-        \midrule
-            Research article \uproman{1} & Dataset \uproman{1} & Force control & Young and old adults\\
-            Research article \uproman{2} & Dataset \uproman{2} & Flanker & 6 age groups (children to old adults)\\
-            Research article \uproman{3} & Dataset \uproman{3} & N-back, tactile oddball, force control & Old adults \\
-            Research article \uproman{4} & Dataset \uproman{1} & Force control & Middle aged (fine motor novices and experts)\\
-        \bottomrule
-     \end{tabular}
-  \end{threeparttable}
-\end{table}
-
 \subsection{Dataset \uproman{1}}
 \label{methods:datasets:I}
 Dataset \uproman{1} was collected as part of the Bremen Hand Study@Jacobs, which investigated the influence of age and expertise on hand dexterity over the working life \cite{Voelcker-Rehage2013}. This dataset was analyzed in research article \uproman{1} \cite{Goelz2021a} and \uproman{4} \cite{Gaidai2022}.
@@ -43,12 +24,12 @@ Grip force and \gls{eeg} were recorded. Before the experiments resting \glspl{ee
 
 \subsection{Dataset \uproman{2}}
 \label{methods:datasets:II}
-The \uproman{2} dataset contains recordings from three experimental studies, each focusing on a different age group and referred to below as Study 1, Study 2, and Study 3.\\
+Dataset \uproman{2} contains recordings from three experimental studies, each focusing on a different age group and referred to below as Study 1, Study 2, and Study 3.\\
 Study 1 is the Bremen-Hand-Study@Jacobs presented above. Study 2 is the Re-LOAD project, which investigated the relationship between motor learning and cognitive function in older adults \cite{HUBNER2018104, Hübner2018}. Study 3 is the CEBRIS project, in which the influence of physical training on the cognitive functions of children was investigated \cite{Koutsandreou2016}. The dataset is described detailed in \cite{Reuter2019} and was analyzed in research article \uproman{2}
 
 \subsubsection{Participants}
 \label{methods:datasets:II:participants}
-The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3.\footnote{In the sample used here 13 participants were excluded due to bad data quality.}. Participants are separated into the following age categories \cite{Reuter2019}: children (N=46, age: 8 to 10 years), young adults (N=39, age: 20 to 29 years), early middle-aged adults (N=21, age: 36 to 48 years), late middle-aged adults (N=25, 55 to 64), old adults $<$75 (N=40, age: 66 to 75 years), very old adults $>$75 (N=38, age: 76 to 83 years).
+The full dataset contains recordings from a total of 222 participants including 92 participants recorded in Study 1, 81 participants recorded in Study 2, and 49 participants recorded in Study 3.\footnote{In the sample used here 13 participants were excluded due to bad data quality.}. Participants are separated into the following age categories \cite{Reuter2019}: children (N=46, age: 8 to 10 years), young adults (N=39, age: 20 to 29 years), early middle-aged adults (N=21, age: 36 to 48 years), late middle-aged adults (N=25, age: 55 to 64), old adults $<$75 (N=40, age: 66 to 75 years), very old adults $>$75 (N=38, age: 76 to 83 years).
 
 \subsubsection{Experimental Procedures}
 \label{methods:datasets:II:experiment}
@@ -88,36 +69,62 @@ Participants' index fingertip of the left hand were stimulated with the pins of 
 \end{center}
 \end{figure}
 
+\begin{table}[h]
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\caption{Overview of datasets and participants in each research article.}
+\label{tab:overview-ds}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{}  & \textbf{Dataset} & \textbf{Paradigm} & \multicolumn{2}{l}{\textbf{Participants}} \\ \midrule
+Research Article \uproman{1} & Dataset \uproman{1} & Force Control  & Young adults & N=13, age: 55 to 65 years \\
+ & & & Old Adults & N=13, age: 18 to 25 years \\ \midrule
+Research Article \uproman{2}  & Dataset \uproman{2} & Flanker  & Children & N=46, age: 8 to 10 years  \\
+ & & & Young adults & N=39, age: 20 to 29 years \\
+ & & & Early middle-aged adults & N=21, age: 36 to 48 years \\
+ & & & Late middle-aged adults  & N=25, age: 55 to 64  \\
+ & & & Old adults \textless{}75 & N=40, age: 66 to 75 years \\
+ & & & Old adults \textgreater{}75 & N=38, age: 76 to 83 years \\ \midrule
+Research Article \uproman{3}  & Dataset \uproman{3} & Nback & Low fit & N=16, age: 63 to 77 years \\
+ & & Tactile Oddball & Fit  & N=15, age: 60 to 66 years \\
+ & & Force Control  &  & \\\midrule
+Research Article \uproman{4} & Dataset \uproman{1} & Force Control  & Experts & N=22, age: 34 to 65 years \\
+ & & & Novices & N=21, age: 35 to  64 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\newpage
 \section{Machine learning procedures} 
 We aimed at uncovering brain reorganization by using methods from the field of machine learning. Following state of the art approaches (see \autoref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification. Dimensionality reduction was used to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and also to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and the aim of the analysis. This approach is visualized in \autoref{fig:ML_approach} and Table \autoref{tab:ml_methods}  summarizes the used methods for each research article. In the following, the methods will be briefly described. The exact pipelines are described in the appended research articles \uproman{1} to \uproman{4}.
 
-% \begin{figure}[h]
-% \begin{center}
-% \input{figures/ml_approach.pdf_tex}
-% \caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally Classification was used to classify either the task at individual level or the group membership (2) using either the results of 1a or 1b.
-% \label{fig:ML_approach}
-% \end{center}
-% \end{figure}
+\begin{figure}[h]
+\begin{center}
+\input{figures/ml_approach.pdf_tex}
+\caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally Classification was used to classify either the task at individual level or the group membership (2) using either the results of 1a or 1b.}
+\label{fig:ML_approach}
+\end{center}
+\end{figure}
 
 \begin{table}[ht]
   \begin{threeparttable}
+    \captionsetup{justification=raggedright,singlelinecheck=false}
     \caption{Dimensionality reduction and classification methods utilized in each research article}
-    \begin{tabular}{lll}
-        \toprule
-        \textbf{Research article} & \textbf{Dimensionality Reduction} & \textbf{Classification} \\
-        \midrule
-            Research article \uproman{1} & \gls{dmd}, \gls{csp} & task: \gls{lda} \\
-            Research article \uproman{2} & xDAWN & task: \gls{svm}, group: \gls{svm} \\
-            Research article \uproman{3} & \gls{dmd}, \gls{csp}, \gls{umap} & task: \gls{lda}, group: \gls{svm} \\
-            Research article \uproman{4} & \gls{dmd}, \gls{pca} & - \\
-        \bottomrule
-     \end{tabular}
+    \begin{tabular}{@{}p{3cm}p{2cm}p{2.5cm}p{2cm}p{2cm}@{}}
+      \toprule
+       & \multicolumn{2}{l}{\textbf{Dimensionality Reduction}} & \multicolumn{2}{l}{\textbf{Classification}} \\ \cmidrule(l){2-5} 
+      & 1st level & 2nd level & Task & Group \\ \midrule
+      Research Article \uproman{1}  & DMD & CSP & LDA & SVM \\
+      Research Article \uproman{2}  & xDAWN & -   & SVM  & SVM \\
+      Research Article \uproman{3}  & DMD & CSP, UMAP & LDA  & SVM  \\
+      Research Article \uproman{4}  & DMD & PCA       & -    & -    \\
+      \bottomrule
+    \end{tabular}
     \begin{tablenotes}
       \small
       \item DMD: dynamic mode decomposition, CSP: common spatial patterns, LDA: linear discriminant analysis, SVM: support vector machine, PCA: principal component analysis
     \end{tablenotes}
   \end{threeparttable}
 \end{table}
+
 
 \newpage
 \subsection{Dimensionality reduction}
@@ -153,7 +160,7 @@ For all datasets, 10 splits were used in the inner and outer cross-validation lo
     \captionsetup{justification=raggedright,singlelinecheck=false}
     \caption{Confusion Matrix}
     \label{tab:confusion-matrix}
-    \renewcommand{\arraystretch}{1.75}
+    \renewcommand{\arraystretch}{1.25}
     \centering
         \begin{tabular}{cc|c|c|}
             \cline{3-4}
@@ -164,16 +171,14 @@ For all datasets, 10 splits were used in the inner and outer cross-validation lo
         \end{tabular}
 \end{table}
 
-\noindent If an actual value is positive and is classified as positive, it is a \gls{tp} result. If the positive instance is classified as negative, it is a \gls{fn} result. If an instance is actually negative and classified as negative, it is called \gls{tn}. Consequently, if an instance is negative and classified as positive, it is a \gls{fp} \cite{Fawcett2006}. This forms the basis for various metrics reported in the research articles. \autoref{tab:metrics-summary} summarizes the metrics and their meaning.\\
-\\
-In this study, we experimented with multiple algorithms based on recent literature to find the most suitable models for the respective tasks. In doing so, we finally used \gls{svm} and \gls{lda}, which both have a wide history of application to neuroscience data and are well suited to our specific problems.  \Glspl{svm} is one of the most commonly used algorithms for neuroscience data \cite{VAROQUAUX2017166}. The algorithm generates optimal decision boundaries, called hyperplanes, and can thus handle both linearly separable and non-linearly separable data by using kernel functions to map the input space into a higher-dimensional feature space. \Gls{lda} is specifically used in the context of \Gls{bci} and has proven to be successful in task decoding \cite{Blankertz2008}. This algorithm aims to find a linear combination of features that maximizes the separation between different classes, making it particularly effective in situations where the classes are well-separated \cite{shoorangiz2021eeg}. 
+\noindent If an actual value is positive and is classified as positive, it is a \gls{tp} result. If the positive instance is classified as negative, it is a \gls{fn} result. If an instance is actually negative and classified as negative, it is called \gls{tn}. Consequently, if an instance is negative and classified as positive, it is a \gls{fp} \cite{Fawcett2006}. This forms the basis for various metrics reported in the research articles. \autoref{tab:metrics-summary} summarizes the metrics and their meaning.
 
 \begin{table}[h]
   \begin{threeparttable}
     \captionsetup{justification=raggedright,singlelinecheck=false}
     \caption{Summary of Metrics}
     \label{tab:metrics-summary}
-    \renewcommand{\arraystretch}{1.75}
+    \renewcommand{\arraystretch}{1.25}
     \begin{tabular}{@{}p{3.5cm}p{4cm}p{6.5cm}@{}}
         \toprule
         \textbf{Metric} & \multicolumn{1}{c}{\textbf{Formula}} & \multicolumn{1}{c}{\textbf{Description}}\\ 
@@ -193,7 +198,7 @@ In this study, we experimented with multiple algorithms based on recent literatu
 \end{threeparttable}
 \end{table}
 
-
+In this study, we experimented with multiple algorithms based on recent literature to find the most suitable models for the respective tasks. In doing so, we finally used \gls{svm} and \gls{lda}, which both have a wide history of application to neuroscience data and are well suited to our specific problems.  \Glspl{svm} is one of the most commonly used algorithms for neuroscience data \cite{VAROQUAUX2017166}. The algorithm generates optimal decision boundaries, called hyperplanes, and can thus handle both linearly separable and non-linearly separable data by using kernel functions to map the input space into a higher-dimensional feature space. \Gls{lda} is specifically used in the context of \Gls{bci} and has proven to be successful in task decoding \cite{Blankertz2008}. This algorithm aims to find a linear combination of features that maximizes the separation between different classes, making it particularly effective in situations where the classes are well-separated \cite{shoorangiz2021eeg}. 
 
 
 % Given \gls{eeg} data containing measurements $x_k$ sampled every $\Delta t$ by $n$ electrodes over $m$ time points, two matrices $X$ and $X'$ can be constructed, where $X'$ are the data points of $X$ shifted by one $\Delta t$, i.e,

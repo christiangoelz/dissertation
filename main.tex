@@ -11,13 +11,13 @@
 \usepackage{amsmath}
 \usepackage[english]{babel}
 \usepackage[ddmmyyyy]{datetime}
+\usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage[style=nature,backend=bibtex,maxbibnames=99]{biblatex}
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={2.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{epigraph}
 \usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
-\usepackage{titlesec}
 \usepackage[most]{tcolorbox}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{titlesec}
@@ -36,6 +36,12 @@
 \addbibresource{literature.bib} 
 \newcommand{\Chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % capitalize link to chapter
 
+% citation
+\newrobustcmd{\twocite}{%
+  \AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
+  
+% \patchcmd{\bibsetup}{\interlinepenalty=5000}{\interlinepenalty=10000}{}{}
+
 % figures
 \graphicspath{{figures/}}
 \captionsetup[figure]{font=small,justification=raggedright,singlelinecheck=false}
@@ -49,8 +55,8 @@
 }
 
 % section numbers
-\setcounter{tocdepth}{2}
-\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 % \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 
 % color
@@ -144,22 +150,23 @@ urlcolor=black
 
 \printbibliography[heading=bibintoc,title={References}]
 
-\chapter*{Published research articles}
+\chapter*{\vspace*{\fill}\centering{Published research articles}\vspace*{\fill}}
+\label{reserach_articles}
 \addcontentsline{toc}{chapter}{Published research articles}
     \newpage
-    \section*{Research article \uproman{1}}
+    \section*{\vspace*{\fill}\centering{Research article \uproman{1}}\vspace*{\fill}}
     \label{paperI}
         \addcontentsline{toc}{section}{Research article \uproman{1}}
         \includepdf[pages=-]{published_paper/ForceControl.pdf}
-    \section*{Research article \uproman{2}}
+    \section*{\vspace*{\fill}\centering{Research article \uproman{2}}\vspace*{\fill}}
         \addcontentsline{toc}{section}{Research article \uproman{2}}
         \label{paperII}
         \includepdf[pages=-]{published_paper/Attention.pdf}
-    \section*{Research article \uproman{3}}
+    \section*{\vspace*{\fill}\centering{Research article \uproman{3}}\vspace*{\fill}}
         \addcontentsline{toc}{section}{Research article \uproman{3}}
         \label{paperIII}
         \includepdf[pages=-]{published_paper/Fitness.pdf}
-    \section*{Research article \uproman{4}}
+    \section*{\vspace*{\fill}\centering{Research article \uproman{4}}\vspace*{\fill}}
         \addcontentsline{toc}{section}{Research article \uproman{4}}
         \label{paperIV}
         \includepdf[pages=-]{published_paper/Expertise.pdf}
