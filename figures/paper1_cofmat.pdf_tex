@@ -1,0 +1,108 @@
+%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'paper1_cofmat.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{453.54330709bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.3125)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{paper1_cofmat.pdf}}%
+    \put(0.28006222,0.23901833){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
+    \put(0.34256222,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.18\end{tabular}}}}%
+    \put(0.4050622,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.096\end{tabular}}}}%
+    \put(0.4675622,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.065\end{tabular}}}}%
+    \put(0.28006222,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.34256222,0.17849982){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.72\end{tabular}}}}%
+    \put(0.4050622,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.056\end{tabular}}}}%
+    \put(0.4675622,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.087\end{tabular}}}}%
+    \put(0.28006222,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
+    \put(0.34256222,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
+    \put(0.4050622,0.1179813){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
+    \put(0.4675622,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.28006222,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.054\end{tabular}}}}%
+    \put(0.34256222,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.097\end{tabular}}}}%
+    \put(0.4050622,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
+    \put(0.4675622,0.05746279){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.74\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{paper1_cofmat.pdf}}%
+    \put(0.563096,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
+    \put(0.625596,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.68809604,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.750596,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.095\end{tabular}}}}%
+    \put(0.563096,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.625596,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.62\end{tabular}}}}%
+    \put(0.68809605,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
+    \put(0.750596,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.563096,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.15\end{tabular}}}}%
+    \put(0.625596,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.062\end{tabular}}}}%
+    \put(0.68809604,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
+    \put(0.750596,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.12\end{tabular}}}}%
+    \put(0.563096,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.08\end{tabular}}}}%
+    \put(0.625596,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.23\end{tabular}}}}%
+    \put(0.68809605,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.750596,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.59\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.04809725){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.08651472){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.12493216){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.16334963){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.20176709){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{paper1_cofmat.pdf}}%
+    \put(0.86549808,0.23919834){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{paper1_cofmat.pdf}}%
+    \put(0.10310036,0.24017662){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}RH steady\end{tabular}}}}%
+    \put(0.10310036,0.1123008){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}LH steady\end{tabular}}}}%
+    \put(0.10310036,0.17696087){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}RH sine\end{tabular}}}}%
+    \put(0.10310036,0.05554485){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}LH sine\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
