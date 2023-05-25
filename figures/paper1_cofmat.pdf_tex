@@ -50,59 +50,70 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.3125)%
+  \begin{picture}(1,0.625)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper1_cofmat.pdf}}%
-    \put(0.28006222,0.23901833){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
-    \put(0.34256222,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.18\end{tabular}}}}%
-    \put(0.4050622,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.096\end{tabular}}}}%
-    \put(0.4675622,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.065\end{tabular}}}}%
-    \put(0.28006222,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
-    \put(0.34256222,0.17849982){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.72\end{tabular}}}}%
-    \put(0.4050622,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.056\end{tabular}}}}%
-    \put(0.4675622,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.087\end{tabular}}}}%
-    \put(0.28006222,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
-    \put(0.34256222,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
-    \put(0.4050622,0.1179813){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
-    \put(0.4675622,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
-    \put(0.28006222,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.054\end{tabular}}}}%
-    \put(0.34256222,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.097\end{tabular}}}}%
-    \put(0.4050622,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
-    \put(0.4675622,0.05746279){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.74\end{tabular}}}}%
+    \put(0.35282271,0.55151833){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
+    \put(0.41532269,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.18\end{tabular}}}}%
+    \put(0.47782268,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.096\end{tabular}}}}%
+    \put(0.54032268,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.065\end{tabular}}}}%
+    \put(0.35282271,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.41532269,0.49099982){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.72\end{tabular}}}}%
+    \put(0.47782268,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.056\end{tabular}}}}%
+    \put(0.54032268,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.087\end{tabular}}}}%
+    \put(0.35282271,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
+    \put(0.41532268,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
+    \put(0.47782269,0.4304813){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
+    \put(0.54032269,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.35282271,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.054\end{tabular}}}}%
+    \put(0.41532268,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.097\end{tabular}}}}%
+    \put(0.47782269,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.11\end{tabular}}}}%
+    \put(0.54032269,0.36996279){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.74\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paper1_cofmat.pdf}}%
-    \put(0.563096,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
-    \put(0.625596,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
-    \put(0.68809604,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
-    \put(0.750596,0.23901833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.095\end{tabular}}}}%
-    \put(0.563096,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
-    \put(0.625596,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.62\end{tabular}}}}%
-    \put(0.68809605,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
-    \put(0.750596,0.17849982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
-    \put(0.563096,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.15\end{tabular}}}}%
-    \put(0.625596,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.062\end{tabular}}}}%
-    \put(0.68809604,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
-    \put(0.750596,0.1179813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.12\end{tabular}}}}%
-    \put(0.563096,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.08\end{tabular}}}}%
-    \put(0.625596,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.23\end{tabular}}}}%
-    \put(0.68809605,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
-    \put(0.750596,0.05746279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.59\end{tabular}}}}%
+    \put(0.63585654,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.66\end{tabular}}}}%
+    \put(0.69835621,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.76085621,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.14\end{tabular}}}}%
+    \put(0.82335583,0.55151833){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.095\end{tabular}}}}%
+    \put(0.63585654,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.69835621,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.62\end{tabular}}}}%
+    \put(0.76085621,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.083\end{tabular}}}}%
+    \put(0.82335583,0.49099982){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.2\end{tabular}}}}%
+    \put(0.63585654,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.15\end{tabular}}}}%
+    \put(0.69835621,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.062\end{tabular}}}}%
+    \put(0.76085621,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.67\end{tabular}}}}%
+    \put(0.82335583,0.4304813){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.12\end{tabular}}}}%
+    \put(0.63585654,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.08\end{tabular}}}}%
+    \put(0.69835621,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.23\end{tabular}}}}%
+    \put(0.76085621,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.1\end{tabular}}}}%
+    \put(0.82335583,0.36996279){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.59\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.04809725){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
+    \put(0.93655499,0.3397788){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.08651472){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
+    \put(0.93655499,0.38788469){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.12493216){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
+    \put(0.93655499,0.43599058){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.16334963){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
+    \put(0.93655499,0.48409647){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.6\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.20176709){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
+    \put(0.93655499,0.53220237){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0.8\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{paper1_cofmat.pdf}}%
-    \put(0.86549808,0.23919834){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
+    \put(0.936555,0.58030827){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}1.0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{paper1_cofmat.pdf}}%
-    \put(0.10310036,0.24017662){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}RH steady\end{tabular}}}}%
-    \put(0.10310036,0.1123008){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}LH steady\end{tabular}}}}%
-    \put(0.10310036,0.17696087){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}RH sine\end{tabular}}}}%
-    \put(0.10310036,0.05554485){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}LH sine\end{tabular}}}}%
+    \put(0.08325663,0.55267662){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand steady\end{tabular}}}}%
+    \put(0.08325663,0.4248008){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand steady\end{tabular}}}}%
+    \put(0.08325663,0.48946087){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand sine\end{tabular}}}}%
+    \put(0.08325663,0.36804485){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand sine\end{tabular}}}}%
+    \put(0.04313226,0.39981406){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{Actual Class}\end{tabular}}}}}%
+    \put(0.35951372,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand steady\end{tabular}}}}}%
+    \put(0.48451372,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand steady\end{tabular}}}}}%
+    \put(0.42201372,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand sine\end{tabular}}}}}%
+    \put(0.54936443,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand sine\end{tabular}}}}}%
+    \put(0.3385037,0.04933619){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{Predicted Class}\end{tabular}}}}%
+    \put(0.64254752,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand steady\end{tabular}}}}}%
+    \put(0.76754752,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand steady\end{tabular}}}}}%
+    \put(0.70504752,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Right-hand sine\end{tabular}}}}}%
+    \put(0.83239828,0.09587436){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Left-hand sine\end{tabular}}}}}%
+    \put(0.62217412,0.04933619){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{Predicted Class}\end{tabular}}}}%
   \end{picture}%
 \endgroup%
