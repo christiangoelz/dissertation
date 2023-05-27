@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="5.6568544"
-     inkscape:cx="108.18733"
-     inkscape:cy="174.83215"
+     inkscape:zoom="1"
+     inkscape:cx="-28.499999"
+     inkscape:cy="92.999997"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -956,17 +956,13 @@
            id="text5544"><tspan
              sodipodi:role="line"
              id="tspan5542"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke-width:0.264584"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;stroke-width:0.264584"
              x="-13.040655"
              y="45.51144"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000080;stroke-width:0.264584"
-   id="tspan5546"><tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
-   id="tspan1117">A</tspan> </tspan>B <tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.88716px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000080;stroke-width:0.264584"
-   id="tspan5548"><tspan
+   id="tspan812">D</tspan> E <tspan
    style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'"
-   id="tspan1119">A</tspan> </tspan>C</tspan></text>
+   id="tspan810">D</tspan> F</tspan></text>
         <g
            id="g5540"
            transform="matrix(1.1815995,-0.5252743,0.5252743,1.1815995,-82.202858,-9.9321738)">
@@ -1693,6 +1689,39 @@
            style="fill:none;stroke:#000000;stroke-width:0.31992255;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
            d="m -7.3832927,46.393785 h 3.1291555"
            id="path856-3" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.88716px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196852"
+           x="19.070024"
+           y="12.933495"
+           id="text700"><tspan
+             sodipodi:role="line"
+             id="tspan698"
+             style="stroke-width:0.196852"
+             x="19.070024"
+             y="12.933495">B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.88716px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196852"
+           x="-26.716513"
+           y="34.310257"
+           id="text700-3"><tspan
+             sodipodi:role="line"
+             id="tspan698-6"
+             style="stroke-width:0.196852"
+             x="-26.716513"
+             y="34.310257">C</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.88716px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';stroke-width:0.196852"
+           x="-26.697481"
+           y="12.932085"
+           id="text700-3-7"><tspan
+             sodipodi:role="line"
+             id="tspan698-6-5"
+             style="stroke-width:0.196852"
+             x="-26.697481"
+             y="12.932085">A</tspan></text>
       </g>
     </g>
   </g>
