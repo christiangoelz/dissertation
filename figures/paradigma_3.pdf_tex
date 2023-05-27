@@ -50,21 +50,21 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.50282501)%
+  \begin{picture}(1,0.55283001)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paradigma_3.pdf}}%
-    \put(0.61481748,0.19645783){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Foot switch\end{tabular}}}}%
-    \put(0.01339034,0.1173143){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Speaker\end{tabular}}}}%
+    \put(0.61481748,0.2200045){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Foot switch\end{tabular}}}}%
+    \put(0.01339034,0.14086098){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Speaker\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paradigma_3.pdf}}%
-    \put(0.61481748,0.11044164){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
+    \put(0.61481748,0.13398832){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Force transducer\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_3.pdf}}%
-    \put(0.03863132,0.2775417){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Braille device\end{tabular}}}}%
+    \put(0.03863132,0.30108834){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Braille device\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_3.pdf}}%
-    \put(0.20390401,0.02094403){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{D} E \textbf{D} F\end{tabular}}}}%
+    \put(0.20390401,0.04449067){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\textbf{D} E \textbf{D} F\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_3.pdf}}%
-    \put(0.63549573,0.45881615){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
-    \put(0.02009019,0.17149637){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
-    \put(0.02034599,0.4588351){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
+    \put(0.94770429,0.50882115){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
+    \put(0.02531554,0.19504301){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}C\end{tabular}}}}%
+    \put(0.02563766,0.50882115){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
   \end{picture}%
 \endgroup%
