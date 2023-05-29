@@ -31,6 +31,7 @@
 \usepackage{array}
 \usepackage[flushleft]{threeparttable}
 \usepackage{pdfpages}
+\usepackage{pdflscape}
 %------------------------------------ Settings ------------------------------------
 % references
 \addbibresource{literature.bib} 
@@ -57,9 +58,6 @@
 % section numbers
 \setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{2}
-\renewcommand{\sectionautorefname}{section}
-\renewcommand{\subsectionautorefname}{section}
-\renewcommand{\subsubsectionautorefname}{section}
 % \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 
 % color
@@ -79,7 +77,7 @@ urlcolor=black
 % numbering
 \newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
 \newcommand{\lowroman}[1]{\romannumeral#1\relax}
-
+\renewcommand{\subsectionautorefname}{Abschnitt}
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
 %------------------------------------ Document ------------------------------------
@@ -137,17 +135,17 @@ urlcolor=black
 \chapter{Summary of the Main Results}
 \label{chap:results}
     \section{Research Article \uproman{1}}
-    \label{results:paper1}
+    \label{results:paperI}
     \input{chapters/4_Results/1_Paper1}
 
     \section{Research Article \uproman{2}}
-    \label{results:paper2}
+    \label{results:paperII}
 \input{chapters/4_Results/2_Paper2}
     \section{Research Article \uproman{3}}
-    \label{results:paper3}
+    \label{results:paperIII}
 
     \section{Research Article \uproman{4}}
-    \label{results:paper4}
+    \label{results:paperIV}
     
 \chapter{General discussion}
 \label{chap:discussion}
