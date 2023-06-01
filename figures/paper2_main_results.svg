@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="37.476659"
-     inkscape:cy="261.62951"
+     inkscape:zoom="2"
+     inkscape:cx="483.75"
+     inkscape:cy="252"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -1042,7 +1042,7 @@
          transform="matrix(0.69058725,-0.72402148,0.69058725,0.72402148,0,0)"
          id="text14133"
          x="47.50589"
-         y="155.09776">old &gt;75</text><text
+         y="155.09776">old $&gt;$75</text><text
          style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:3.58154px;line-height:normal;font-family:'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', Verdana, Geneva, Lucid, Arial, Helvetica, 'Avant Garde', sans-serif;text-anchor:middle;stroke-width:0.396191"
          x="127.95987"
          y="79.971054"
@@ -1628,7 +1628,7 @@
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;line-height:normal;font-family:'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', Verdana, Geneva, Lucid, Arial, Helvetica, 'Avant Garde', sans-serif;text-anchor:start;stroke-width:0.352778;stroke-linecap:butt;stroke-linejoin:round"
              x="52.669949"
              y="82.701836"
-             id="text10674">old &lt;75</text></g><g
+             id="text10674">old $&lt;$75</text></g><g
            id="g14401"
            transform="translate(0,-1.4390124)"><path
              d="M 46.990233,85.462217 H 48.842317 50.6944"
@@ -1637,7 +1637,7 @@
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;line-height:normal;font-family:'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', Verdana, Geneva, Lucid, Arial, Helvetica, 'Avant Garde', sans-serif;text-anchor:start;stroke-width:0.352778;stroke-linecap:butt;stroke-linejoin:round"
              x="52.669949"
              y="86.326523"
-             id="text10680">old &gt;75</text></g><path
+             id="text10680">old $&gt;$75</text></g><path
            d="M 46.990233,89.480149 H 48.842317 50.6944"
            style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none"
            id="path10683" /><text
