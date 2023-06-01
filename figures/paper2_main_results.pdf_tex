@@ -151,20 +151,20 @@
     \put(0.07953961,0.45112007){\makebox(0,0)[rt]{\lineheight{0}\smash{\begin{tabular}[t]{r}0.7\end{tabular}}}}%
     \put(0.03240515,0.37996765){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\textbf{Performance [AUC]}\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{paper2_main_results.pdf}}%
-    \put(0.10992706,0.13302038){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}children\end{tabular}}}}%
+    \put(0.10992706,0.1330204){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}children\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{paper2_main_results.pdf}}%
     \put(0.10992706,0.10433722){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}young\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{paper2_main_results.pdf}}%
     \put(0.10992706,0.07038083){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}early-ma\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=25]{paper2_main_results.pdf}}%
-    \put(0.10992706,0.03922032){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}late-ma\end{tabular}}}}%
+    \put(0.10992706,0.03922033){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}late-ma\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=26]{paper2_main_results.pdf}}%
-    \put(0.28062757,0.13302038){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}old $<$75\end{tabular}}}}%
+    \put(0.28062756,0.1330204){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}old $<$75\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=27]{paper2_main_results.pdf}}%
-    \put(0.28062757,0.10030266){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}old $>$75\end{tabular}}}}%
+    \put(0.28062756,0.10030265){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}old $>$75\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{paper2_main_results.pdf}}%
     \put(0.28062756,0.06839356){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}stimulus onset\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=29]{paper2_main_results.pdf}}%
-    \put(0.28062757,0.03922032){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}chancel level\end{tabular}}}}%
+    \put(0.28062756,0.03922033){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}chancel level\end{tabular}}}}%
   \end{picture}%
 \endgroup%
