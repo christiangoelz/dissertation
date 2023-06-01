@@ -1,20 +1,20 @@
+In the following, the main results of the individual research articles will be briefly presented. The style of the illustrations published in the respective articles has been adapted to the style of this work. Furthermore, the author's contributions were standardized and adapted to the \gls{credit}. 
+
 \fullcite{Goelz2021a}\\
 \\
-% Classification of motor task conditions from \gls{eeg} data may provide insights into age-related changes such as dedifferentiation and compensatory activation of motor networks. The idea is that less task-specific activation of brain networks is reflected in the classification performance of classifiers trained to discriminate task conditions. So far, only isolated studies have investigated this for one-dimensional task conditions and indeed found losses in classification performance in older adults when classifying right and left handed motor tasks \cite{Chen2019}. The intention was to use classifiers trained to differentiate between different task conditions to detect age-related changes in visuomotor tracking tasks.
+Classification of motor task conditions from \gls{eeg} data may provide insights into age-related changes such as dedifferentiation activation of motor networks. So far, only isolated studies have investigated this for one-dimensional task conditions and indeed found losses in classification performance in older adults when classifying right and left-handed motor tasks \cite{Chen2019}. The intention was to use classifiers trained to differentiate between different task conditions to detect age-related changes in visuomotor tracking tasks.\\
+\\
+To describe the classifier input, classical statistical analyses revealed significant differences in the expression of \gls{dmd} patterns between tasks and groups focusing mainly on central and posterior electrodes, most pronounced in the $\beta$ frequency bands. In addition, there were differences in the spatial distribution with respect to a more bilateral and frontal expression of the patterns in the late-middle aged adults.\\
+\\
+We trained the classifier to output the appropriate task label based on the EEG data (tracking a sinusoidal target force with the left hand vs. a sinusoidal target force with the right hand vs. a steady target force with the left hand vs. a steady target force with the right hand). The analysis, shown in Figure 1, yielded different results for younger and late middle-aged adults. Classification of hand side in the late middle-aged participants performed significantly worse, i.e., the classifier misclassified trials performed with the right hand as left-handed trials and vice versa. On the other hand, the classification of which target force was followed, i.e. steady vs sinus, worked significantly better in the late middle-aged adults. 
 
-In this study we investigated differences of central processing of visuomotor tracking tasks based on the classification of different force control tasks in younger and older adults using machine learning.\\
-
-Statistical Comparison of the classification input revealed significant differences in 
-
-
-
-
-
-
-From a practical perspective, this has implications for assistive systems that target the differentiability of task-related brain activity of older users, such as motor BCIs.\\
-
-
-
+\begin{figure}[h]
+\begin{center}
+\input{figures/paper1_main_result.pdf_tex}
+\caption[Reuslts]{Results}
+\label{fig:results1}
+\end{center}
+\end{figure}
 
 \subsection*{CRediT: Author Contributions}
 C. Goelz: Conceptualization, Software, Formal analysis, Writing - Original Draft.\\
@@ -26,11 +26,4 @@ B. Godde: Conceptualization, Writing - Review \& Editing.\\
 C. Reinsberger: Writing - Review \& Editing.\\
 C. Voelcker-Rehage: Conceptualization, Writing - Review \& Editing.\\ 
 S. Vieluf: Conceptualization, Project administration, Supervision, Writing - Review \& Editing.\\
-
-\begin{figure}[h]
-\begin{center}
-\input{figures/paper1_main_result.pdf_tex}
-\caption[Reuslts]{Results}
-\label{fig:DSI_exp1}
-\end{center}
-\end{figure}
+All authors read and approved the final manuscript.

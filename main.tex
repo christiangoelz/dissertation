@@ -36,6 +36,7 @@
 % references
 \addbibresource{literature.bib} 
 \newcommand{\Chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % capitalize link to chapter
+\newcommand{\chapref}[1]{\hyperref[#1]{chapter~\ref*{#1}}}
 
 % citation
 \newrobustcmd{\twocite}{%
@@ -153,7 +154,7 @@ urlcolor=black
 \printbibliography[heading=bibintoc,title={References}]
 
 \chapter*{\vspace*{\fill}\centering{Published Research Articles}\vspace*{\fill}}
-\label{reserach_articles}
+\label{pub:papers}
 \addcontentsline{toc}{chapter}{Published Research Articles}
     \newpage
     \section*{\vspace*{\fill}\centering{Published Research Article \uproman{1}}\vspace*{\fill}}
