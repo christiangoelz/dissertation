@@ -1,27 +1,28 @@
 \fullcite{Goelz2021a}\\
 \\
-The aim of this research article was to investigate whether age-related differences in the central processing of fine motor skills can be captured by machine learning based on the classification of different force control tasks in younger and older adults.
+This research article aimed To investigate whether age-related differences in the central processing of fine motor skills can be captured by machine learning based on the classification of different force control tasks in younger and older adults.\\
 \\
-To describe the classifier input, classical statistical analyses revealed significant differences in the expression of \gls{dmd} patterns between tasks and groups focusing mainly on central and posterior electrodes, most pronounced in the $\beta$ frequency bands. In addition, there were differences in the spatial distribution with respect to a more bilateral and frontal expression of the patterns in the late-middle aged adults.\\
+To describe the classifier input, we used classical statistical methods first. We found significant differences in the expression of \gls{dmd} patterns between tasks and groups focusing mainly on central and posterior electrodes, most pronounced in the $\beta$ frequency bands. In addition, there were differences in the spatial distribution concerning a more bilateral and frontal expression of the patterns in the late middle-aged adults.\\
 \\
-We trained the classifier to output the appropriate task label based on the EEG data (tracking a sinusoidal target force with the left hand vs. a sinusoidal target force with the right hand vs. a steady target force with the left hand vs. a steady target force with the right hand). The analysis, shown in \autoref{fig:results}, yielded different results for younger and late middle-aged adults. Classification of hand side in the late middle-aged participants performed significantly worse, i.e., the classifier misclassified trials performed with the right hand as left-handed trials and vice versa. On the other hand, the classification of which target force was followed, i.e. steady vs sinus, worked significantly better in the late middle-aged adults. 
+We trained a classifier for each participant to output the appropriate task label based on the \gls{eeg} data recorded during a trial. That is, the classifier should be able to identify, given the \gls{eeg} data, whether the subject was tracking a sinusoidal target force with the left hand or right hand or whether the task was to track a steady target force with the right or left hand. The classifiers' performance was above chance level within all participants and yielded distinct misclassification patterns between younger and late middle-aged adults (see \autoref{fig:results1}).\\
+The classification of the hand side in the late middle-aged participants performed significantly worse, i.e., the classifier misclassified trials performed with the right hand as left-handed trials and vice versa. On the other hand, the classification of which target force was followed, i.e., steady vs. sinus, worked significantly better in the late middle-aged adults. Consequently, fewer steady trials were classified as sinusoidal trials in the late middle-aged compared to the younger subjects or vice versa.
 
 \begin{figure}[h]
 \begin{center}
 \input{figures/paper1_main_result.pdf_tex}
-\caption[Reuslts]{Results}
+\caption[Main results of Research Article \uproman{1}.]{Main results of Research Article \uproman{1}. The misclassification rate of the hand side (left vs. right)  was higher and the misclassification rate of task type (sinus vs. steady) was lower in late middle-aged compared to young adults.}
 \label{fig:results1}
 \end{center}
 \end{figure}
 
-\subsection*{CRediT: Author Contributions}
-C. Goelz: Conceptualization, Software, Formal analysis, Writing - Original Draft.\\
-K. Mora: Software, Formal analysis, Writing - Review \& Editing.\\
-J. Rudisch: Writing - Review \& Editing.\\
-R. Gaidai: Formal analysis, Writing - Review \& Editing.\\ 
-E. Reuter: Investigation, Writing - Review \& Editing.\\
-B. Godde: Conceptualization, Writing - Review \& Editing.\\ 
-C. Reinsberger: Writing - Review \& Editing.\\
-C. Voelcker-Rehage: Conceptualization, Writing - Review \& Editing.\\ 
-S. Vieluf: Conceptualization, Project administration, Supervision, Writing - Review \& Editing.\\
-All authors read and approved the final manuscript.
+% \subsection*{CRediT: Author Contributions}
+% \textbf{C. Goelz}: Conceptualization, Software, Formal analysis, Writing - Original Draft.
+% \textbf{K. Mora}: Software, Formal analysis, Writing - Review \& Editing.
+% \textbf{J. Rudisch}: Writing - Review \& Editing.
+% \textbf{R. Gaidai}: Formal analysis, Writing - Review \& Editing.
+% \textbf{E. Reuter}: Investigation, Writing - Review \& Editing.
+% \textbf{B. Godde}: Conceptualization, Writing - Review \& Editing.
+% \textbf{C. Reinsberger}: Writing - Review \& Editing.
+% \textbf{C. Voelcker-Rehage}: Conceptualization, Writing - Review \& Editing.
+% \textbf{S. Vieluf}: Conceptualization, Project administration, Supervision, Writing - Review \& Editing.\\
+% All authors read and approved the final manuscript.
