@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{229.60629921bp}%
+    \setlength{\unitlength}{396.8503937bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,18 +50,27 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1)%
+  \begin{picture}(1,0.57142857)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper4_main_results.pdf}}%
-    \put(0.08057703,0.5390316){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}%
-    \put(0.08057703,0.40386411){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}%
-    \put(0.08233149,0.2767292){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}%
-    \put(0.0822847,0.13676334){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}%
-    \put(0.43329277,0.69625708){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
-    \put(0.56846544,0.69625708){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
-    \put(0.69559121,0.69801153){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
-    \put(0.83554784,0.69796475){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{paper4_main_results.pdf}}%
+    \put(0.27599412,0.0954085){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
+    \put(0.78147177,0.0954085){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
+    \put(0.18839172,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.33794583,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.69386684,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.84342089,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.06379858,0.30884995){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
+    \put(0.09209237,0.22207084){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.09222777,0.28927504){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.08266575,0.3564464){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.08295674,0.42365061){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
+    \put(0.56927622,0.30884995){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
+    \put(0.59757001,0.22207084){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.59770541,0.28927504){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.58814338,0.3564464){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.58843437,0.42365061){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
+    \put(0.24156285,0.50905923){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Experts\end{tabular}}}}%
+    \put(0.74540962,0.50594632){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Novices\end{tabular}}}}%
   \end{picture}%
 \endgroup%
