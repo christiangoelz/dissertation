@@ -54,14 +54,14 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper3_main_results.pdf}}%
-    \put(0.19293183,0.54904127){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}%
-    \put(0.1408421,0.42739054){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}%
-    \put(0.09968474,0.31296912){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}%
-    \put(0.06883967,0.18699984){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}%
-    \put(0.48567959,0.71828367){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
-    \put(0.6073349,0.71828367){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
-    \put(0.72108977,0.72000622){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
-    \put(0.84744212,0.71996027){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
+    \put(0.21808403,0.5582525){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}%
+    \put(0.17393201,0.43660176){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}%
+    \put(0.14797545,0.3221803){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}%
+    \put(0.11900066,0.19621103){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}%
+    \put(0.44764607,0.69221708){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
+    \put(0.56930139,0.69221708){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
+    \put(0.68305625,0.69393963){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
+    \put(0.80940861,0.69389368){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paper3_main_results.pdf}}%
   \end{picture}%
 \endgroup%
