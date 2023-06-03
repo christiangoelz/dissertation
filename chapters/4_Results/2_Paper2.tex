@@ -2,10 +2,12 @@
 \\
 Following the previous approach, the discriminability of inhibitory and non-inhibitory stimuli within a subject should be investigated.\\
 \\
-In this study, we trained a classifier for each participant that could predict which stimulus, i.e., congruent or incongruent, was presented based on the \gls{eeg} data (see \chapref{methods:datasets:II:experiment}). We also examined at which time points after stimulus presentation the most accurate classification was possible and compared the classification trajectories thus recorded between different age groups (see \autoref{fig:results2} A)\\
-The maximum classification performance was above the chance level in over 95\% of the participants and not different between the groups, except for the group of children, in whom classification performance was significantly reduced. When comparing the trajectories, we found that the highest differentiability of the two stimuli occurred significantly delayed in the two oldest groups and the children.\\
+In this study, we trained a classifier for each participant that could predict which stimulus, i.e., congruent or incongruent, was presented based on the \gls{eeg} data (see \chapref{methods:datasets:II:experiment}). We also examined at which time points after stimulus presentation the most accurate classification was possible and compared the classification trajectories thus recorded between different age groups using one-way ANOVAs followed by t-tests or Kruskal-Wallis tests followed by Dunn’s tests for post hoc comparisons.\\
+To further investigate the group structure, we also trained a group-level classifier to predict which age group the performing participant belongs to based on the \gls{eeg} recording of a trial.\\
 \\
-To further investigate the group structure, we also trained a group-level classifier to predict which age group the performing participant belongs to based on the \gls{eeg} recording of a trial. While the classification was overall above chance level, a characteristic pattern of misclassifications emerged (see \autoref{fig:results2} B). \\
+The maximum classification performance of the model trained to predict which stimulus was presented within a participant was above the chance level in over 95\% of the participants (M~=~72 \%, SD~=~6 \%,  analytical chance level: 61~\% at p~=~0.05). The classification performance further was dependent on the group (F(5)~=~4.805, p~$<$~0.001) with classification performance lower in the children's group compared to the other groups (p~$<$~0.05). When comparing the trajectories, we found that this also differed between the groups (H(5)~=~35.575, p~<~0.001) with later performance peaks in the children and two oldest age groups (p~$<$~0.05) (see \autoref{fig:results2} A).\\
+\\
+The classification of group membership was overall above chance level (accuracy: 55\%, empirical chance level: 17~\% at p~=~0.05), and a characteristic pattern of misclassifications emerged (see \autoref{fig:results2} B).\\
 The classification of children was the most accurate. An increasing number of misclassifications can be observed in the other age groups, especially in adjacent age groups. Clusters of age groups within which the classifier was less accurate in assigning trials to the correct age group. The first cluster ranged from boys to late middle-aged adults, and the second cluster included the two oldest age groups. There were higher misclassification rates within these clusters but fewer misclassifications between clusters.\\
 We also studied the time points for which the classification performance of the group model was highest and found a 10\% performance increase after stimulus onset as compared to before, with a peak at 100 ms to 200 ms.
 
@@ -17,13 +19,12 @@ We also studied the time points for which the classification performance of the 
 \end{center}
 \end{figure}
 
-% \subsection*{CRediT: Author Contributions}
-% C. Goelz: Conceptualization, software, formal analysis, writing—original draft.\\
-% E.M. Reuter: Conceptualization, investigation, data curation, writing—review and editing.\\
-% S. Froehlich: Writing—review and editing. 
-% J. Rudisch: writing—review and editing.\\ 
-% B. Godde: Conceptualization, writing—review and editing.\\ 
-% S. Vieluf: Conceptualization, investigation, supervision, writing—review and editing.\\ 
-% C. Voelcker-Rehage: Conceptualization, investigation, supervision, project administration, writing—review and editing.\\ 
-% All authors read and approved the final manuscript.\\
+\subsection*{Author Contributions}
+C. Goelz: Conceptualization, software, formal analysis, writing—original draft.\\
+E. Reuter: Conceptualization, investigation, data curation, writing—review and editing.\\
+S. Froehlich: Writing—review and editing. 
+J. Rudisch: writing—review and editing.\\ 
+B. Godde: Conceptualization, writing—review and editing.\\ 
+S. Vieluf: Conceptualization, investigation, supervision, writing—review and editing.\\ 
+C. Voelcker-Rehage: Conceptualization, investigation, supervision, project administration, writing—review and editing. All authors read and approved the final manuscript.\\
 
