@@ -1,4 +1,4 @@
-%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'paper3_main_results.pdf' (pdf, eps, ps)
 %%
@@ -54,13 +54,14 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper3_main_results.pdf}}%
-    \put(-0.28481041,0.56011161){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\raisebox{-.5\height}{rest}\end{tabular}}}}%
-    \put(-0.33307472,0.43071393){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\\raisebox{-.5\height}{motor}\end{tabular}}}}%
-    \put(-0.36188789,0.30259771){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\raisebox{-.5\height}{sensory}\end{tabular}}}}%
-    \put(-0.39492102,0.16068119){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\raisebox{-.5\height}{cognitive}\end{tabular}}}}%
-    \put(0.57796402,0.71624422){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
-    \put(0.70593825,0.71818208){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
-    \put(0.84808465,0.71813039){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
+    \put(0.18987008,0.56553401){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}%
+    \put(0.43958493,0.71624422){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
+    \put(0.14160579,0.42867693){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}motor\end{tabular}}}}%
+    \put(0.11279262,0.29995284){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}%
+    \put(0.07975948,0.1582375){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}%
+    \put(0.57644721,0.71624422){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
+    \put(0.70516205,0.7180206){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
+    \put(0.84686814,0.71797323){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paper3_main_results.pdf}}%
   \end{picture}%
 \endgroup%
