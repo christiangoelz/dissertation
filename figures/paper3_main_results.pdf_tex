@@ -50,32 +50,32 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.5625)%
+  \begin{picture}(1,0.5375)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.08832045,0.2691993){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}%
-    \put(0.06418832,0.20077076){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}motor\end{tabular}}}}%
-    \put(0.04978173,0.13640873){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}%
-    \put(0.03326516,0.06555106){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}%
+    \put(0.08832045,0.28057954){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Rest\end{tabular}}}}%
+    \put(0.06418832,0.212151){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Motor\end{tabular}}}}%
+    \put(0.04978173,0.14778897){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Sensory\end{tabular}}}}%
+    \put(0.03326516,0.07693131){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Cognitive\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper3_main_results.pdf}}%
-    \put(0.55321247,0.3445544){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
-    \put(0.62020876,0.3445544){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
-    \put(0.68375889,0.3454426){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
-    \put(0.75685407,0.3454189){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
+    \put(0.55321245,0.35593464){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Rest\end{tabular}}}}}%
+    \put(0.68375893,0.35682285){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Sensory\end{tabular}}}}}%
+    \put(0.75685406,0.35679915){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Cognitive\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{paper3_main_results.pdf}}%
-    \put(0.21317557,0.34455437){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}rest\end{tabular}}}}}%
-    \put(0.28017176,0.34455437){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\\motor\end{tabular}}}}}%
-    \put(0.34372262,0.34544255){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
-    \put(0.41681784,0.34541888){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}cognitive\end{tabular}}}}}%
+    \put(0.21317556,0.35593462){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Rest\end{tabular}}}}}%
+    \put(0.34372263,0.3568228){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}sensory\end{tabular}}}}}%
+    \put(0.41681786,0.35679912){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Cognitive\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paper3_main_results.pdf}}%
-    \put(0.88663435,0.03391029){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Fit\end{tabular}}}}%
-    \put(0.88663435,0.06868822){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Less fit\end{tabular}}}}%
+    \put(0.88663435,0.04529051){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Fit\end{tabular}}}}%
+    \put(0.88663435,0.08006844){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Less fit\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paper3_main_results.pdf}}%
-    \put(0.89474992,0.20087399){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}9\end{tabular}}}}%
-    \put(0.89466704,0.16393213){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.89054584,0.12699027){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}-9\end{tabular}}}}%
-    \put(0.84346352,0.25282301){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}t-value\end{tabular}}}}%
-    \put(0.54556442,0.52012992){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$\beta_2$ - band\end{tabular}}}}%
-    \put(0.2145627,0.52301528){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}$\theta$ - band\end{tabular}}}}%
+    \put(0.89474992,0.21225421){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}9\end{tabular}}}}%
+    \put(0.89466704,0.17531235){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.89054584,0.13837049){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}-9\end{tabular}}}}%
+    \put(0.84346352,0.26420323){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}t-value\end{tabular}}}}%
+    \put(0.54556442,0.48190077){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{$\beta_2$ - band}\end{tabular}}}}%
+    \put(0.2145627,0.48478613){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{$\theta$ - band}\end{tabular}}}}%
+    \put(0.28193345,0.35593462){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Motor\end{tabular}}}}}%
+    \put(0.62196927,0.35593464){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Motor\end{tabular}}}}}%
   \end{picture}%
 \endgroup%
