@@ -1,4 +1,4 @@
-%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'paper4_main_results.pdf' (pdf, eps, ps)
 %%
@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{396.8503937bp}%
+    \setlength{\unitlength}{453.54330709bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,27 +50,27 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.57142857)%
+  \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{paper4_main_results.pdf}}%
-    \put(0.27599412,0.0954085){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
-    \put(0.78147177,0.0954085){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
-    \put(0.18839172,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.33794583,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
-    \put(0.69386684,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.84342089,0.13321112){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
-    \put(0.06379858,0.30884995){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
-    \put(0.09209237,0.22207084){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.09222777,0.28927504){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
-    \put(0.08266575,0.3564464){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
-    \put(0.08295674,0.42365061){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
-    \put(0.56927622,0.30884995){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
-    \put(0.59757001,0.22207084){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.59770541,0.28927504){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
-    \put(0.58814338,0.3564464){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
-    \put(0.58843437,0.42365061){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
-    \put(0.24156285,0.50905923){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Experts\end{tabular}}}}%
-    \put(0.74540962,0.50594632){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Novices\end{tabular}}}}%
+    \put(0.32442708,0.06036171){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
+    \put(0.24355167,0.09343526){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.38162151,0.09343526){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.75948905,0.06035909){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U1\end{tabular}}}}%
+    \put(0.68283473,0.09343638){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.81369453,0.09343638){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.11815626,0.24712035){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
+    \put(0.14291332,0.17118863){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.1430318,0.2299923){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.13466503,0.28876725){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.13491964,0.34757093){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
+    \put(0.5607842,0.24712035){\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}U2\end{tabular}}}}}%
+    \put(0.58554127,0.17118863){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
+    \put(0.58565974,0.2299923){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}5\end{tabular}}}}%
+    \put(0.57729297,0.28876725){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}10\end{tabular}}}}%
+    \put(0.57754759,0.34757093){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}15\end{tabular}}}}%
+    \put(0.27631605,0.42230347){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{Experts}\end{tabular}}}}%
+    \put(0.70997779,0.41957968){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\textbf{Novices}\end{tabular}}}}%
   \end{picture}%
 \endgroup%
