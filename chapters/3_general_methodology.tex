@@ -96,15 +96,15 @@ The cognitive task was an auditory n-back task. Participants were asked to liste
 
 \subsection{Electroencephalography: Recording and Preprocessing}
 The \glspl{eeg} in Dataset \autoref{methods:datasets:I} and \autoref{methods:datasets:II} were recorded with a 32-channel Biosemi active electrode system (ActiveTwo, BioSemi, Amsterdam, Netherlands). In \autoref{methods:datasets:III} \gls{eeg} measurements were recorded with a 128-channel actiCap active electrode system (BrainProducts, Munich, Germany).
-Based on the different analysis methods, objectives, and \gls{eeg} systems used, the preprocessing differed slightly between the research articles. In each case, the data were down-sampled, re-referenced, and filtered. In \hyperref[res:paperI]{Research Article \uproman{1}}, \hyperref[res:paperIII]{\uproman{3}} and \hyperref[res:paperIV]{\uproman{4}}, ICA was used to reduce occular and muscle artifacts. In \hyperref[res:paperI]{Research Article \uproman{1}} and \hyperref[res:paperIII]{\uproman{3}}, trials containing large artifacts were excluded using the \textit{autoreject pipeline} \cite{Jas2017}. Due to the high number of electrodes used in \hyperref[methods:datasets:III]{Dataset \uproman{3}}, bridges were detected and interpolated based on coherence measurements and electrical distance \cite{Alschuler2014}. The exact pipelines are described in the \hyperref[pub:papers]{published research articles}).  
+Based on the different analysis methods, objectives, and \gls{eeg} systems used, the preprocessing differed slightly between the research articles. In each case, the data were down-sampled, re-referenced, and filtered. In \hyperref[res:paperI]{Research Article \uproman{1}}, \hyperref[res:paperIII]{\uproman{3}} and \hyperref[res:paperIV]{\uproman{4}}, ICA was used to reduce occular and muscle artifacts. In \hyperref[res:paperI]{Research Article \uproman{1}} and \hyperref[res:paperIV]{\uproman{4}}, trials containing large artifacts were excluded using the \textit{autoreject pipeline} \cite{Jas2017}. Due to the high number of electrodes used in \hyperref[methods:datasets:III]{Dataset \uproman{3}}, bridges were detected and interpolated based on coherence measurements and electrical distance \cite{Alschuler2014}. The exact pipelines are described in the \hyperref[pub:papers]{published research articles}).  
 
 \section{Machine learning procedures} 
-Following state of the art approaches (see \chapref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification. Dimensionality reduction was used at the first level to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction, and at second level to detect and visualize patterns in the data sets. Classification procedures were used both at the individual level as well as at the group level. The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and the aim of the analysis. This approach is visualized in \autoref{fig:ML_approach} and Table \autoref{tab:ml_methods}  summarizes the used methods for each research article. In the following, the methods will be briefly described.
+Following state of the art approaches (see \chapref{theory:ml:applications_aging}) we used a combination of dimensionality reduction methods and classification (see \autoref{fig:ML_approach}). Dimensionality reduction was used at the first level to extract a suitable representation of the EEG data for the following classification, i.e. for feature extraction (see \autoref{fig:ML_approach} 1a), and at second level to detect and visualize patterns in the data sets (see \autoref{fig:ML_approach} 1b). Classification procedures were used both at the individual level as well as at the group level (see \autoref{fig:ML_approach} 2). The former means that one model per subject was trained, which represents the cortical representation of an experimental condition, e.g., a task, and finally allows conclusions, e.g., about the dedifferentiation of cortical processes at the individual level. The latter means that a model was trained for the whole group to detect general overlapping patterns in the group structure. The selection of a suitable method was based on the dataset, i.e. data structure and experimental conditions, and the aim of the analysis. \autoref{tab:ml_methods}  summarizes the used methods for each research article. In the following, the methods will be briefly described.
 
 \begin{figure}[h]
 \begin{center}
 \input{figures/ml_approach.pdf_tex}
-\caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1a). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally Classification was used to classify either the task at individual level or the group membership (2) using either the results of 1a or 1b.}
+\caption[Machine learning approach used in this thesis]{Machine learning approach used in this thesis. Dimensionality reduction was used to produce a suitable representation of the \gls{eeg} data (1a). Optionally a second level dimensionality reduction was applied to extract patterns and for visualization (1b). Finally, Classification was used to classify either the task at the individual level or the group membership (2) using either the results of 1a or 1b.}
 \label{fig:ML_approach}
 \end{center}
 \end{figure}
@@ -112,7 +112,6 @@ Following state of the art approaches (see \chapref{theory:ml:applications_aging
 \begin{table}[ht]
   \begin{threeparttable}
     \captionsetup{justification=raggedright,singlelinecheck=false}
-    \label{tab:ml_methods}
     \caption{Dimensionality reduction and classification methods utilized in each research article}
     \label{tab:ml_methods}
     \begin{tabular}{@{}p{3cm}p{2cm}p{2.5cm}p{2cm}p{2cm}@{}}
@@ -121,8 +120,8 @@ Following state of the art approaches (see \chapref{theory:ml:applications_aging
       & 1st level & 2nd level & Task & Group \\ \midrule
       \hyperref[res:paperI]{Research Article \uproman{1}}  & DMD & CSP & LDA & SVM \\
       \hyperref[res:paperII]{Research Article \uproman{2}}  & xDAWN & -   & SVM  & SVM \\
-      \hyperref[res:paperIII]{Research Article \uproman{3}} & DMD & CSP, UMAP & LDA  & SVM  \\
-      \hyperref[res:paperIV]{Research Article \uproman{4}}  & DMD & PCA       & -    & -    \\
+      \hyperref[res:paperIII]{Research Article \uproman{3}} & DMD & PCA       & -    & -    \\
+      \hyperref[res:paperIV]{Research Article \uproman{4}}  & DMD & CSP, UMAP & LDA  & SVM  \\
       \bottomrule
     \end{tabular}
     \begin{tablenotes}
@@ -135,7 +134,7 @@ Following state of the art approaches (see \chapref{theory:ml:applications_aging
 
 \newpage
 \subsection{Dimensionality reduction}
-As described above, different dimensionality reductions were performed with the aim to extract a suitable representation of the EEG on the first level and to further investigate this representation on the second level. In the following, the methods listed in Table \label{tab:ml_methods} are briefly introduced. 
+As described above, different dimensionality reductions were performed with the aim to extract a suitable representation of the EEG on the first level and to further investigate this representation on the second level. In the following, the methods listed in \autoref{tab:ml_methods} are briefly introduced. 
 
 \subsubsection{Dynamic mode decomposition}
 To extract a relevant representation of the continuous \gls{eeg} activity, we chose \gls{dmd} because it is able to decompose the signals into spatial activation patterns that are dynamically coherent, reflecting the network nature of the underlying brain activity \cite{Brunton2016}. \Gls{dmd} was developed in the field of fluid mechanics and was applied to various fields to model time-varying dynamical systems, including neuroscience proving to extract physiological valid signal patterns \cite{Brunton2016, Kunert-Graf2019, Schmid2010, Schmid2008}. The activation patterns (modes) extracted from \gls{dmd} analysis can reveal key features such as the spatial distribution of coherent dynamics in relation to oscillation frequencies and mechanisms of growth or decay. This provides a deeper understanding of the functional reorganization of the brain and can serve as a starting point for further analysis \cite{Brunton2016}.\\
