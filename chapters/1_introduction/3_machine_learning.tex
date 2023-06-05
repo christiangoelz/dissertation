@@ -18,15 +18,19 @@ child[grow=35, level distance=4cm] {  node[draw,ellipse,align=center] {Supervise
 	child[grow=-90]{ node {Regression}}
 }
 child[grow=-90, level distance=2.5cm] {node[draw,ellipse,align=center] {Unsupervised\\[-1ex]learning}
-	child[grow=south west,level distance=2.3cm] { node[align=center] {Dimensionality\\[-1ex]reduction}}
-	child[grow=south east] { node {Clustering}}
+	child[grow=-160,level distance=3.75cm] { node[align=center] {Dimensionality\\[-1ex]reduction}}
+	child[grow=-40,level distance=3cm] { node {Clustering}}
 }
 node at (-3.5,-0.2)[scale=0.8]{\input{figures/reinforcement.pdf_tex}}
-node at (1.6,-5.7)[scale=0.2]{\input{figures/clustering.pdf_tex}}
-node at (-2.75,-5.7)[scale=0.21]{\input{figures/dim_red.pdf_tex}}
+node at (3.75,-5.5)[scale=0.2]{\input{figures/clustering.pdf_tex}}
+node (node1) at (-5.5,-5.5)[scale=0.2]{\input{figures/dim_red3D.pdf_tex}}
+node (node2) at (-2.5,-5.5)[scale=0.2]{\input{figures/dim_red.pdf_tex}}
 node at (3.25,-0.75)[scale=0.2]{\input{figures/regression.pdf_tex}}
 node at (6.25,-0.75)[scale=0.2]{\input{figures/classification.pdf_tex}}
 ;
+
+\draw[->] (node1) -- (node2);
+
 \end{tikzpicture}
 \end{center}
 \caption[The three main forms of machine learning.]{The three main forms of machine learning.}
