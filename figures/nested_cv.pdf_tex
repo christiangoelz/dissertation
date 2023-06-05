@@ -59,7 +59,7 @@
     \put(0.44157899,0.1168207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
     \put(0.76101575,0.1168207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{nested_cv.pdf}}%
-    \put(0.04899709,0.34689342){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\k splits\\\end{tabular}}}}%
+    \put(0.04899709,0.34689342){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\k folds\\\end{tabular}}}}%
     \put(0.21364663,0.44630744){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
     \put(0.31916329,0.44866902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{nested_cv.pdf}}%
@@ -68,7 +68,7 @@
     \put(0.69543784,0.44866902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{nested_cv.pdf}}%
     \put(0.84343323,0.2071865){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
-    \put(0.0463702,0.09941151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\k splits\\\end{tabular}}}}%
+    \put(0.0463702,0.09941151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\k folds\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{nested_cv.pdf}}%
   \end{picture}%
 \endgroup%
