@@ -1,4 +1,4 @@
-%% Creator: Inkscape 1.2.2 (1:1.2.2+202212051552+b0a8486541), www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'nested_cv.pdf' (pdf, eps, ps)
 %%
@@ -53,22 +53,22 @@
   \begin{picture}(1,0.52857143)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.27726029,0.10541652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
-    \put(0.6252685,0.10541652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
-    \put(0.79491136,0.10541652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
-    \put(0.4225175,0.10576534){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
-    \put(0.74195426,0.10576534){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
+    \put(0.29632178,0.11647188){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.64432999,0.11647188){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.81397285,0.11647188){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.44157899,0.1168207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
+    \put(0.76101575,0.1168207){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Test\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{nested_cv.pdf}}%
-    \put(0.02993561,0.36971938){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\10 Splits\\\end{tabular}}}}%
-    \put(0.19458515,0.49572827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
-    \put(0.3001018,0.49808986){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.04899709,0.34689342){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Inner CV\\k splits\\\end{tabular}}}}%
+    \put(0.21364663,0.44630744){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
+    \put(0.31916329,0.44866902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{nested_cv.pdf}}%
-    \put(0.44809715,0.25660733){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
-    \put(0.5708597,0.49572827){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
-    \put(0.67637636,0.49808985){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
+    \put(0.46715864,0.2071865){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
+    \put(0.58992119,0.44630744){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Val\end{tabular}}}}%
+    \put(0.69543784,0.44866902){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Train\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{nested_cv.pdf}}%
-    \put(0.82437174,0.25660734){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
-    \put(0.02730872,0.08835615){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\10 Splits\\\end{tabular}}}}%
+    \put(0.84343323,0.2071865){\color[rgb]{0,0,0}\rotatebox{89.844086}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Best model\\\end{tabular}}}}}%
+    \put(0.0463702,0.09941151){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Outer CV\\k splits\\\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{nested_cv.pdf}}%
   \end{picture}%
 \endgroup%
