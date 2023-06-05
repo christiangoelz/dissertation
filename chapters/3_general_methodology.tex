@@ -153,16 +153,16 @@ To extract the information from the \gls{dmd} modes that would allow the best po
 While \gls{pca} was used to explain patterns of variation within a participant, we relied on \gls{umap} to capture the structure both on a local level, i.e., within a participant, and on a global level, i.e., between participants. \Gls{umap} constructs a low-dimensional representation by modeling the data as a topological manifold, considering both the distances between data points and the local density and is particularly effective in visualizing and exploring complex data patterns and meaningful relationships in the data \cite{mcinnes2018umap}. For this, we first calculated the arithmetic mean over the \gls{dmd} modes of all windows per frequency band, trial, and participant and then applied \gls{umap} to obtain a lower-dimensional representation that captures underlying patterns and meaningful relationships in the data, facilitating visualization and exploration of \gls{dmd} patterns.
 
 \subsection{Classification}
-The classification was performed on a trial-by-trial basis, i.e., models were learned that can predict for each participant to which task a given trial belongs or cross-participant to which group the performing subject belongs. Typically, different classification algorithms and their parameters are selected, trained on one portion of the data, the so-called training data, and then tested for their performance on data not used for training, the so-called testing data \cite{Daumé2017}. The training data can further be divided into a training and validation portion to compare different model types or user-defined learning algorithm settings, so-called hyperparameters. Finally, the best model configuration is tested for its predictive performance on the test data and reported. However, this three time division may drastically reduce the data size usable for training and may result in flawed generalization evaluation due to the randomness of the split \cite{VAROQUAUX2017166}. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time a different subset of the data is used for validation while the rest is used for training. Usually, this is repeated for a range of models and subsequent hyperparameters and the model and hyperparameter performing best on average are selected for final testing. We used a more advanced method denoted nested cross-validation, which adds a second cross-validation loop for the final model evaluation (see Figure \ref{fig:CV} for a visual representation of the procedures).
+The classification was performed on a trial-by-trial basis, i.e., models were learned that can predict for each participant to which task a given trial belongs or cross-participant to which group the performing subject belongs. Typically, different classification algorithms and their parameters are selected, trained on one portion of the data, the so-called training data, and then tested for their performance on data not used for training, the so-called testing data \cite{Daumé2017}. The training data can further be divided into a training and validation portion to compare different model types or user-defined learning algorithm settings, so-called hyperparameters. Finally, the best model configuration is tested for its predictive performance on the test data and reported. However, this three-time division may drastically reduce the data size usable for training and may result in flawed generalization evaluation due to the randomness of the split \cite{VAROQUAUX2017166}. Therefore several procedures can be applied. In simple k-fold cross-validation, for example, the training data is divided k-times. Thus each time, a different subset of the data is used for validation while the rest is used for training. Usually, this is repeated for a range of models and subsequent hyperparameters, and the model and hyperparameter performing best on average are selected for final testing. We used a more advanced method denoted nested cross-validation, which adds a second cross-validation loop for the final model evaluation (see Figure \ref{fig:CV} for a visual representation of the procedures).
 
 \begin{figure*}[h]
 \centering
   \input{figures/nested_cv.pdf_tex} 
-  \caption[Nested cross-validation procedure]{Nested cross-validation procedure. CV: cross-validation, Val: Validation}
+  \caption[Exemplary nested cross-validation procedure.]{Exemplary nested cross-validation procedure. K-fold cross-validation is used in an outer loop for testing the best configuration tuned in an inner cross-validation loop. CV: cross-validation, Val: Validation}
   \label{fig:CV}
 \end{figure*}
 
-\noindent For all datasets, ten splits were used in the inner and outer cross-validation loops, keeping 80\% of the dataset for training and 20\% for testing. In the inner loop, hyperparameters were tuned according to a grid search procedure in which a given parameter space is provided to select the best-fitting parameters \cite{VAROQUAUX2017166} comprehensively. Consequently, one model was tested for each of the ten outer splits. The final metrics are the average over the outer splits and represent the performance of the classification algorithm. For classifiers, these can be derived using a so-called confusion matrix (\autoref{tab:confusion-matrix}), which summarizes all correct and false predicted instances of the test set \cite{Fawcett2006}.  
+\noindent For all datasets, ten splits were used in the inner and outer cross-validation loops, keeping 80~\% of the dataset for training and 20~\% for testing. In the inner loop, hyperparameters were tuned according to a grid search procedure in which a given parameter space is provided to select the best-fitting parameters \cite{VAROQUAUX2017166} comprehensively. Consequently, one model was tested for each of the ten outer splits. The final metrics are the average over the outer splits and represent the performance of the classification algorithm. For classifiers, these can be derived using a so-called confusion matrix (\autoref{tab:confusion-matrix}), which summarizes all correct and false predicted instances of the test set \cite{Fawcett2006}.  
 
 \begin{table}[ht]
     \captionsetup{justification=raggedright,singlelinecheck=false}
@@ -179,7 +179,8 @@ The classification was performed on a trial-by-trial basis, i.e., models were le
         \end{tabular}
 \end{table}
 
-\noindent If an actual value is positive and is classified as positive, it is a \gls{tp} result. If the positive instance is classified as negative, it is a \gls{fn} result. If an instance is actually negative and classified as negative, it is called \gls{tn}. Consequently, if an instance is negative and classified as positive, it is a \gls{fp} \cite{Fawcett2006}. This forms the basis for various metrics reported in the research articles. \autoref{tab:metrics-summary} summarizes the metrics and their meaning.
+\noindent If an actual value is positive and is classified as positive, it is a \gls{tp} result. If the positive instance is classified as negative, it is a \gls{fn} result. If an instance is actually negative and classified as negative, it is called \gls{tn}. Consequently, if an instance is negative and classified as positive, it is a \gls{fp} \cite{Fawcett2006}. This forms the basis for various metrics reported in the research articles. \autoref{tab:metrics-summary} summarizes the metrics and their meaning.\\
+These values can be related to the theoretical chance level of the values that would occur if the class labels were randomly assigned. However, since this gives a biased estimate of the significance of model performance when the distribution is uneven and the data sets are small, the random level of the values can be determined by permutation procedures, in which the labels are randomly shuffled repeatedly (e.g., 1000 times) to produce a null distribution against which the significance of a model can be tested. This analytical approach is computationally expensive. An alternative is to empirically determine a model's significance by computing a binomial cumulative distribution to estimate the significance threshold \cite{Combrisson2015}. To evaluate the validity of the trained models in the present work, the appropriate method was chosen individually depending on the data set, model objective, and distribution of classes. The results consequently mark the reference values as theoretical, analytical, or empirical chance level. A detailed justification of the chosen methods is described in the \hyperref[pub:papers]{published research articles}. 
 
 \begin{table}[h]
   \begin{threeparttable}
@@ -196,7 +197,7 @@ The classification was performed on a trial-by-trial basis, i.e., models were le
             Recall (Sensitivity) & \centering$\displaystyle\frac{TP}{TP + FN}$ & Measures the proportion of true positive predictions among all actual positive samples.\\
             Specificity & \centering$\displaystyle\frac{TN}{TN + FP}$  & Measures the proportion of true negative predictions among all actual negative samples.\\
             F1 Score & \centering$\displaystyle\frac{2 \times \text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$  &  Harmonic mean of precision and recall, providing a balanced measure between the two.\\
-            AUC & \centering- & Area under the receiver operating characteristic curve which measures the performance of a binary classification model across various threshold settings. \\
+            AUC & \centering- & Area under the receiver operating characteristic curve, which measures the performance of a binary classification model across various threshold settings. \\
         \bottomrule
     \end{tabular}
     \begin{tablenotes}
@@ -206,48 +207,7 @@ The classification was performed on a trial-by-trial basis, i.e., models were le
 \end{threeparttable}
 \end{table}
 
-\noindent In the research articles, we experimented with multiple algorithms based on recent literature to find the most suitable models for the respective tasks \cite{shoorangiz2021eeg}. In doing so, we used \gls{svm} and \gls{lda}, which both have a comprehensive history of application to neuroscience data and are well suited to our specific problems.  \Glspl{svm} is one of the most commonly used algorithms for neuroscience data \cite{VAROQUAUX2017166}. The algorithm generates optimal decision boundaries, called hyperplanes. It can thus handle both linearly separable and non-linearly separable data by using kernel functions to map the input space into a higher-dimensional feature space \cite{shoorangiz2021eeg}. \Gls{lda} is specifically used in the context of \Gls{bci} and has proven to be successful in task decoding \cite{Blankertz2008}. This algorithm aims to find a linear combination of features that maximizes the separation between different classes, making it particularly effective when the classes are well-separated \cite{shoorangiz2021eeg}.\\
+\noindent In the research articles, we experimented with multiple algorithms based on recent literature to find the most suitable models for the respective tasks \cite{shoorangiz2021eeg}. In doing so, we used \gls{svm} and \gls{lda}, which both have a comprehensive application history to neuroscience data and are well suited to our specific problems.  \Glspl{svm} is one of the most commonly used algorithms for neuroscience data \cite{VAROQUAUX2017166}. The algorithm generates optimal decision boundaries, called hyperplanes. It can thus handle both linearly separable and non-linearly separable data by using kernel functions to map the input space into a higher-dimensional feature space \cite{shoorangiz2021eeg}. \Gls{lda} is specifically used in the context of \Gls{bci} and has proven to be successful in task decoding \cite{Blankertz2008}. This algorithm aims to find a linear combination of features that maximizes the separation between different classes, making it particularly effective when the classes are well-separated \cite{shoorangiz2021eeg}.\\
 \\
-For the implementation of the machine learning methods, the framework of the Python package scikit-learn was followed. If the methods were not implemented, they were implemented in Python or Matlab. A detailed description of the complete analysis pipelines as well as details of the respective implementation can be found in the \hyperref[{pub:reserach_articles}]{published research articles}. 
+The framework of the Python package scikit-learn was followed to implement the machine learning methods. If the methods were not implemented, they were implemented in Python or Matlab. A detailed description of the complete analysis pipelines and details of the respective implementation can be found in the \hyperref[pub:papers]{published research articles}. 
 
-
-% Given \gls{eeg} data containing measurements $x_k$ sampled every $\Delta t$ by $n$ electrodes over $m$ time points, two matrices $X$ and $X'$ can be constructed, where $X'$ are the data points of $X$ shifted by one $\Delta t$, i.e,
-% \begin{equation}
-% X = \begin{bmatrix}
-%     | & | &  & |\\
-%     x_1 & x_2 & \dots & x_{n-1}\\
-%     | & | &  & |
-% \end{bmatrix}
-% \label{eqn:X}
-% \end{equation}
-% and
-% \begin{equation}
-% X' = \begin{bmatrix}
-%     | & | &  & |\\
-%     x_2 & x_3 & \dots & x_n\\
-%     | & | &  & |
-% \end{bmatrix},
-% \label{eqn:X'}
-% \end{equation}
-% The relationship between the matrices $X$ and $X'$ can be represented by a linear operator $A$ which characterizes the underlying dynamics in terms of the relationship between $x_k$ and $x_{k+1}$, such that
-% \begin{equation}
-% \label{eq:dmd_model}
-% X' = AX.
-% \end{equation}
-% The eigendecomposition of $A$ is referred to as \gls{dmd} and yields the spatial patterns, i.e. \gls{dmd} modes, and associated eigenvalues. In this thesis, the \textit{exact \gls{dmd}} algorithm as reported by \cite{Brunton2016} was applied to compute these quantities. Based on this an approximation $\hat{X}$ of the observed measurements $X$ by defining the dynamical model
-% \begin{equation}
-%     \hat{X}=\Phi exp(\Omega t) z
-% \end{equation}
-% Every column of $\Phi$ is a DMD mode $\phi_i$ and the matrix $\Omega$, expressed by $\Omega=\log(\lambda)/\Delta t$, reveals the dynamics of the system, where the diagonal matrix $\Lambda$ contains the DMD eigenvalues, i.e., eigenvalues of $A$, on its diagonal. The variable $t$ represents time and $z$ is a constant vector that can be determined from the first time point in each channel, i.e., $x_i = \Phi z$. Each value $\omega_i$ in $\Omega$ corresponds to $\phi_i$ and describes its dynamic behavior in terms of growth, decay, and oscillation. Thus, the oscillation frequency in cycles per second (Hz) of each mode can be determined by $f_i = imag(\omega_i)/2\pi$.
-
-% \subsubsection{Machine learning pipelines}
-% Training testing 
-% Evaluation
-
-% % To approximate the performance of a classification model a dataset is typically divided into a training and testing set. The training set is used for learning a model whereas the testing set is used to estimate the generalization performance to new unseen data, i.e. data which was not used during the process of training. The training data can further be divided into a training and validation portion to compare different model types or user-defined settings of a learning algorithm, so-called hyperparameters. However, this three time division may drastically reduce the data size usable for training and my result in flawed generalization evaluation due to the randomness of the split. Therefore several procedures can be applied. In a simple k-fold cross-validation, for example, the training data is divided k-times. Thus, a different subset of the data is used for validation while the rest is used for training. Usually this is repeated for a range of models and subsequent hyperparamters and the model and hyperparameter performing best on average are selected for final testing. A more advanced method denoted nested cross-validation adds a second k-fold cross-validation loop for the final model evaluation (see Figure \ref{fig1:CV} for a visual representation of the procedures).    
-
-% % \begin{figure*}[h]
-% %   \dummyfig{Cross-validation procedures} 
-% %   \caption{Cross-validation procedures}
-% %   \label{fig1:CV}
-% % \end{figure*}
