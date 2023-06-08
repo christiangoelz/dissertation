@@ -2,31 +2,32 @@
 \\
 Professional expertise is another factor influencing age-related reorganization. This study aimed to characterize middle-aged fine motor experts and novices by using classification at task and group levels.\\
 \\
-As described previously, we used class-level statistical methods first to compare the inputs to the classification algorithms. Analogous to \chapref{res:paperI}, we trained a classifier for each participant that can predict the type of task, i.e., uniform or sinusoidal force tracking with the left and right hands, and compared the differentiability of the tasks between the groups.\\
-In addition, we trained a group-level classifier to predict whether the person performing the force tracking is an expert or a novice. We used \gls{eeg} and the force tracking data as input to the classification pipelines\\
-To further examine the EEG patterns at the trial level, we transformed the DMD modes of all subjects via UMAP. To quantify the clustering structure of the UMAP embedding, we calculated the Euclidean distance of each trial within each participant. We also computed the centroids of all trials per participant and determined the Euclidean distance between them between these centroids.\\
+As described previously, we used class-level statistical methods first to compare the inputs to the classification algorithms. Analogous to \chapref{results:paperI}, we trained a classifier for each participant that outputs the type of task, i.e., uniform or sinusoidal force tracking with the left and right hands. We compared the classification performance, i.e. the differentiability of the tasks, between the groups. In addition, we trained a group-level classifier to predict whether the participant performing the force tracking is a fine motor expert or a novice. We used \gls{eeg} and the force tracking data as input to the classification pipelines\\
+To further examine the \gls{eeg} patterns at the trial level, we transformed the DMD modes of all subjects via UMAP. We quantified the clustering structure of the UMAP embedding by calculating the Euclidean distance of each trial within each participant. We also computed the centroids of all trials per participant and determined the Euclidean distance between these centroids.\\
 \\
-Although the groups differed at the behavioral level in left-handed force tracking, we found no statistical differences in \gls{dmd} modes. Classification of task levels for all subjects better than chance (accuracy: M~=~68 \% SD~=~13 \%, theoretical chance level: 25 \%). There were no differences in classification performance between experts (accuracy: M~=~0.66, SD~=~0.16) and novices (accuracy: M~=~0.70, SD~=~0.10) [t(41)~=~0.96, p~=~0.35].\\
+Although the groups differed at the behavioral level in left-handed force tracking, we found no statistical differences in \gls{dmd} modes. Classification of task levels for all subjects performed better than chance (accuracy: M~=~0.68, SD~=~0.13, theoretical chance level: 0.25). There were no differences in classification performance between experts (accuracy: M~=~0.66, SD~=~0.16) and novices (accuracy: M~=~0.70, SD~=~0.10) [t(41)~=~0.96, p~=~0.35].\\
 Classification of group membership was not possibly better than chance (theoretical chance level: 0.5), neither based on the \gls{eeg} (M~=~0.53, SD~=~0.07) nor based on the force tracking data (M~=~0.43, SD~=~0.16).\\
-Visualization of the \gls{eeg} feature space revealed patterns of individuality in both groups (see \autoref{fig:results4}). This is expressed in a structure of small clusters, with each cluster assigned to one participant. Our comparison of the distances showed a more considerable distance between the individual clusters of the experts (M~=~7.26, SD~=~2.25) than between those of the novices (M~=~3.92, SD~=~1.33) with simultaneously more compact clusters for the experts (M~=~1.03, SD~=~0.55) compared to the novices (M~=~1.34, SD~=~0.48).  
+Visualization of the \gls{eeg} feature space revealed patterns of individuality in both groups (see \autoref{fig:results4}). This is expressed in a structure of small clusters, with each cluster assigned to one participant. Our comparison of the distances showed a more considerable distance between the individual clusters of the experts (M~=~7.26, SD~=~2.25) than between those of the novices (M~=~3.92, SD~=~1.33) with more compact clusters for the experts (M~=~1.03, SD~=~0.55) compared to the novices (M~=~1.34, SD~=~0.48).\\
 
-\begin{figure}[h]
+\begin{figure}[ht]
 \begin{center}
 \input{figures/paper4_main_results.pdf_tex}
-\caption[Main results of Research Article \uproman{4}]{Main results of Research Article \uproman{4}. UMAP embedding of EEG feature space of fine motor experts and novices. Each color corresponds to one participant; each dot corresponds to one trial. The experts' data clustered structure is more dispersed, and clusters are more compact. 
-one trial}
+\caption[Main results of Published Research Article \uproman{4}]{Main results of Published Research Article \uproman{4}. UMAP embedding of EEG feature space of fine motor experts and novices. Each color corresponds to one participant; each dot corresponds to one trial. The experts' data clustered structure is more dispersed, and clusters are more compact.}
 \label{fig:results4}
 \end{center}
 \end{figure}
 
+\newpage
 \noindent The results of task classification suggest that contrary to what was predicted by the reserve hypothesis, expertise does not influence the differentiation of task representations. Also, we could not classify between experts and novices. However, the analysis of the group structure indicates a higher individuality of task-related brain activation patterns in experts compared to novices.
 
 \subsection*{Author Contributions}
-\textbf{R. Gaidai}: Software, Formal analysis, Writing – original draft.
-\textbf{C. Goelz}: Software, Formal analysis, Writing – original draft.
-\textbf{K. Mora}: Software, Formal analysis, Writing – review and editing.  
-\textbf{J. Rudisch}: Writing – review and editing. E. Reuter: Conceptualization, Investigation, Writing – review and editing.  
-\textbf{B. Godde}: Conceptualization, Supervision, Writing – review and editing. C. Reinsberger: Writing – review and editing. 
-\textbf{C. Voelcker-Rehage}: Conceptualization, Supervision, Writing – review and editing.  
-\textbf{S. Vieluf}: Conceptualization, Investigation, Supervision, Project administration, Writing – review and 
+\textbf{R. Gaidai}: Software, formal analysis, writing – original draft.
+\textbf{C. Goelz}: Software, formal analysis, writing – original draft.
+\textbf{K. Mora}: Software, formal analysis, writing – review, and editing.  
+\textbf{J. Rudisch}: Writing – review, and editing. 
+\textbf{E. Reuter}: Conceptualization, Investigation, writing – review, and editing.  
+\textbf{B. Godde}: Conceptualization, Supervision, writing – review, and editing. 
+\textbf{C. Reinsberger}: Writing – review and editing. 
+\textbf{C. Voelcker-Rehage}: Conceptualization, supervision, writing – review and editing.  
+\textbf{S. Vieluf}: Conceptualization, investigation, supervision, project administration, writing – review and 
 editing.
