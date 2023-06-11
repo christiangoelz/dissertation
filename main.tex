@@ -17,7 +17,8 @@
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={3.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin={2.5cm}]{geometry}
 \usepackage{epigraph}
-\usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
+\usepackage[acronym]{glossaries}
+% \usepackage[nopostdot,nogroupskip,style=super,nonumberlist,toc,automake,toc]{glossaries}
 \usepackage[most]{tcolorbox}
 \usepackage[font=small,labelfont=bf]{caption}
 \usepackage{titlesec}
@@ -32,6 +33,7 @@
 \usepackage[flushleft]{threeparttable}
 \usepackage{pdfpages}
 \usepackage{pdflscape}
+
 
 %------------------------------------ Settings ------------------------------------
 % references
@@ -81,108 +83,125 @@ urlcolor=black
 % numbering
 \newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
 \newcommand{\lowroman}[1]{\romannumeral#1\relax}
-\renewcommand{\subsectionautorefname}{Abschnitt}
+
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
 %------------------------------------ Document ------------------------------------
 \begin{document}
-\input{chapters/0_Formalia/titlepage}
-\pagenumbering{Roman}
-\tableofcontents
-\chapter*{Acknowledgement}
-\addcontentsline{toc}{chapter}{Acknowledgement}
-\input{chapters/0_Formalia/acknowledgement}
-
-
-\chapter*{Abstract}
-\setcounter{page}{2}
-\addcontentsline{toc}{chapter}{Abstract}
-\input{chapters/0_Formalia/abstract}
-
-
-\listoffigures
-\addcontentsline{toc}{chapter}{List of Figures}
-
-
-\listoftables
-\addcontentsline{toc}{chapter}{List of Tables}
-
-\printglossary[title={List of Abbreviations}]
-
-\chapter*{Publications and other scientific contributions}
-\addcontentsline{toc}{chapter}{Publications and other scientific contributions}
-\input{chapters/0_Formalia/publist}
-
-\chapter{General Introduction}\label{chap:intro}
-\pagenumbering{arabic}
-
-    \section{Motivation}
-    \input{chapters/1_introduction/1_motivation}
-    \label{motivation}
-
-    \section{Aging}
-    \label{theory:aging}
-    \input{chapters/1_introduction/2_aging}    
+%%%%%%%%%%%%%%%%%% Formal stuff %%%%%%%%%%%%%%%%%%
+    % Title page
+    \input{chapters/0_Formalia/titlepage}
     
-    \section{Machine learning}
-    \label{theory:ml}
-    \input{chapters/1_introduction/3_machine_learning} 
-    
-\chapter{Aims and scope}
+    \pagenumbering{roman}
+    \tableofcontents
 
+    % Acknowledgement
+    \chapter*{Acknowledgement}
+    \addcontentsline{toc}{chapter}{Acknowledgement}
+    
+    \input{chapters/0_Formalia/acknowledgement}
+
+    % Abstract
+    \chapter*{Abstract}
+    \setcounter{page}{2}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \input{chapters/0_Formalia/abstract}
+    
+    % List of figures
+    \listoffigures
+    \addcontentsline{toc}{chapter}{List of Figures}
+    
+    % List of tables
+    \listoftables
+    \addcontentsline{toc}{chapter}{List of Tables}
+
+    % List of acronyms
+    \printglossary[nonumberlist, type=\acronymtype, title={List of Abbreviations}]
+
+    % Contributions
+    \chapter*{Publications and other scientific contributions}
+    \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
+    \input{chapters/0_Formalia/publist}
+
+%%%%%%%%%%%%%%%%%% Content %%%%%%%%%%%%%%%%%%
+
+    % Introduction
+    \chapter{General Introduction}\label{chap:intro}
+    \pagenumbering{arabic}
+    
+        \section{Motivation}
+        \label{motivation}
+        \input{chapters/1_introduction/1_motivation}
+        
+    
+        \section{Aging}
+        \label{theory:aging}
+        \input{chapters/1_introduction/2_aging}    
+        
+        \section{Machine learning}
+        \label{theory:ml}
+        \input{chapters/1_introduction/3_machine_learning} 
+
+    % Aims
+    \chapter{Aims and scope}
     \label{chap:aims_scope}
     \input{chapters/2_aims_scope}
 
-\chapter{General methodology}
-\label{chap:methods}
-This chapter introduces the overarching methods of the \hyperref[pub:papers]{published research articles} on which this thesis is based. The focus is rather on an overall description of the methods, which is crucial for the following summary of the main results than on details in terms of reproducibility. For this, reference is made to the original description as it can be found in the \hyperref[pub:papers]{published research articles}.
-
+    % Methods
+    \chapter{General methodology}
+    \label{chap:methods}
+    This chapter introduces the overarching methods of the \hyperref[pub:papers]{published research articles} on which this thesis is based. The focus is rather on an overall description of the methods, which is crucial for the following summary of the main results than on details in terms of reproducibility. For this, reference is made to the original description as it can be found in the \hyperref[pub:papers]{published research articles}.
     \input{chapters/3_general_methodology}
-
-
-\chapter{Summary of the Main Results}
-In the following, the main results of the i\hyperref[pub:papers]{published research articles} will be briefly presented. The style of the illustrations published in the respective articles has been adapted from the original publication. The Authors' contributions are indicated as published in the articles and reviewed and agreed to by all authors.
-
-\label{chap:results}
-    \section{Research Article \uproman{1}}
-    \label{results:paperI}
-    \input{chapters/4_Results/1_Paper1}
     
-    \section{Research Article \uproman{2}}
-    \label{results:paperII}
-    \input{chapters/4_Results/2_Paper2}
-
-    \section{Research Article \uproman{3}}
-    \label{results:paperIII}
-    \input{chapters/4_Results/3_Paper3}
+    % Results
+    \chapter{Summary of the Main Results}
+    \label{chap:results}
+    In the following, the main results of the i\hyperref[pub:papers]{published research articles} will be briefly presented. The style of the illustrations published in the respective articles has been adapted from the original publication. The Authors' contributions are indicated as published in the articles and reviewed and agreed to by all authors.
     
-    \section{Research Article \uproman{4}}
-    \label{results:paperIV}
-    \input{chapters/4_Results/4_Paper4}
+        \section{Research Article \uproman{1}}
+        \label{results:paperI}
+        \input{chapters/4_Results/1_Paper1}
+        
+        \section{Research Article \uproman{2}}
+        \label{results:paperII}
+        \input{chapters/4_Results/2_Paper2}
     
-\chapter{General discussion}
-\label{chap:discussion}
+        \section{Research Article \uproman{3}}
+        \label{results:paperIII}
+        \input{chapters/4_Results/3_Paper3}
+        
+        \section{Research Article \uproman{4}}
+        \label{results:paperIV}
+        \input{chapters/4_Results/4_Paper4}
 
-\printbibliography[heading=bibintoc,title={References}]
+    % Discussion
+    \chapter{General discussion}
+    \label{chap:discussion}
+    \input{chapters/5_discussion}
 
-\chapter*{\vspace*{\fill}\centering{Published Research Articles}\vspace*{\fill}}
-\label{pub:papers}
-\addcontentsline{toc}{chapter}{Published Research Articles}
-    \newpage
-    \section*{\vspace*{\fill}\centering{Published Research Article \uproman{1}}\vspace*{\fill}}
-        \addcontentsline{toc}{section}{Published Research Article \uproman{1}}
-        \label{pub:paperI}
-        % \includepdf[pages=-]{published_paper/ForceControl.pdf}
-    \section*{\vspace*{\fill}\centering{Published Research Article \uproman{2}}\vspace*{\fill}}
-        \addcontentsline{toc}{section}{Published Research Article \uproman{2}}
-        \label{pub:paperII}
-        % \includepdf[pages=-]{published_paper/Attention.pdf}
-    \section*{\vspace*{\fill}\centering{Published Research Article \uproman{3}}\vspace*{\fill}}
-        \addcontentsline{toc}{section}{Published Research Article \uproman{3}}
-        \label{pub:paperIII}
-        % \includepdf[pages=-]{published_paper/Fitness.pdf}
-    \section*{\vspace*{\fill}\centering{Published Research Article \uproman{4}}\vspace*{\fill}}
-        \addcontentsline{toc}{section}{Published Research Article \uproman{4}}
-        \label{pub:paperIV}
-        % \includepdf[pages=-]{published_paper/Expertise.pdf}
+    % References
+    \printbibliography[heading=bibintoc,title={References}]
+
+    % Publications
+    \chapter*{\vspace*{\fill}\centering{Published Research Articles}\vspace*{\fill}}
+    \label{pub:papers}
+    \addcontentsline{toc}{chapter}{Published Research Articles}
+        \newpage
+        \section*{\vspace*{\fill}\centering{Published Research Article \uproman{1}}\vspace*{\fill}}
+            \addcontentsline{toc}{section}{Published Research Article \uproman{1}}
+            \label{pub:paperI}
+            \includepdf[pages=-]{published_paper/ForceControl.pdf}
+        \section*{\vspace*{\fill}\centering{Published Research Article \uproman{2}}\vspace*{\fill}}
+            \addcontentsline{toc}{section}{Published Research Article \uproman{2}}
+            \label{pub:paperII}
+            \includepdf[pages=-]{published_paper/Attention.pdf}
+        \section*{\vspace*{\fill}\centering{Published Research Article \uproman{3}}\vspace*{\fill}}
+            \addcontentsline{toc}{section}{Published Research Article \uproman{3}}
+            \label{pub:paperIII}
+             \includepdf[pages=-]{published_paper/Fitness.pdf}
+        \section*{\vspace*{\fill}\centering{Published Research Article \uproman{4}}\vspace*{\fill}}
+            \addcontentsline{toc}{section}{Published Research Article \uproman{4}}
+            \label{pub:paperIV}
+            \includepdf[pages=-]{published_paper/Expertise.pdf}
+            
 \end{document}
