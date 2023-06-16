@@ -13,7 +13,7 @@
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage[style=draft,backend=bibtex,maxbibnames=99]{biblatex}
+\usepackage[style=nature,backend=bibtex,maxbibnames=99]{biblatex}
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={3.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin={2.5cm}]{geometry}
 \usepackage{epigraph}
@@ -42,6 +42,9 @@
 \newcommand{\chapref}[1]{\hyperref[#1]{chapter~\ref*{#1}}}
 
 % citation
+\newrobustcmd{\allcite}{%
+  \AtNextCite{\defcounter{maxnames}{99}\defcounter{minnames}{99}}\fullcite}
+
 \newrobustcmd{\twocite}{%
   \AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
   
