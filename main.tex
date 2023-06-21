@@ -13,7 +13,7 @@
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage[style=nature,backend=bibtex,maxbibnames=99]{biblatex}
+\usepackage[style=nature,backend=biber,maxbibnames=99]{biblatex}
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={3.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin={2.5cm}]{geometry}
 \usepackage{epigraph}
@@ -36,57 +36,129 @@
 
 
 %------------------------------------ Settings ------------------------------------
-% references
-\addbibresource{literature.bib} 
-\newcommand{\Chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % capitalize link to chapter
-\newcommand{\chapref}[1]{\hyperref[#1]{chapter~\ref*{#1}}}
+% CITATION
+    % ADD TWO AUTHOR CITE
+        \newrobustcmd{\twocite}{\AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
 
-% citation
-\newrobustcmd{\allcite}{%
-  \AtNextCite{\defcounter{maxnames}{99}\defcounter{minnames}{99}}\fullcite}
+    % ADD BOLD AUTHOR NAME
+        \makeatletter
+        % auxiliary bibfile
+        \def\hlblx@bibfile@name{\jobname -boldnames.bib}
+        \newwrite\hlblx@bibfile
+        \immediate\openout\hlblx@bibfile=\hlblx@bibfile@name
+        
+        \newcounter{hlblx@name}
+        \setcounter{hlblx@name}{0}
+        
+        \newcommand*{\hlblx@writenametobib}[1]{%
+          \stepcounter{hlblx@name}%
+          \edef\hlblx@tmp@nocite{%
+            \noexpand\AfterPreamble{%
+              \noexpand\setbox0\noexpand\vbox{%
+                \noexpand\hlblx@getmethehash{hlblx@name@\the\value{hlblx@name}}}}%
+          }%
+          \hlblx@tmp@nocite
+          \immediate\write\hlblx@bibfile{%
+            @misc{hlblx@name@\the\value{hlblx@name}, author = {\unexpanded{#1}}, %
+                  options = {dataonly=true},}%
+          }%
+        }
+        
+        \AtEndDocument{%
+          \closeout\hlblx@bibfile}
+        
+        \addbibresource{\hlblx@bibfile@name}
+        
+        \newcommand*{\hlbxl@boldhashes}{}
+        \DeclareNameFormat{hlblx@hashextract}{%
+          \xifinlist{\thefield{hash}}{\hlbxl@boldhashes}
+            {}
+            {\listxadd{\hlbxl@boldhashes}{\thefield{fullhash}}}}
+        
+        \DeclareCiteCommand{\hlblx@getmethehash}
+          {}
+          {\printnames[hlblx@hashextract][1-999]{author}}
+          {}
+          {}
+        
+        % user-level macros
+        \newcommand*{\addboldnames}{\forcsvlist\hlblx@writenametobib}
+        \newcommand*{\resetboldnames}{\def\hlbxl@boldhashes{}}
+        
+        
+        \newcommand*{\mkboldifhashinlist}[1]{%
+          \xifinlist{\thefield{hash}}{\hlbxl@boldhashes}
+            {\mkbibbold{#1}}
+            {#1}}
+        \makeatother
+        
+        \DeclareNameWrapperFormat{given-family:hash:bold}{%
+          \renewcommand*{\mkbibcompletename}{\mkboldifhashinlist}%
+          #1}
+        
+        \DeclareCiteCommand{\fullcitebold}
+          {\usebibmacro{prenote}}
+          {\usedriver
+             {\DeclareNameAlias{sortname}{default}%
+              \DeclareNameWrapperAlias{default}{given-family:hash:bold}%
+              \defcounter{maxnames}{99}%
+              \defcounter{minnames}{99}}
+             {\thefield{entrytype}}}
+          {\multicitedelim}
+          {\usebibmacro{postnote}}
+        
+        \addboldnames{{Gölz, Christian},{Goelz, Christian}} 
+    
+% REFERENCES
+    \addbibresource{literature.bib} 
+    \newcommand{\Chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}} % capitalize link to chapter
+    \newcommand{\chapref}[1]{\hyperref[#1]{chapter~\ref*{#1}}}
 
-\newrobustcmd{\twocite}{%
-  \AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
-  
-% \patchcmd{\bibsetup}{\interlinepenalty=5000}{\interlinepenalty=10000}{}{}
+% FIGURES
+    \graphicspath{{figures/}}
+    \captionsetup[figure]{font=small,justification=raggedright,singlelinecheck=false}
+    \newcommand{\dummyfig}[1]{
+      \centering
+      \fbox{
+        \begin{minipage}[c][0.33\textheight][c]{0.5\textwidth}
+          \centering{#1}
+        \end{minipage}
+      }
+    }
 
-% figures
-\graphicspath{{figures/}}
-\captionsetup[figure]{font=small,justification=raggedright,singlelinecheck=false}
-\newcommand{\dummyfig}[1]{
-  \centering
-  \fbox{
-    \begin{minipage}[c][0.33\textheight][c]{0.5\textwidth}
-      \centering{#1}
-    \end{minipage}
-  }
-}
+% SECTION NUMBERS
+    \setcounter{tocdepth}{2}
+    \setcounter{secnumdepth}{2}
+    
 
-% section numbers
-\setcounter{tocdepth}{2}
-\setcounter{secnumdepth}{2}
-% \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+% COLOR LINKS
+    \hypersetup{colorlinks=true,
+    linkcolor=black,
+    urlcolor=balck
+    }
+    
+% LINE SPACING
+    \renewcommand{\baselinestretch}{1.5}
 
-% color
-\hypersetup{colorlinks=true,
-linkcolor=black,
-filecolor=magenta,
-urlcolor=black
-}
+% FOOTNOTES
+    
+    \renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
+    \setlength{\footnotesep}{1.5em}
+    \setlength{\skip\footins}{1.5em}
+    
+    \newcommand{\symbfootnote}[1]{%
+    \renewcommand{\thefootnote}{\fnsymbol{footnote}}%
+    \footnote{#1}%
+    \renewcommand{\thefootnote}{\arabic{footnote}}%
+    }
 
 
-% line spacing
-\renewcommand{\baselinestretch}{1.5}
+% NUMBERING
+    \newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+    \newcommand{\lowroman}[1]{\romannumeral#1\relax}
 
-% footnotes
-\renewcommand{\footnotesize}{\fontsize{10}{12}\selectfont}
-\setlength{\footnotesep}{1.5em}
-\setlength{\skip\footins}{1.5em}
-
-% numbering
-\newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
-\newcommand{\lowroman}[1]{\romannumeral#1\relax}
-
+% !!!!! ADDED DUE TO UNICODE ERROR: TO DO - SEE EFFECT 
+\DeclareUnicodeCharacter{2212}{\textendash} 
 %------------------------------------ Abbreviations -------------------------------
 \input{acronyms}
 %------------------------------------ Document ------------------------------------
@@ -120,10 +192,11 @@ urlcolor=black
 
     % List of acronyms
     \printglossary[nonumberlist, type=\acronymtype, title={List of Abbreviations}]
-
+    \addcontentsline{toc}{chapter}{List of Abbreviations}
+    
     % Contributions
-    \chapter*{Publications and other scientific contributions}
-    \addcontentsline{toc}{chapter}{Publications and other scientific contributions}
+    \chapter*{List of scientific contributions}
+    \addcontentsline{toc}{chapter}{List of scientific contributions}
     \input{chapters/0_Formalia/publist}
 
 %%%%%%%%%%%%%%%%%% Content %%%%%%%%%%%%%%%%%%
@@ -159,7 +232,7 @@ urlcolor=black
     % Results
     \chapter{Summary of the Main Results}
     \label{chap:results}
-    In the following, the main results of the i\hyperref[pub:papers]{published research articles} will be briefly presented. The style of the illustrations published in the respective articles has been adapted from the original publication. The Authors' contributions are indicated as published in the articles and reviewed and agreed to by all authors.
+    In the following, the main results of the \hyperref[pub:papers]{published research articles} will be briefly presented. The style of the illustrations published in the respective articles has been adapted from the original publication. The Authors' contributions are indicated as published in the articles and reviewed and agreed to by all authors.
     
         \section{Research Article \uproman{1}}
         \label{results:paperI}
