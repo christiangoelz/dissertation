@@ -1,35 +1,34 @@
-One of the greatest challenges of our society is to cope with an aging society. This requires targeted interventions, early detection of unfavorable trajectories, and assistive technology. To achieve this, an understanding of individual trajectories of age-related decline is essential. The approach of this work was to gain such an understanding by applying machine learning techniques. Following this the overall goal of this thesis was to better understand the reorganization of the aging brain by applying machine learning techniques. Three approaches were derived from the literature and taken up in four publications.\\
+This work aimed to better understand the reorganization of the aging brain by applying machine learning techniques to \gls{eeg} data. Three approaches were derived from the literature and used in four publications.
+The first approach was based on a reorganization of the aging brain often described in the literature, namely dedifferentiation, i.e., less specific activation of brain networks expressed in a lower differentiability of brain states. Based on a computational model, this could be due to the loss of selectivity of neuronal responsiveness, which has been confirmed in numerous animal and human studies. Building upon this, we tested the differentiability of brain states, e.g., in the form of activation patterns of brain networks, and thus the selectivity of neuronal representations using machine learning methods. This approach provided insights into age-related dedifferentiation and allowed the formulation of new hypotheses, e.g., regarding this phenomenon's temporal aspect.\\
+The second approach of this work addressed the reserve hypothesis. We examined the possible positive effects of certain lifestyle factors, such as physical fitness or occupational expertise, on brain reorganization during aging. Using machine learning techniques, we compared individuals with different lifestyle backgrounds and the effects on age-related brain reorganization. This analysis provided new perspectives and helped confirm certain predictions of the reserve hypothesis.\\
+In the third approach, dimensionality reduction and group-level classification algorithms were used to identify overarching patterns in brain reorganization. This approach enabled the generation of new insights and hypotheses by these methods on high-dimensional data.\\
+In the following, the main results of these approaches are discussed. However, for a detailed discussion of each specific result, please refer to the corresponding published journal articles.\\
 
-\section{Summary}
-The first approach was based on a widely reported reorganization of the aging brain in the literature, namely dedifferentiation, which is based on a computational model with broad evidence from animal models and human studies. In this work, machine learning was used to quantify the selectivity of neural representations at the individual level. This approach provided insights into age-related dedifferentiation and allowed the formulation of new hypotheses, e.g., regarding the temporal aspect of this phenomenon.\\
-The second approach of this research addressed the reserve hypothesis and examined the possible positive effects of certain lifestyle factors, such as physical fitness or occupational experience, on brain reorganization during aging. Using machine learning techniques, we compared individuals with different lifestyle backgrounds and the effects on age-related brain reorganization. This analysis provided new perspectives and helped confirm certain predictions of the reserve hypothesis.\\
-In the third approach, dimensionality reduction, and group-level classification algorithms were used to identify overarching patterns in brain reorganization. This enabled the generation of new insights and hypotheses by these methods on high-dimensional data.\\
-In the following, we discuss the main results of these approaches. However, for a detailed discussion of each specific result, please refer to the corresponding published journal articles.\\
+\section{On the detection of dedifferentiated brain organization}
+Motivated by applications from research using \gls{fmri}, in which dedifferentiation is quantified based on the performance of classification algorithms, we applied this to \gls{eeg} data to investigate the differentiability of signals in motor, cognitive and sensory tasks in participants of different age groups.\\
+In \hyperref[results:paperI]{Research Article \uproman{1}}, we found differences in the classification performance of fine motor tasks based on \gls{eeg} data. In particular, performance in classifying which hand was used to perform the task was reduced in the late middle-aged compared with younger participants. Studying the classifier input, i.e., the spatiotemporal coherent activation patterns extracted with \gls{dmd}, we found that this corresponds to differences in the electrophysiological network activation patterns pointing to more bilateral and widespread activation in late middle-aged adults. These results correspond to a dedifferentiated motor network as reported in \gls{fmri} studies \cite{Carb2011, Cassedy2020} and are also consistent with other \gls{eeg} findings that have compared classification between age groups finding reduced performance in the classification of the body side of task execution in older adults \cite{Chen2019, Zich2015}. On the other hand, we found an increased classification performance in the late middle-aged participants when predicting whether the participant tracked a steady or sinusoidal target force. When considering the classifier input again, we found a stronger frontal involvement in the network activation patterns of the late middle-aged participants and thus suspected that compensation processes play a role here. Compensation could be present,  especially in the more complex sinusoidal force tracking, and thus positively influence the differentiability of sinusoidal and steady force tracking. This result is consistent with the \gls{crunch} hypothesis, which postulated that during task performance, as task difficulty (or load) increases, more cortical resources will be activated \cite{Festini2018}. Combining both results, we could demonstrate that age-related reorganization of the aging brain is reflected in the performance of classifiers based on EEG measurements, thus providing new insights into the aging brain.\\
+In \hyperref[results:paperII]{Research Article \uproman{2}}, we again utilized classification algorithms to investigate whether the cortical representation of selective attention differed between six different age groups ranging from children to older adults. Here we found that the discriminability between stimuli requiring and stimuli not requiring inhibitory control was reduced only in the children's group. This reduced discriminability in the group of children goes along with the assumption of inhibitory control in children that is not yet differentiated at the neural level \cite{Waszak2010, Reuter2019}. However, the results of similar good performance of the classifiability of the two stimulus categories contradict the assumption of a general dedifferentiation of all cortical systems. Similar results are also known in \gls{fmri} studies, which, for example, found no dedifferentiation in the activation of the visual system in response to certain stimulus categories \cite{Voss2008}. By using \gls{eeg}, however, we were able to investigate the temporal response to the stimulus in addition. For this reason, the classifier input did not represent coherent activation patterns as in the previously described analysis, but rather single-trial \gls{eeg} traces filtered by xDAWN in response to the stimuli, through which it was possible to examine the performance of the classifier over time and thus gain insight into the temporal dynamics of information processing. In this way, we found that the differentiability of the stimuli was delayed in older adults.\\
+Taken together, dedifferentiation might also have a dynamic component related to the rise of neural noise, as postulated in the computational model of \citeauthor{Li2001} \cite{Li2001, Li2000}. However, this only occurred in the two oldest age groups and not, as in the previous study, in the late middle-aged, so this effect might occur later in the aging process.
 
-\subsection{On the detection of dedifferentiated brain organization}
-Motivated by applications from \gls{fmri} research, in which dedifferentiation, operationalized as loss of neural specificity, is quantified based on the performance of classification algorithms, we applied this to \gls{eeg} data to investigate the differentiability of signals in motor, cognitive, and sensory tasks in participants of different age groups.\\
-In \hyperref[results:paperI]{Research Article \uproman{1}}, we found differences in the classification performance of fine motor tasks based on \gls{eeg} data. In particular, performance in classifying which hand was used to perform each task was reduced in late middle-aged compared with younger participants. Studying the classifier input, i.e. the spatiotemporal coherent activation patterns extracted with \gls{dmd}, we found that this corresponds to differences in the electrophysiological network activation patterns pointing to more bilateral and widespread activation in late middle-aged adults. Taken together these results correspond to a dedifferentiated motor network as reported in \gls{fmri} studies \cite{Carb2011,Cassedy2020} and are also consistent with other \gls{eeg} findings that have compared classification between age groups finding reduced performance in the classification of the body side of task execution in older adults \cite{Chen2019, Zich2015}. On the other hand, we found an increased classification performance in the late middle-aged participants when predicting whether a steady or sinusoidal target force was tracked by the participant. When considering the classifier input again, we found a stronger involvement of frontal electrodes in the network activation patterns of the late middle-aged participants and thus suspected that compensation processes play a role here. This could be present,  especially in the more complex sinusoidal force tracking and thus positively influence the differentiability of the two task classes and is consistent with the \gls{crunch} hypothesis which  postulated that during task performance, as task difficulty (or load) increases, more cortical resources will be activated \cite{Festini2018}.\\ 
-In \hyperref[results:paperII]{Research Article \uproman{2}} we again utilized classification algorithms to investigate whether the cortical representation of selective attention differed between six different age groups ranging from children to older adults. Here we found that the discriminability between stimuli requiring and stimuli not requiring inhibitory control was reduced only in the children's group. This reduced discriminability in the group of children goes along with the assumption of inhibitory control in children that is not yet differentiated at the neural level \cite{Waszak2010,Reuter2019}. However, the results of similar good performance of the classifiability of the two stimulus categories contradict the assumption of a general dedifferentiation of all cortical systems. This is also known in \gls{fmri} studies, which, for example, found no dedifferentiation in the activation of the visual system in response to specific stimulus categories \cite{Voss2008}. In this article, we were interested in the temporal response to the stimulus and so the classifier input did not represent coherent activation patterns as in the previously described analysis, but rather single-trial \gls{eeg} traces filtered by xDAWN in response to the stimulus, through which it was possible to examine the performance of the classifier over time and thus gain insight into the temporal dynamics of information processing. In this way we found that the differentiability of the stimuli was delayed in older adults. Thus, dedifferentiation might also have a dynamic component related to the rise of neural noise, as postulated in the model of Li and colleagues \cite{Li2001,Li2000}. However, this only occurred in the two oldest age groups and not, as in the previous study, in the late middle-aged, so this effect might occur later in the aging process. 
+\section{The role of lifestyle factors}
+An important aspect to better understand the individuality of age-related alterations is to investigate how influencing factors affect the reorganization of the aging brain. From the literature, physical fitness can be deduced as a significant influencing factor that affects the brain's ability to resist degradation processes and maintain function, thus contributing to reserve. In this context, \citeauthor{Stillman2019} \cite{Stillman2019} summarizes findings of \gls{fmri} studies proving that the network structure of the brain at rest of physically fit people show fewer signs of dedifferentiation. Therefore, in \hyperref[results:paperIII]{Research Article \uproman{3}} we investigated to what extent cardiorespiratory fitness affects the dedifferentiation of task-related network activation patterns based on \gls{eeg}. To do so, we extracted dominant spatiotemporal network patterns and their prominence over time during the performance of motor, sensory and cognitive tasks. In this way, we were able to estimate task-related brain network activation patterns in the main domains in which age-related changes are reported and compare this between a fit and less fit group \cite{Baltes1997, Sala-Llonch2015, Park2009}. This comparison revealed greater differences between the task-related activation patterns in the fit compared to the less fit group, suggesting lower levels of dedifferentiation in the less fit group. We further found that the extracted dominant modes of the fit group resolved more variance compared to the less fit group, indicating higher stability or prominence of the extracted patterns in the fit group. These differences were frequency dependent mainly to the $\theta$ and $\beta_2$ bands which could be carefully attributed to processes reflecting cognitive involvement and information integration \cite{Siegel2012}. From the perspective of the computation model of dedifferentiation, this could indicate less neural noise and a lower rate of neural variability, which points to a higher efficiency of information processing. Overall, these results follow the prediction of the reserve hypothesis and provide evidence that supports the assumptions of the computational model of dedifferentiation.\\
+Another frequently studied factor of influence in the literature is professional expertise. Thus, in \hyperref[results:paperIV]{Research Article \uproman{4}}, we compared fine motor experts and novices with respect to the classification performance of visuomotor tasks. We found no group differences in the performance of a classifier trained to classify the same task characteristics as in \hyperref[results:paperI]{Research Article \uproman{1}}. Consequently, we could not detect any differences in the differentiation of the neural representation of the task between novices and experts. At first glance, these results contradict previous studies from the Bremen-Hand-Study@Jacobs, which showed statistical differences in the expression of network characteristics of experts compared to novices in terms of neural efficiency \cite{Goelz2018, Vieluf2018}. However, our study tested a particular assumption of age-related reorganization, namely a reduced differentiation, and did not test neural efficiency as in the previous work. Also, in contrast to \hyperref[results:paperIII]{Research Article \uproman{3}}, the results seem to contradict the reserve concept, based on which a lower level of dedifferentiation would have been expected. Therefore, taking a more differentiated view of the reserve concept concerning individual factors is necessary. We have only explored one aspect in considering dedifferentiation in the aging brain. As a result, other characteristics of brain reorganization may differ, such as the efficiency of information processing or compensational network involvement. These factors were not accounted for in our analyses.
 
-\subsection{The role of lifestyle factors}
-An important aspect to better understand the individuality of age-related alterations is to investigate how influencing factors affect the reorganization of the aging brain. From the literature, physical fitness can be deduced as a significant influencing factor that affects the brain's ability to resist degradation processes and maintain function, thus contributing to reserve. In this context \citeauthor{Stillman2019} \cite{Stillman2019} summarizes findings of \gls{fmri} studies proving that the network structure of the brain at rest of physically fit people show less signs of dedifferentiation. Based on this, in \hyperref[results:paperIII]{Research Article \uproman{3}} we investigated to what extent cardiorespiratory fitness affects the dedifferentiation of task-related network activation patterns based on \gls{eeg}. To do so, we used \gls{dmd} and extracted the dominant spatiotemporal \gls{eeg} patterns and their prominence over time of task performance in motor, sensory and cognitive tasks. In this way, we were able to estimate task-related brain network dynamic activation patterns in the main domains in which age-related changes are reported \cite{Baltes1997, Sala-Llonch2015, Park2009}. Comparison between a fit and less fit group revealed greater differences in activation patterns in the fit compared to the unfit group, suggesting lower levels of dedifferentiation. We further found that the extracted dominant modes of the fit group resolved more variance compared to the less fit group, indicating higher stability or prominence of the extracted patterns in the fit group. In this way, it was possible to investigate the dynamics of age-related changes described in the literature. From the perspective of the dedifferentiation model, this could indicate less neural noise and a lower rate of neural variability predicted by this model which points to higher efficiency of information processing. These differences were frequency dependent mainly to the $\theta$ and $\beta_2$ bands which could be carefully attributed to processes reflecting cognitive involvement and information integration \cite{Siegel2012}.\\
-Another frequently studied factor of influence in the literature is that of professional expertise. Thus, we compared fine motor experts and novices in \hyperref[results:paperIV]{Research Article \uproman{4}} analogous to \hyperref[results:paperI]{Research Article \uproman{1}} with respect to the classification performance of the visuomotor tasks and found no differences in classifier performance. Consequently, we could not detect any differences in the differentiation of the neural representation of the task. At first glance, these results contradict previous studies from the Bremen Hand Study@Jacobs, which showed statistical differences in the expression of network characteristics of experts compared to novices in terms of neural efficiency \cite{Goelz2018, Vieluf2018}. However, in our study, we tested a very specific assumption of age-related reorganization, namely a reduced differentiation, and did not test neural efficiency as in the previous work. Also, the results seem to contradict the reserve concept, on the basis of which a lower level of dedifferentiation would have been expected. However, this is only one specific point and the concept of reserve is more multifaceted than this specific assumption including structural as well as functional aspects such as compensatory involvement and efficiency of brain networks \cite{Cabeza2018}. Therefore, our results do not necessarily contradict the reserve concept.
-
-\subsection{Exploratory insights into age-related reorganization}
-While the previous results refer to the application at the participant level, we also used the machine learning methods at the group level to gain explorative insights into the structure of the studied groups.\\
-In \hyperref[results:paperII]{Research Article \uproman{2}} we found a grouped structure of misclassifications when using a classifier to distinguish between the six age groups, i.e. the classifier tended to misclassify only between certain age groups. This was especially noticeable in the two oldest groups, between which the misclassification rate was highest. Less frequently, however, older subjects were classified into the younger group of late middle-aged subjects and vice versa. Since the age cut was around 65 years, this could indicate changes that occur after retirement. Deterioration of cognitive abilities and cerebral blood flow after retirement has been reported in the literature \cite{Celidoni2017, Rohwedder2010, Rogers1990}. However, we could not further test this hypothesis because of a lack of data on the retirement age of the participants. In addition, no misclassification occurred between children and the oldest groups. Although differences based on \gls{erp} markers are often described as u-shaped \cite{Mueller2008, Reuter2019}, this result suggests different mechanisms, i.e., differentiation in children vs dedifferentiation in older adults. Overall, we found an increase in classification performance shortly after stimulus onset of about 10 \%, which highlights the added value of task-related \gls{eeg} recordings and suggests early processing of the stimulus to be affected by age-related reorganization.\\
-In contrast, in \hyperref[results:paperIV]{Research Article \uproman{4}} we were unable to distinguish between experts and novices. This contrasts with studies in which this approach was successful. In contrast to these studies, the occupational background of the fine motor experts studied, such as opticians and watchmakers, was very diverse. Following, the visuomotor tracking tasks selected for analysis offered only a general approximation of the context of their expertise. Based on this, we visualized the underlying brain network characteristics using a nonlinear dimensionality reduction in two-dimensional space. However, differences in the data structure between experts and novices emerged. Compared to each other, the brain network patterns of the experts showed a higher degree of a clustered structure in which each cluster could be clearly assigned to a participant. This can be interpreted as a higher individuality of the brain network patterns in the experts. A high degree of individuality is also known in the movement patterns of flute players and in the muscle synergies of expert powerlifters \cite{Albrecht2014, Caramiaux2018, Kristiansen2015} and our results suggest that this is present at the network level of the brain as well.\\
+\section{Exploratory insights into age-related reorganization}
+While the previous results refer to the application at the participant level, we also used the machine learning methods at the group level to gain explorative insights into the overreaching group patterns.\\
+In \hyperref[results:paperII]{research article \uproman{2}}, we found a grouped structure of misclassifications when using a classifier that was trained to determine the group membership in one of the six age groups based on \gls{eeg} data. The classifier tended to misclassify only between certain age groups. This was especially noticeable in the two oldest age groups, between which the misclassification rate was highest. Less frequently, however, older participants were classified into the group of late middle-aged adults and vice versa. Considering the age structure of the older adults (minimum age of 65 years) and the middle-aged adult (maximum age of 64 years) groups, as well as a retirement age of around 65, this could indicate major cognitive changes after retirement. Deterioration of cognitive abilities and cerebral blood flow after retirement has been reported in the literature \cite{Celidoni2017, Rohwedder2010, Rogers1990}. However, we could not further test this hypothesis because of a lack of data on the retirement age of the participants. In addition, no misclassification occurred between children and the oldest groups. Although differences based on \gls{erp} markers are often described as u-shaped \cite{Mueller2008, Reuter2019}, this result suggests different mechanisms, i.e., differentiation in children vs. dedifferentiation in older adults. Overall, we found an increase in classification performance shortly after stimulus onset of about 10~\%, highlighting the added value of task-related \gls{eeg} recordings and suggesting early processing of the stimulus to be affected by age-related reorganization.\\
+Also, in \hyperref[results:paperIV]{Research Article \uproman{4}}, a classifier should be trained based on the \gls{eeg} data to determine the membership to the group of experts or novices. In contrast to the previous article, however, the performance was below the random level. This finding contrasts with studies in which the classification of the level of expertise was already successful \cite{Hosp2021, Winkler-Schwartz2019, Shourie2016}. In contrast to these studies, the occupational background of the fine motor experts studied in this study, such as opticians and watchmakers, was very diverse, and the visuomotor tracking tasks selected for analysis offered only a general approximation of the context of their expertise. Based on this, we visualized the underlying brain network characteristics using a nonlinear dimensionality reduction in two-dimensional space. Differences in the data structure between experts and novices emerged. Compared to each other, the brain network patterns of the experts showed a higher degree of a clustered structure in which each cluster could be clearly assigned to a participant. This finding can be interpreted as a higher individuality of the brain network patterns in the experts. A high degree of individuality is also known in the movement patterns of flute players and the muscle synergies of expert powerlifters \cite{Albrecht2014, Caramiaux2018, Kristiansen2015}. Our results suggest that individuality, which was gained in the context of professional expertise, is as well present at the network level of the brain.\\
 \\
-Overall, the results presented in the four research articles showed that machine learning techniques, including dimensionality reduction and classification of \gls{eeg} signals, were successful in detecting age-related brain reorganization. These results provided new starting points for understanding the reorganization process of the aging brain, particularly in relation to dedifferentiation, and partially supported the predictions of the reserve hypothesis.
+Overall, the results presented in the four research articles showed that machine learning techniques, including dimensionality reduction and classification of \gls{eeg} signals, successfully detected age-related brain reorganization. These results provided new starting points for understanding the reorganization process of the aging brain, particularly in relation to dedifferentiation, and partially supported the predictions of the reserve hypothesis.
 
 \section{Methodological considerations}
-Before discussing specific methodological aspects regarding the characteristics of the datasets used and the underlying study protocols, as well as the application of machine learning procedures, it should be noted that, noted that we have not presented changes but \textit{differences} as the study design of all studies from which the datasets were derived were cross-sectional. We also focused only on some well-documented specific aspects of the reorganization of the aging brain and explored overarching patterns in an exploratory manner. The results should be evaluated in light of the following methodological considerations. 
+Before discussing specific methodological aspects regarding the characteristics of the datasets as well as the application of machine learning procedures, it should be noted that we have not presented changes but \textit{differences} as the study design of all studies from which the datasets were derived were cross-sectional. We also focused only on some well-documented specific aspects of the reorganization of the aging brain and explored overarching patterns in an exploratory manner. The results should be evaluated in light of the following methodological considerations. 
 
 \subsection{Datasets}
 With regard to the individual datasets and the underlying study protocols, there are some considerations that should be taken into account when evaluating the results presented.\\
 Overall, different age groups were present in the datasets underlying the individual research articles. The older (late middle-aged) participants in the first dataset, which were examined in \hyperref[results:paperI]{Research Article \uproman{1}}, were comparatively young so for these results it is to be expected that possible age effects have been underestimated. In the second dataset, the minimum age difference between the six age groups varied from ten years (between children and young adults) to one year (within the two oldest groups). This may have significantly conditioned the classification results of the second research article. However, the minimum age difference between the oldest groups and the next younger group (the middle-aged adults) is also only two years, so the cutoff found between these groups is less likely to be explained by the age structure of the dataset. In regard to the age structure, it would be advantageous to have a continuous age structure for a fine-grained analysis of age-related reorganization.\\
 Regarding the proxies of the reserve construct, it should be noted that the construct of the reserve hypothesis is more diverse than the dimesions depicted in \hyperref[results:paperI]{Research Articles \uproman{3}} and \hyperref[results:paperI]{\uproman{4}}. In our considerations, we followed the common scientific practice of comparing individuals with low expression with individuals with higher expression of a given proxy, i.e. cardiorespiratory fitness or expertise \cite{Koen2019}. Cardiorespiratory fitness was indirectly measured by a 6 min walk test, which is dependent on the motivation of the participants. However, a high correlation to the more objective VO$_2$max is reported in the literature \cite{Zhang2017}. The selection of the fine motor experts was based on the professional group of precision mechanics, whose daily routines and hand use may differ. On the other hand, it cannot be excluded that the novices also had a certain level of fine motor skill, which they acquired in their everyday life, so expertise effects may have been underestimated. By the criterion of a minimum of ten years of professional experience, however, the deliberate practice approach was followed, which was evaluated as a suitable criterion for professional expertise \cite{Ericsson1991, Voelcker-Rehage2013}. Furthermore, previous studies have shown that the selected fine motor task appropriately reflects the expertise context \cite{Vieluf2018, Goelz2018, Vieluf2012, Vieluf2013}. In general, a comparison to young subjects could have tested further assumptions of the reserve hypothesis. For example, whether different networks are activated and have higher task specificity or whether we can assume that networks are maintained. However, this was not possible during participant recruitment due to the selected criterion, i.e., at least ten years of work experience, in Dataset \uproman{1} or was not considered in the original intervention study on which Dataset \uproman{3} is based on.\\
-In addition to the age structure and the proxies of the reserve concept, it should be noted that the tasks evaluated comprised very specific laboratory tasks, whose transferability to everyday life may be limited. Nevertheless, the tasks should map across relevant domains in which age-related changes are reported, i.e., sensory, cognitive, and motor domains. The task types were all based on well-tested and common paradigms in aging research and had the advantage that the results are comparable to other studies. One aspect that we cannot exclude is the possible effect of fatigue and motivation, which could have played a role, especially during longer sessions. Other aspects relate to the specific characteristics of the task designs. For example, the force control task in Dataset \uproman{1} was designed in a block design and the participants already attended several similar experiments in the context of the Bremen Hand Study, so that practice effects cannot be excluded. This could also have been advantageous since age differences in short-term adaptation effects could thus be eliminated. The flanker task in Dataset \uproman{2} deferred slightly between the individual studies on which this dataset is based on. This was present in the length of stimulus presentation, number of trials, and gender. However, because the subjects of the individual studies were present in several groups and we did not find increased rates of misclassification between these groups, we excluded that this had a major influence on the results. In addition, the influence of gender and the number of trials in previous or comparable studies was estimated to be low \cite{Reuter2019, Vahid2020}. In Dataset \uproman{3}, the task was quite long, which may have contributed to the aforementioned fatigue effects, but had the advantage of allowing the temporal dynamics to be better mapped using the machine learning algorithms of brain activation using the machine learning algorithms 
+In addition to the age structure and the proxies of the reserve concept, it should be noted that the tasks evaluated comprised very specific laboratory tasks, whose transferability to everyday life may be limited. Nevertheless, the tasks should map across relevant domains in which age-related changes are reported, i.e., sensory, cognitive, and motor domains. The task types were all based on well-tested and common paradigms in aging research and had the advantage that the results are comparable to other studies. One aspect that we cannot exclude is the possible effect of fatigue and motivation, which could have played a role, especially during longer sessions. Other aspects relate to the specific characteristics of the task designs. For example, the force control task in Dataset \uproman{1} was designed in a block design and the participants already attended several similar experiments in the context of the Bremen-Hand-Study@Jacobs, so that practice effects cannot be excluded. This could also have been advantageous since age differences in short-term adaptation effects could thus be eliminated. The flanker task in Dataset \uproman{2} deferred slightly between the individual studies on which this dataset is based on. This was present in the length of stimulus presentation, number of trials, and gender. However, because the subjects of the individual studies were present in several groups and we did not find increased rates of misclassification between these groups, we excluded that this had a major influence on the results. In addition, the influence of gender and the number of trials in previous or comparable studies was estimated to be low \cite{Reuter2019, Vahid2020}. In Dataset \uproman{3}, the task was quite long, which may have contributed to the aforementioned fatigue effects, but had the advantage of allowing the temporal dynamics to be better mapped using the machine learning algorithms of brain activation using the machine learning algorithms 
 
 \subsection{Machine learning approaches}
 The application of machine learning algorithms is strongly dependent on the dataset and utilized algorithm.\\
@@ -51,6 +50,10 @@ Although the clinical relevance of dedifferentiation is not fully understood, \c
 The decoding approaches we have used are applied in technical systems such as \glspl{bci} or systems used in therapy such as neurofeedback systems. Our results imply that age and reorganization of the brain are significant factors to be considered in the development of assistive systems.  Direct implications for the development of such systems include, for example, thje usage of age-appropriate features, paradigms and algorithms in the development of assistive systems for the elderly. This arises from the differences in decoding performance between age groups and could affect the selection and placement of electrodes and a possible delay in decoding attempts. Likewise, our findings suggest that fitness or expertise level could have an influence and thus have implications for the development of adaptive systems, i.e. systems that automatically adapt to the user. 
 
 \section{Conclusion}
+One of the greatest challenges of our society is to cope with an aging society. This requires targeted interventions, early detection of unfavorable trajectories, and assistive technology. To achieve this, an understanding of individual trajectories of age-related decline is essential. The approach of this work was to gain such an understanding by applying machine learning techniques. 
+
+
+
 This thesis approached age-related reorganization with data-driven methods from the field of machine learning. Four resrearch articles were presented in which classification and dimensionality reduction methods were used to provide additional insights. 
 
 
@@ -58,96 +61,96 @@ This thesis approached age-related reorganization with data-driven methods from 
 
 Specifically in the firesst reserach article we used these methods and detecetd a 
 
-Study 1
-Based on age-related changes of brain networks, such as ad-
-ditional recruitment of bilateral motor areas (Carp et al., 2011;
-Ward & Frackowiak, 2003) and attentional resources (Berghuis
-et al., 2019), we aimed to study differences in the classification
-of EEG data recorded in active visuomotor tracking tasks.
-In summary we found electrophysiological patterns associated
-with an altered sensorimotor network in OA. Lower task speci-
-ficity in combination with changes in symmetry of brain activity
-point to bilateral and dedifferentiated, i.e., less task specific, brain
-activity of the motor network and activation and interrelation of
-several networks with age.
-Most importantly these electrophysiological brain activity pat-
-terns resulted in lower classification performance in the clas-
-sification of body side of task execution in OA, indicating less
-segregated brain network activation of the motor system. In
-contrast, OA showed higher classification performance with re-
-spect to the task characteristic. The study of the classifier input
-indicates the relevance of markers of information integration for
-classification performance in OA.
-The current results confirm previous findings on age-related
-reorganization of task-related brain networks and expand them
-with reference to the characteristics of the task. Furthermore,
-the findings may have practical implications for areas of applied
-research such as BCI applications. Age-related differences should
-be taken into account in the development of BCI and neurofeed-
-back systems if they are designed for this target group. This could
-include the selection of the appropriate positioning of electrodes,
-e.g., the use of frontal and occipital electrodes, as well as the
-choice of suitable features and algorithms.
+% Study 1
+% Based on age-related changes of brain networks, such as ad-
+% ditional recruitment of bilateral motor areas (Carp et al., 2011;
+% Ward & Frackowiak, 2003) and attentional resources (Berghuis
+% et al., 2019), we aimed to study differences in the classification
+% of EEG data recorded in active visuomotor tracking tasks.
+% In summary we found electrophysiological patterns associated
+% with an altered sensorimotor network in OA. Lower task speci-
+% ficity in combination with changes in symmetry of brain activity
+% point to bilateral and dedifferentiated, i.e., less task specific, brain
+% activity of the motor network and activation and interrelation of
+% several networks with age.
+% Most importantly these electrophysiological brain activity pat-
+% terns resulted in lower classification performance in the clas-
+% sification of body side of task execution in OA, indicating less
+% segregated brain network activation of the motor system. In
+% contrast, OA showed higher classification performance with re-
+% spect to the task characteristic. The study of the classifier input
+% indicates the relevance of markers of information integration for
+% classification performance in OA.
+% The current results confirm previous findings on age-related
+% reorganization of task-related brain networks and expand them
+% with reference to the characteristics of the task. Furthermore,
+% the findings may have practical implications for areas of applied
+% research such as BCI applications. Age-related differences should
+% be taken into account in the development of BCI and neurofeed-
+% back systems if they are designed for this target group. This could
+% include the selection of the appropriate positioning of electrodes,
+% e.g., the use of frontal and occipital electrodes, as well as the
+% choice of suitable features and algorithms.
 
-Study 2
-In summary, we were able to extend previous results
-using machine learning techniques to detect age and
-task differences in cognitive processing on a single-trial
-level. This is especially crucial for a step behind classical
-ERP components and a more direct link between behav-
-ior and neural dynamics [55]. The data-driven approach
-used in this research particularly highlights early atten-
-tional processes in the classification of age groups and
-suggests the benefit of task-related EEG data in the clas-
-sification of different age groups, which could be used in
-clinical contexts. With respect to information process-
-ing in selective attention our analyses could confirm the
-relevance of time windows corresponding to N1 and N2
-components reported in ERP studies. Furthermore, the
-time windows relevant for inhibitory control differed
-between groups, i.e., later time windows were relevant
-in older adults, suggesting that different processes are
-important for selective attention at different ages. Over-
-all, we showed that using machine learning compared
-to a priori selected electrodes and timepoints, we were
-able to obtain assumption-free insights into differences
-in inhibitory control over the lifespan. Machine learning
-thus represents an extension to classical methods that
-can be used to test existing theories but also to extend
-them.
+% Study 2
+% In summary, we were able to extend previous results
+% using machine learning techniques to detect age and
+% task differences in cognitive processing on a single-trial
+% level. This is especially crucial for a step behind classical
+% ERP components and a more direct link between behav-
+% ior and neural dynamics [55]. The data-driven approach
+% used in this research particularly highlights early atten-
+% tional processes in the classification of age groups and
+% suggests the benefit of task-related EEG data in the clas-
+% sification of different age groups, which could be used in
+% clinical contexts. With respect to information process-
+% ing in selective attention our analyses could confirm the
+% relevance of time windows corresponding to N1 and N2
+% components reported in ERP studies. Furthermore, the
+% time windows relevant for inhibitory control differed
+% between groups, i.e., later time windows were relevant
+% in older adults, suggesting that different processes are
+% important for selective attention at different ages. Over-
+% all, we showed that using machine learning compared
+% to a priori selected electrodes and timepoints, we were
+% able to obtain assumption-free insights into differences
+% in inhibitory control over the lifespan. Machine learning
+% thus represents an extension to classical methods that
+% can be used to test existing theories but also to extend
+% them.
 
-Study 3 
-In applying DMD to continuous EEG recordings during
-rest and three different tasks, we considered both topo-
-logical properties and the temporal dynamics of task-re-
-lated
-brain
-networks.
-Thus, we
-identified electrophysiological signatures of age-related brain reor-
-ganization processes in fit and less fit older adults. Fit
-participants showed higher task specificity, i.e., more dif-
-ferentiated brain activation patterns, as well as higher
-prominence of these patterns, indicating less neural noise
-throughout task execution. Our findings support the idea
-that physical fitness manifests in task-related brain network
-activation patterns that are in line with reduced dediffer-
-entiation in older adults.
+% Study 3 
+% In applying DMD to continuous EEG recordings during
+% rest and three different tasks, we considered both topo-
+% logical properties and the temporal dynamics of task-re-
+% lated
+% brain
+% networks.
+% Thus, we
+% identified electrophysiological signatures of age-related brain reor-
+% ganization processes in fit and less fit older adults. Fit
+% participants showed higher task specificity, i.e., more dif-
+% ferentiated brain activation patterns, as well as higher
+% prominence of these patterns, indicating less neural noise
+% throughout task execution. Our findings support the idea
+% that physical fitness manifests in task-related brain network
+% activation patterns that are in line with reduced dediffer-
+% entiation in older adults.
 
-Study 4
-In this study, we used machine learning to gain data-driven insights
-into expressions of expertise. We found that classification of group
-membership based on tasks that roughly reflect the expertise context is
-not possible with high accuracy. In contrast to positive reports from the
-literature, we assume a high importance of the expertise context in
-classification. Furthermore, the classification of tasks is possible with
-high accuracy within novices and experts at individual level. By exam­
-ining a low-dimensional representation of the feature space, we found a
-more pronounced individuality of EEG patterns in experts, suggesting
-more specialized neural mechanisms in fine motor experts during task
-performance. In addition to providing data-driven insights, these results
-could be relevant to the application of machine learning in the context of
-expertise classification as well as the generalizability of such algorithms
-in the context of BCI research.
+% Study 4
+% In this study, we used machine learning to gain data-driven insights
+% into expressions of expertise. We found that classification of group
+% membership based on tasks that roughly reflect the expertise context is
+% not possible with high accuracy. In contrast to positive reports from the
+% literature, we assume a high importance of the expertise context in
+% classification. Furthermore, the classification of tasks is possible with
+% high accuracy within novices and experts at individual level. By exam­
+% ining a low-dimensional representation of the feature space, we found a
+% more pronounced individuality of EEG patterns in experts, suggesting
+% more specialized neural mechanisms in fine motor experts during task
+% performance. In addition to providing data-driven insights, these results
+% could be relevant to the application of machine learning in the context of
+% expertise classification as well as the generalizability of such algorithms
+% in the context of BCI research.
 
-By using machine learning techniques, more precisely dimensionality reduction and the classification of tasks-related \gls{eeg} signals, it was consequently possible to detect age-related differences and confirm hypotheses about the aging brain such as dedifferentiation and compensation directly based on \gls{eeg} signals. In addition, new hypotheses such as the temporal component of dedifferentiation could be established.  Since classifiers are trained for each participant individually, the level of dedifferentiated and compensatory activity could thus be quantified on an individual level. 
+By using machine learning techniques, more precisely dimensionality reduction and the classification of tasks-related \gls{eeg} signals, it was consequently possible to detect age-related differences and confirm hypotheses about the aging brain such as dedifferentiation and compensation directly based on \gls{eeg} signals. In addition, new hypotheses such as the temporal component of dedifferentiation could be established.  Since classifiers are trained for each participant individually, the level of dedifferentiated and compensatory activity could thus be quantified on an individual level.
