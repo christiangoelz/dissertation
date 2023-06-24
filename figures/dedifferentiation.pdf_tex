@@ -120,6 +120,6 @@
     \put(0.3036942,0.06162581){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S3\end{tabular}}}}%
     \put(0.3403878,0.06162581){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}S4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=19]{dedifferentiation.pdf}}%
-    \put(0.32793319,0.48179001){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input       Activation\end{tabular}}}}%
+    \put(0.33454778,0.48179001){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Input       Activation\end{tabular}}}}%
   \end{picture}%
 \endgroup%
