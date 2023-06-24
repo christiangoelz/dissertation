@@ -36,12 +36,12 @@
      showgrid="false"
      showguides="true"
      inkscape:zoom="1.180997"
-     inkscape:cx="140.98257"
-     inkscape:cy="294.66628"
-     inkscape:window-width="1860"
-     inkscape:window-height="1011"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
+     inkscape:cx="140.98258"
+     inkscape:cy="294.66629"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      inkscape:pageshadow="2" /><defs
@@ -1684,13 +1684,13 @@
    sodipodi:nodetypes="cccc" /><text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.299385"
-   x="9.179718"
+   x="7.0547848"
    y="61.009979"
    id="text44614"><tspan
      sodipodi:role="line"
      id="tspan44612"
      style="font-size:3.175px;stroke-width:0.299385"
-     x="9.179718"
+     x="7.0547848"
      y="61.009979">Activation pattern hidden layer</tspan></text>
 
 <text
@@ -1753,13 +1753,13 @@
 <text
    xml:space="preserve"
    style="font-style:normal;font-weight:normal;font-size:3.175px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
-   x="77.035675"
+   x="77.027405"
    y="61.009979"
    id="text44614-4"><tspan
      sodipodi:role="line"
      id="tspan44612-7"
      style="font-size:3.175px;stroke-width:0.264583"
-     x="77.035675"
+     x="77.027405"
      y="61.009979">Activation of a neuron to the same input</tspan></text>
 <text
    xml:space="preserve"
