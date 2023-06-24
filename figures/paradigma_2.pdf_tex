@@ -1,4 +1,4 @@
-%% Creator: Inkscape inkscape 0.92.3, www.inkscape.org
+%% Creator: Inkscape 1.1.2 (0a00cf5339, 2022-02-04), www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
 %% Accompanies image file 'paradigma_2.pdf' (pdf, eps, ps)
 %%
@@ -60,7 +60,7 @@
     \put(0,0){\includegraphics[width=\unitlength,page=3]{paradigma_2.pdf}}%
     \put(0.2777569,0.06998548){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{paradigma_2.pdf}}%
-    \put(0.41036377,0.17446026){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}~ 950 ms\end{tabular}}}}}%
+    \put(0.41036377,0.17446026){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$\sim$950 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{paradigma_2.pdf}}%
     \put(0.34551201,0.12170061){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{paradigma_2.pdf}}%
