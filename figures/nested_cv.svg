@@ -40,7 +40,7 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="173"
+     inkscape:cx="172.5"
      inkscape:cy="104"
      inkscape:window-width="1860"
      inkscape:window-height="1011"
@@ -481,7 +481,7 @@
            style="font-size:3.52778px;stroke-width:0.264583"
            x="4.1909847"
            y="31.392397"
-           id="tspan1096">k folds</tspan><tspan
+           id="tspan1096">(k folds)</tspan><tspan
            sodipodi:role="line"
            x="4.1909847"
            y="35.80212"
@@ -790,7 +790,7 @@
            style="font-size:3.52778px;stroke-width:0.264583"
            x="3.8232203"
            y="66.039864"
-           id="tspan10058">k folds</tspan><tspan
+           id="tspan10058">(k folds)</tspan><tspan
            sodipodi:role="line"
            x="3.8232203"
            y="70.449585"
