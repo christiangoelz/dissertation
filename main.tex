@@ -168,7 +168,6 @@
     \input{chapters/0_Formalia/titlepage}
     
     \pagenumbering{roman}
-    \tableofcontents
 
     % Acknowledgement
     \chapter*{Acknowledgement}
@@ -181,6 +180,15 @@
     \setcounter{page}{2}
     \addcontentsline{toc}{chapter}{Abstract}
     \input{chapters/0_Formalia/abstract}
+
+     % Zusammenfassung
+    \chapter*{Zusammenfassung}
+    \setcounter{page}{2}
+    \addcontentsline{toc}{chapter}{Zusammenfassung}
+    \input{chapters/0_Formalia/zusammenfassung}
+
+    % Contents
+    \tableofcontents
     
     % List of figures
     \listoffigures
@@ -195,8 +203,8 @@
     \addcontentsline{toc}{chapter}{List of Abbreviations}
     
     % Contributions
-    \chapter*{List of scientific contributions}
-    \addcontentsline{toc}{chapter}{List of scientific contributions}
+    \chapter*{List of Scientific Contributions}
+    \addcontentsline{toc}{chapter}{List of Scientific Contributions}
     \input{chapters/0_Formalia/publist}
 
 %%%%%%%%%%%%%%%%%% Content %%%%%%%%%%%%%%%%%%
@@ -219,12 +227,12 @@
         \input{chapters/1_introduction/3_machine_learning} 
 
     % Aims
-    \chapter{Aims and scope}
+    \chapter{Aims and Scope}
     \label{chap:aims_scope}
     \input{chapters/2_aims_scope}
 
     % Methods
-    \chapter{General methodology}
+    \chapter{General Methodology}
     \label{chap:methods}
     This chapter introduces the overarching methods of the \hyperref[pub:papers]{published research articles} on which this thesis is based. The focus is rather on an overall description of the methods, which is crucial for the following summary of the main results than on details in terms of reproducibility. For this, reference is made to the original description as it can be found in the \hyperref[pub:papers]{published research articles}.
     \input{chapters/3_general_methodology}
@@ -251,7 +259,7 @@
         \input{chapters/4_Results/4_Paper4}
 
     % Discussion
-    \chapter{General discussion}
+    \chapter{General Discussion}
     \label{chap:discussion}
     \input{chapters/5_discussion}
 
