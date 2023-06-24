@@ -17,7 +17,7 @@ Grip force and \gls{eeg} were recorded. Before the experiments resting \glspl{ee
 \begin{figure}[ht]
 \begin{center}
 \input{figures/paradigma_1.pdf_tex}
-\caption[Schematic presentation of the force-tracking task conducted in dataset \uproman{1}.]{Schematic presentation of the force-tracking task conducted in dataset \uproman{1}. The task was to apply the correct force to a force transducer using a precision grip with the right or left hand to track a target force level (green line) as precisely as possible. Participants received feedback, i.e., they saw their applied force (yellow line).}
+\caption[Schematic presentation of the force-tracking task conducted in Dataset \uproman{1}.]{Schematic presentation of the force-tracking task conducted in dataset \uproman{1}. The task was to apply the correct force to a force transducer using a precision grip with the right or left hand to track a target force level (green line) as precisely as possible. Participants received feedback, i.e., they saw their applied force (yellow line).}
 \label{fig:DSI_exp1}
 \end{center}
 \end{figure}
@@ -64,11 +64,11 @@ Participants performed sensory, motor, and cognitive tasks each lasting 90~s dur
 \end{center}
 \end{figure}
 
-\paragraph{Sensory task}
+\paragraph{Sensory Task}
 The index fingertips of the participant's left hand were stimulated with the pins of a braille device presenting two pin configurations in random order. 
-\paragraph{Motor task} 
+\paragraph{Motor Task} 
 The motor task corresponded to the force tracking experiment as described in \chapref{methods:datasets:I:experiment}. Here, the target was a line that moved from the right to the left on the screen for 90~s and changed level every 3~s in randomized order between heights representing 10~\%, 20~\% and 30~\% of participants' individual \gls{mvc}. The task was to apply the appropriate force to the force transducer to move a cursor so that it followed the target force level presented on a screen as closely as possible.
-\paragraph{Cognitive task}
+\paragraph{Cognitive Task}
 The cognitive task was an auditory n-back task. Participants were asked to listen to a sequence of letters presented via two speakers behind them and press the foot switch with the right foot if a letter appeared again two letters later (2-back).
 
 \begin{table}[ht]
@@ -106,7 +106,7 @@ The \glspl{eeg} in Dataset \chapref{methods:datasets:I} and \chapref{methods:dat
 \\
 Based on the different analysis methods, objectives, and \gls{eeg} systems used, the preprocessing differed slightly between the research articles. In each case, the data were down-sampled, re-referenced, and filtered. In \hyperref[results:paperI]{Research Article \uproman{1}}, \hyperref[results:paperIII]{\uproman{3}} and \hyperref[results:paperIV]{\uproman{4}}, \gls{ica} was used to reduce occular and muscle artifacts. In \hyperref[results:paperI]{Research Article \uproman{1}} and \hyperref[results:paperIV]{\uproman{4}}, trials containing large artifacts were excluded using the \textit{autoreject pipeline} \cite{Jas2017}. Due to the high number of electrodes used in \hyperref[methods:datasets:III]{Dataset \uproman{3}}, bridges were detected and interpolated based on coherence measurements and electrical distance \cite{Alschuler2014}. The exact pipelines are described in the \hyperref[pub:papers]{published research articles}.  
 
-\section{Machine learning procedures}
+\section{Machine Learning Procedures}
 Applying machine learning techniques followed the state-of-the-art practices presented in \chapref{theory:ml} to enable the three approaches presented in \chapref{chap:aims_scope}. For this purpose, we used a combination of dimensionality reduction methods and classification.\\
 As a preliminary step, in all approaches taken in this work, the dimensions of the \gls{eeg} data were reduced to extract specific characteristics, e.g., the network characteristics (see \autoref{fig:ML_approach} 1a). Additionally, a second level of dimensionality reduction was optionally applied. This secondary reduction served as additional feature extraction for the following analyses or facilitated the exploratory analysis performed in the third approach of this work (see \autoref{fig:ML_approach} 1b).\\
 Classification procedures were used at the individual and group levels (see \autoref{fig:ML_approach} 2). At the individual level, a classification model was trained for each participant based on the \gls{eeg} data to predict which experimental condition was present, e.g., which task a participant performed. Following the first approach, this should ultimately allow inferences about dedifferentiation at the individual level and, following the second approach, provide the basis for comparing groups with different lifestyle backgrounds. In addition, following the third approach, classifiers were also trained at the group level to predict group membership and detect general patterns in the dataset. \autoref{tab:ml_methods}  summarizes the used methods for each research article. In the following, the methods will be briefly described.
@@ -143,20 +143,20 @@ Classification procedures were used at the individual and group levels (see \aut
 
 
 \newpage
-\subsection{Dimensionality reduction}
+\subsection{Dimensionality Reduction}
 As described above, different dimensionality reduction methods were utilized to extract a suitable representation of the EEG on the first level and further investigate this representation on the second level. The following briefly introduces the methods listed in \autoref{tab:ml_methods}.
 
-\subsubsection{Dynamic mode decomposition}
+\subsubsection{Dynamic Mode Decomposition}
 To extract dynamic brain network activation patterns from the continuous \gls{eeg} activity, we chose \gls{dmd} because it can decompose the signals into spatial activation patterns that are dynamically coherent, reflecting the network nature of the underlying brain activity \cite{Brunton2016}. \Gls{dmd} was developed in the field of fluid mechanics and was applied to various fields to model time-varying dynamical systems, including neuroscience proving to extract physiological valid signal patterns \cite{Brunton2016, Kunert-Graf2019, Schmid2010, Schmid2008}. The activation patterns (modes) extracted from \gls{dmd} analysis can reveal key features such as the spatial distribution of coherent dynamics in relation to oscillation frequencies and growth or decay rates. This representation provides a deeper understanding of the functional reorganization of the brain and can serve as a starting point for further analysis \cite{Brunton2016}.\\
 For the computation of \gls{dmd}, we used the \textit{exact \gls{dmd}} algorithm introduced by \citeauthor{Tu2014} \cite{Tu2014} and described in \cite{Brunton2016} as applied to electrophysiological data. The analysis was based on the preprocessed and windowed \gls{eeg} data and \gls{dmd} modes associated with the frequency ranges $\theta$ (4 to $<$ 7 Hz), $\alpha$ (7 to $<$ 12 Hz), $\beta_1$ (12 to $<$ 16 Hz), and $\beta_2$ (16 to $<$ 30 Hz) were considered. We calculated the \gls{dmd} mode magnitude (absolute value) to obtain the influence of each electrode in a \gls{dmd} mode representing coherent activation \cite{Brunton2016}.
 
-\subsubsection{Common spatial patterns}
+\subsubsection{Common Spatial Patterns}
 To extract the information from the \gls{dmd} modes that would allow the best possible differentiation between the tasks, we leveraged supervised dimensionality reduction (see \chapref{theory:ml:applications_eeg}). This approach is based on \gls{fbcsp}, a widely used algorithm for the classification of continuous tasks that extracts a weighting for each \gls{eeg} channel that maximizes the class discriminative energy for selected frequency bands \cite{Ang2012}. By multiplying these weights with the channel values, meaningful features are generated. The weightings were calculated based on \gls{dmd} magnitudes in each frequency band (see \hyperref[pup:paperI]{Published Research Article \uproman{1}} for details on the implementation).
 
-\subsubsection{Principal component analysis}
+\subsubsection{Principal Component Analysis}
 \Gls{pca} aims at extracting the statistically most descriptive components from highly dimensional data \cite{BruntonKutz2019}. We used the \gls{svd} algorithm and reduced the dimension of the \gls{dmd} modes of all time windows to their main features. Therefore, we calculated a \gls{svd} over all frequency-specific modes over all time windows per participant and extracted the singular vectors and values. The singular vectors represent the principal components and capture the most significant or dominant \gls{dmd} patterns. The singular values capture the proportion of variance accounted for by this pattern. Higher singular values indicate that the associated dominant pattern captures more variation among all \gls{dmd} modes during task completion and can be considered representative of the stability or prominence of this pattern.
 
-\subsubsection{Uniform manifold matrix approximation and projection}
+\subsubsection{Uniform Manifold Matrix Approximation and Projection}
 While \gls{pca} was used to explain patterns of variation within a participant, we relied on \gls{umap} to capture the structure both on a local level, i.e., within a participant, and on a global level, i.e., between participants. \Gls{umap} constructs a low-dimensional representation by modeling the data as a topological manifold, considering both the distances between data points and the local density, and is particularly effective in visualizing and exploring complex data patterns and meaningful relationships in the data \cite{Mcinnes2018}. For this, we first calculated the arithmetic mean over the \gls{dmd} modes of all windows per frequency band, trial, and participant and then applied \gls{umap} to obtain a lower-dimensional representation that captures underlying patterns and meaningful relationships in the data, facilitating visualization and exploration of \gls{dmd} patterns.
 
 \subsubsection{xDAWN}
@@ -176,7 +176,7 @@ The classification was performed on a trial-by-trial basis, i.e., models were le
 
 \begin{table}[ht]
     \captionsetup{justification=raggedright,singlelinecheck=false}
-    \caption{Confusion Matrix}
+    \caption{Confusion matrix}
     \label{tab:confusion-matrix}
     \renewcommand{\arraystretch}{1.25}
     \centering
