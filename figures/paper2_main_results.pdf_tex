@@ -99,7 +99,7 @@
     \put(0.7949094,0.08587055){\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Old $<$75\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=22]{paper2_main_results.pdf}}%
     \put(0.8432181,0.08587056){\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Old $>$75\end{tabular}}}}}%
-    \put(0.75000535,0.05554792){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\textbf{Predicted label}\end{tabular}}}}%
+    \put(0.75000535,0.05224063){\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\textbf{Predicted Class}\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=23]{paper2_main_results.pdf}}%
     \put(0.52739665,0.411448){\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Children\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=24]{paper2_main_results.pdf}}%
@@ -112,7 +112,7 @@
     \put(0.5281003,0.24571075){\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Old $<$75\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=28]{paper2_main_results.pdf}}%
     \put(0.52810031,0.20418847){\rotatebox{45}{\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Old $>$75\end{tabular}}}}}%
-    \put(0.50316486,0.31413806){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\textbf{True label}\end{tabular}}}}}%
+    \put(0.49985757,0.31413805){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}\textbf{Actual Class}\end{tabular}}}}}%
     \put(0.6219873,0.43404339){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.99\end{tabular}}}}%
     \put(0.670296,0.43404339){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.01\end{tabular}}}}%
     \put(0.7186047,0.43404339){\color[rgb]{0.14901961,0.14901961,0.14901961}\makebox(0,0)[t]{\lineheight{0}\smash{\begin{tabular}[t]{c}0.00\end{tabular}}}}%

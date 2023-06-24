@@ -26,12 +26,12 @@
      showgrid="false"
      width="160mm"
      inkscape:zoom="1.4142136"
-     inkscape:cx="234.75945"
+     inkscape:cx="235.113"
      inkscape:cy="220.61731"
-     inkscape:window-width="1860"
-     inkscape:window-height="1011"
-     inkscape:window-x="1920"
-     inkscape:window-y="32"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
      showguides="false"
@@ -1593,12 +1593,12 @@
     </g>
     <g
        id="text_7"
-       transform="matrix(0.38613228,0,0,0.38613228,75.374417,8.762553)">
+       transform="matrix(0.38613228,0,0,0.38613228,75.374417,9.2917197)">
       <text
          style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:7px;line-height:normal;font-family:'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', Verdana, Geneva, Lucid, Arial, Helvetica, 'Avant Garde', sans-serif;text-anchor:middle"
          x="115.57293"
          y="187.37045"
-         id="text12861">Predicted label</text>
+         id="text12861">Predicted Class</text>
     </g>
     <g
        id="ytick_1"
@@ -1762,10 +1762,10 @@
        transform="matrix(0.38613228,0,0,0.38613228,74.316084,6.645887)">
       <text
          style="font-style:normal;font-variant:normal;font-weight:700;font-stretch:normal;font-size:7px;line-height:normal;font-family:'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', Verdana, Geneva, Lucid, Arial, Helvetica, 'Avant Garde', sans-serif;text-anchor:middle"
-         x="16.031534"
-         y="85.701263"
-         transform="rotate(-90,16.031534,85.70126)"
-         id="text12922">True label</text>
+         x="-85.701263"
+         y="14.661109"
+         transform="rotate(-90)"
+         id="text12922">Actual Class</text>
     </g>
     <g
        id="text_15"
