@@ -34,8 +34,9 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage[T1]{fontenc}
-
 %------------------------------------ Settings ------------------------------------
+
+
 % CITATION
     % ADD TWO AUTHOR CITE
         \newrobustcmd{\twocite}{\AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
@@ -133,8 +134,8 @@
 
 % COLOR LINKS
     \hypersetup{colorlinks=true,
-    linkcolor=black,
-    urlcolor=balck
+    linkcolor=blue,
+    urlcolor=blue,
     }
     
 % LINE SPACING
@@ -154,7 +155,7 @@
 
 
 % NUMBERING
-    \newcommand{\uproman}[1]{\uppercase\expandafter{\romannumeral#1}}
+    \newcommand{\uproman}[1]{\MakeUppercase{\romannumeral#1}}
     \newcommand{\lowroman}[1]{\romannumeral#1\relax}
 
 % !!!!! ADDED DUE TO UNICODE ERROR: TO DO - SEE EFFECT 
@@ -271,6 +272,7 @@
     \chapter*{\vspace*{\fill}\centering{Published Research Articles}\vspace*{\fill}}
     \label{pub:papers}
     \addcontentsline{toc}{chapter}{Published Research Articles}
+    \markboth{PUBLISHED RESEARCH ARTICLES}{PUBLISHED RESEARCH ARTICLES}
         \newpage
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{1}}\vspace*{\fill}}
             \addcontentsline{toc}{section}{Published Research Article \uproman{1}}
