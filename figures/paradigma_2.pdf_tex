@@ -67,8 +67,8 @@
     \put(0.5379481,0.27331206){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}200 ms\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{paradigma_2.pdf}}%
     \put(0.4727411,0.22360436){\color[rgb]{0,0,0}\rotatebox{-1.0100483}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}300 ms\end{tabular}}}}}%
-    \put(0.67873949,0.23859545){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
-    \put(0.67826913,0.02368659){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.67873949,0.22881574){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Incongruent\end{tabular}}}}}%
+    \put(0.67826913,0.03386523){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Congruent\end{tabular}}}}}%
     \put(0.85861203,0.15520276){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Neutral\end{tabular}}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{paradigma_2.pdf}}%
   \end{picture}%
