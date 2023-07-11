@@ -36,80 +36,6 @@
 \usepackage[T1]{fontenc}
 %------------------------------------ Settings ------------------------------------
 
-
-% CITATION
-    % ADD TWO AUTHOR CITE
-        \newrobustcmd{\twocite}{\AtNextCite{\defcounter{maxnames}{2}\defcounter{minnames}{2}}\fullcite}
-
-    % ADD BOLD AUTHOR NAME
-        \makeatletter
-        % auxiliary bibfile
-        \def\hlblx@bibfile@name{\jobname -boldnames.bib}
-        \newwrite\hlblx@bibfile
-        \immediate\openout\hlblx@bibfile=\hlblx@bibfile@name
-        
-        \newcounter{hlblx@name}
-        \setcounter{hlblx@name}{0}
-        
-        \newcommand*{\hlblx@writenametobib}[1]{%
-          \stepcounter{hlblx@name}%
-          \edef\hlblx@tmp@nocite{%
-            \noexpand\AfterPreamble{%
-              \noexpand\setbox0\noexpand\vbox{%
-                \noexpand\hlblx@getmethehash{hlblx@name@\the\value{hlblx@name}}}}%
-          }%
-          \hlblx@tmp@nocite
-          \immediate\write\hlblx@bibfile{%
-            @misc{hlblx@name@\the\value{hlblx@name}, author = {\unexpanded{#1}}, %
-                  options = {dataonly=true},}%
-          }%
-        }
-        
-        \AtEndDocument{%
-          \closeout\hlblx@bibfile}
-        
-        \addbibresource{\hlblx@bibfile@name}
-        
-        \newcommand*{\hlbxl@boldhashes}{}
-        \DeclareNameFormat{hlblx@hashextract}{%
-          \xifinlist{\thefield{hash}}{\hlbxl@boldhashes}
-            {}
-            {\listxadd{\hlbxl@boldhashes}{\thefield{fullhash}}}}
-        
-        \DeclareCiteCommand{\hlblx@getmethehash}
-          {}
-          {\printnames[hlblx@hashextract][1-999]{author}}
-          {}
-          {}
-        
-        % user-level macros
-        \newcommand*{\addboldnames}{\forcsvlist\hlblx@writenametobib}
-        \newcommand*{\resetboldnames}{\def\hlbxl@boldhashes{}}
-        
-        
-        \newcommand*{\mkboldifhashinlist}[1]{%
-          \xifinlist{\thefield{hash}}{\hlbxl@boldhashes}
-            {\mkbibbold{#1}}
-            {#1}}
-        \makeatother
-        
-        \DeclareNameWrapperFormat{given-family:hash:bold}{%
-          \renewcommand*{\mkbibcompletename}{\mkboldifhashinlist}%
-          #1}
-        
-        \DeclareCiteCommand{\fullcitebold}
-          {\usebibmacro{prenote}}
-          {\usedriver
-             {\DeclareNameAlias{sortname}{default}%
-              \DeclareNameWrapperAlias{default}{given-family:hash:bold}%
-              \defcounter{maxnames}{99}%
-              \defcounter{minnames}{99}}
-             {\thefield{entrytype}}}
-          {\multicitedelim}
-          {\usebibmacro{postnote}}
-        
-        \addboldnames{{Gölz, Christian},{Goelz, Christian}} 
-    
 % REFERENCES
     \addbibresource{literature.bib} 
     \newcommand{\chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}}
@@ -168,25 +94,33 @@
     \input{chapters/0_Formalia/titlepage}
     
     \pagenumbering{roman}
-    % Declaration of Authorship 
-    \chapter*{Declaration of Authorship}
+    \newpage 
+    \vspace*{\fill}
+    \noindent Principle supervisor: Dr. Solveig Vieluf\\
+    \noindent Secondary supervisor: Prof. Dr. Dr. Claus Reinsberger\\
+    \\
+    Paderborn, July XX, 2023
     
-    % Acknowledgement
-    \chapter*{Acknowledgement}
-    \addcontentsline{toc}{chapter}{Acknowledgement}
-    \input{chapters/0_Formalia/acknowledgement}
-
     % Abstract
     \chapter*{Abstract}
-    \setcounter{page}{2}
+    % \setcounter{page}{2}
     \addcontentsline{toc}{chapter}{Abstract}
     \input{chapters/0_Formalia/abstract}
 
      % Zusammenfassung
     \chapter*{Zusammenfassung}
-    \setcounter{page}{2}
+    % \setcounter{page}{2}
     \addcontentsline{toc}{chapter}{Zusammenfassung}
     \input{chapters/0_Formalia/zusammenfassung}
+
+    % Declaration of Authorship 
+    \chapter*{Declaration of Authorship}
+    \input{chapters/0_Formalia/declaration_of_authorship}
+    
+    % Acknowledgement
+    \chapter*{Acknowledgement}
+    \addcontentsline{toc}{chapter}{Acknowledgement}
+    \input{chapters/0_Formalia/acknowledgement}
 
     % Contents
     \tableofcontents
@@ -278,20 +212,20 @@
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{1}}
             \label{pub:paperI}
-            % \includepdf[pages=-]{published_paper/ForceControl.pdf}
+            \includepdf[pages=-]{published_paper/ForceControl.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{2}}\vspace*{\fill}}
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{2}}
             \label{pub:paperII}
-            % \includepdf[pages=-]{published_paper/Attention.pdf}
+            \includepdf[pages=-]{published_paper/Attention.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{3}}\vspace*{\fill}}
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{3}}
             \label{pub:paperIII}
-             % \includepdf[pages=-]{published_paper/Fitness.pdf}
+             \includepdf[pages=-]{published_paper/Fitness.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{4}}\vspace*{\fill}}
             \addcontentsline{toc}{section}{Published Research Article \uproman{4}}
             \label{pub:paperIV}
-            % \includepdf[pages=-]{published_paper/Expertise.pdf}
+            \includepdf[pages=-]{published_paper/Expertise.pdf}
             
 \end{document}
