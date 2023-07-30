@@ -13,7 +13,7 @@
 \usepackage[ddmmyyyy]{datetime}
 \usepackage{titlesec}
 \usepackage{hyperref}
-\usepackage[style=nature,backend=biber,maxbibnames=99]{biblatex}
+\usepackage[style=nature, intitle=true, backend=biber, maxbibnames=99]{biblatex}
 \usepackage{csquotes}
 \usepackage[a4paper,lmargin={3.5cm},rmargin={2.5cm},tmargin={2.5cm},bmargin={2.5cm}]{geometry}
 \usepackage{epigraph}
@@ -34,7 +34,13 @@
 \usepackage{pdfpages}
 \usepackage{pdflscape}
 \usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
 %------------------------------------ Settings ------------------------------------
+\pagestyle{fancy}
+\fancyhf{}% Clear header/footer
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[RO, LE]{\leftmark}
+\fancyfoot[C]{\thepage}
 
 % REFERENCES
     \addbibresource{literature.bib} 
@@ -95,20 +101,26 @@
     
     \pagenumbering{roman}
     \newpage
-    \setcounter{page}{2}
+    \thispagestyle{empty} 
     \vspace*{\fill}
     \noindent Principle supervisor: Dr. Solveig Vieluf\\
     \noindent Secondary supervisor: Prof. Dr. Dr. Claus Reinsberger\\
     \\
     Paderborn, \today
 
+    % Declaration of Authorship 
+    \chapter*{Declaration of Authorship}
+    \input{chapters/0_Formalia/declaration_of_authorship}
+    \thispagestyle{empty}
+
     % Acknowledgement
-    \chapter*{Acknowledgement}
-    \addcontentsline{toc}{chapter}{Acknowledgement}
+    \chapter*{Danksagung}
     \input{chapters/0_Formalia/acknowledgement}
+    \thispagestyle{empty}
     
     % Abstract
     \chapter*{Abstract}
+    \setcounter{page}{1}
     \addcontentsline{toc}{chapter}{Abstract}
     \input{chapters/0_Formalia/abstract}
     
@@ -118,9 +130,14 @@
     \addcontentsline{toc}{chapter}{Zusammenfassung}
     \input{chapters/0_Formalia/zusammenfassung}
 
-    % Declaration of Authorship 
-    \chapter*{Declaration of Authorship}
-    \input{chapters/0_Formalia/declaration_of_authorship}
+    % Contributions
+    \chapter*{List of Publications Considered for Thesis}
+    \addcontentsline{toc}{chapter}{List of Publications Considered for Thesis}
+    \input{chapters/0_Formalia/publist_thesis}
+
+    \chapter*{List of Other Scientific Contributions}
+    \addcontentsline{toc}{chapter}{List of Other Scientific Contributions}
+    \input{chapters/0_Formalia/publist}
     
     % Contents
     \tableofcontents
@@ -137,13 +154,9 @@
     \printglossary[nonumberlist, type=\acronymtype, title={List of Abbreviations}]
     \addcontentsline{toc}{chapter}{List of Abbreviations}
     
-    % Contributions
-    \chapter*{List of Scientific Contributions}
-    \addcontentsline{toc}{chapter}{List of Scientific Contributions}
-    \input{chapters/0_Formalia/publist}
 
 %%%%%%%%%%%%%%%%%% Content %%%%%%%%%%%%%%%%%%
-
+    \glsresetall
     % Introduction
     \chapter{General Introduction}\label{chap:intro}
     \pagenumbering{arabic}
@@ -169,9 +182,9 @@
     % Methods
     \chapter{General Methodology}
     \label{chap:methods}
-    This chapter introduces the overarching methods of the \hyperref[pub:papers]{published research articles} on which this thesis is based. The focus is rather on an overall description of the methods, which is crucial for the following summary of the main results than on details in terms of reproducibility. For this, reference is made to the original description as it can be found in the \hyperref[pub:papers]{published research articles}.
+    This chapter introduces the main methods used in the \hyperref[pub:papers]{published research articles} on which this thesis is based. The focus is on providing an overall description of these methods, which is important for summarizing the main results. More specific details, can be found in the original description in the \hyperref[pub:papers]{published research articles}, which are attached at the end of this thesis.
     \input{chapters/3_general_methodology}
-    
+
     % Results
     \chapter{Summary of the Main Results}
     \label{chap:results}
@@ -212,20 +225,20 @@
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{1}}
             \label{pub:paperI}
-            \includepdf[pages=-]{published_paper/ForceControl.pdf}
+            \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/ForceControl.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{2}}\vspace*{\fill}}
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{2}}
             \label{pub:paperII}
-            \includepdf[pages=-]{published_paper/Attention.pdf}
+            \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/Attention.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{3}}\vspace*{\fill}}
             \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{3}}
             \label{pub:paperIII}
-             \includepdf[pages=-]{published_paper/Fitness.pdf}
+             \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/Fitness.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{4}}\vspace*{\fill}}
             \addcontentsline{toc}{section}{Published Research Article \uproman{4}}
             \label{pub:paperIV}
-            \includepdf[pages=-]{published_paper/Expertise.pdf}
+            \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/Expertise.pdf}
             
 \end{document}
