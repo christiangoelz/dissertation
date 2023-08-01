@@ -46,7 +46,7 @@
     \addbibresource{literature.bib} 
     \newcommand{\chapref}[1]{\hyperref[#1]{Chapter~\ref*{#1}}}
 
-% FIGURES
+% FIGURES and Tables
     \graphicspath{{figures/}}
     \captionsetup[figure]{font=small,justification=raggedright,singlelinecheck=false}
     \newcommand{\dummyfig}[1]{
@@ -57,6 +57,10 @@
         \end{minipage}
       }
     }
+
+    % Sequential Numbering
+    \counterwithout{figure}{chapter}
+    \counterwithout{table}{chapter}
 
 % SECTION NUMBERS
     \setcounter{tocdepth}{2}
@@ -107,7 +111,7 @@
     \noindent Principle supervisor: Dr. Solveig Vieluf\\
     \noindent Secondary supervisor: Prof. Dr. Dr. Claus Reinsberger\\
     \\
-    Paderborn, \today
+    Paderborn, July 31, 2023
 
     % Declaration of Authorship 
     \chapter*{Declaration of Authorship}
@@ -132,8 +136,8 @@
     \input{chapters/0_Formalia/zusammenfassung}
 
     % Contributions
-    \chapter*{List of Publications Considered for This Thesis}
-    \addcontentsline{toc}{chapter}{List of Publications Considered for This Thesis}
+    \chapter*{List of Publications Included in This Thesis}
+    \addcontentsline{toc}{chapter}{List of Publications Included in This Thesis}
     \input{chapters/0_Formalia/publist_thesis}
 
     \chapter*{List of Other Scientific Contributions}
@@ -144,13 +148,16 @@
     \tableofcontents
     
     % List of figures
+    \let\origaddvspace\addvspace
+    \renewcommand{\addvspace}[1]{}
     \listoffigures
     \addcontentsline{toc}{chapter}{List of Figures}
     
     % List of tables
     \listoftables
     \addcontentsline{toc}{chapter}{List of Tables}
-
+    \renewcommand{\addvspace}[1]{\origaddvspace{#1}}
+    
     % List of acronyms
     \printglossary[nonumberlist, type=\acronymtype, title={List of Abbreviations}]
     \addcontentsline{toc}{chapter}{List of Abbreviations}
@@ -238,6 +245,7 @@
             \label{pub:paperIII}
              \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/Fitness.pdf}
         \section*{\vspace*{\fill}\centering{Published Research Article \uproman{4}}\vspace*{\fill}}
+            \phantomsection
             \addcontentsline{toc}{section}{Published Research Article \uproman{4}}
             \label{pub:paperIV}
             \includepdf[pages=-, noautoscale = true, scale=.9, offset = 1cm 0cm]{published_paper/Expertise.pdf}
