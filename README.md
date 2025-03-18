@@ -1,0 +1,6 @@
+# Decoding the Functional Reorganization of the Aging Brain
+
+This dissertation aimed to extend the understanding of age-related functional brain reorganization by applying machine learning to electroencephalography (EEG) data.\
+Based on EEG data derived during sensory, cognitive, or motor tasks, classification algorithms were trained to predict the task performed during recording and the individual's age and lifestyle group. Dimensionality reduction techniques were used to extract EEG patterns that reveal the relationship between age-related brain reorganization and lifestyle factors.\
+The performance of the classifiers revealed task-specific signatures of dedifferentiation, i.e., loss of specialization of neural systems. In addition, the results provided evidence for cognitive changes at specific life stages, e.g., after retirement, and the influence of lifestyle factors. High cardiorespiratory fitness was associated with less dedifferentiation, and occupational expertise led to greater individualization of functional brain activity patterns.\
+Machine learning enabled the identification and quantification of age-related brain reorganization. This supported existing findings and, in addition, generated new hypotheses. These results could contribute to developing diagnostic tools, therapies, or assistive technologies.
